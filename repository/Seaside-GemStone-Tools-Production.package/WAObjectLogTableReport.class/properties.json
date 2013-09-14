@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Tools-Production-ObjectLog",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "KenTreis 08/10/2010 01:54",
+	"instvars" : [
+		 ],
+	"name" : "WAObjectLogTableReport",
+	"pools" : [
+		 ],
+	"super" : "WATableReport",
+	"type" : "normal" }

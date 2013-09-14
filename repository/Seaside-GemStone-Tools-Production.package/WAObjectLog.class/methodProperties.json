@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"canBeRoot" : "jgf 11/16/2009 13:02",
+		"description" : "jgf 11/16/2009 13:02",
+		"entryPointName" : "jgf 11/16/2009 13:02",
+		"initialize" : "DaleHenrichs 07/06/2010 18:32" },
+	"instance" : {
+		"children" : "jgf 11/16/2009 13:02",
+		"deleteAllAtPriority:" : "jgf 11/16/2009 13:02",
+		"deleteLogEntriesUpToInclusive:" : "jgf 11/16/2009 13:02",
+		"deleteLogEntry:" : "jgf 11/16/2009 13:02",
+		"initialize" : "DaleHenrichs 07/06/2010 12:22",
+		"labels" : "DaleHenrichs 06/20/2010 10:28",
+		"objectLogEntries" : "jgf 11/16/2009 13:02",
+		"objectLogEntries:" : "jgf 11/16/2009 13:02",
+		"objectLogSummary" : "DaleHenrichs 06/20/2010 10:30",
+		"renderContentOn:" : "jgf 11/16/2009 13:05",
+		"renderFormOn:" : "jgf 11/16/2009 13:14",
+		"renderSummaryOn:" : "jgf 11/16/2009 13:02" } }

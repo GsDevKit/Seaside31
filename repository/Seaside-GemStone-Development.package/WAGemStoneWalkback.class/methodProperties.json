@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"initialize" : "dkh 11/10/2009 14:20" },
+	"instance" : {
+		"currentContextForWalkback" : "dkh 11/10/2009 15:00",
+		"frameCount" : "dkh 11/10/2009 14:20",
+		"frames" : "dkh 11/10/2009 14:20",
+		"initializeWithException:" : "dkh 11/10/2009 14:59",
+		"renderObject:labelled:on:" : "dkh 11/10/2009 14:20",
+		"renderStackFrame:on:" : "dkh 11/10/2009 14:20",
+		"renderStackOn:" : "dkh 11/10/2009 14:20",
+		"safePrintString:" : "dkh 11/10/2009 14:20",
+		"tempNamesAndValuesIn:do:" : "dkh 11/10/2009 15:07",
+		"updateRoot:" : "DaleHenrichs 06/19/2010 10:55" } }

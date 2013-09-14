@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Core-RequestHandling",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 05/18/2011 15:21",
+	"instvars" : [
+		"forDebugging" ],
+	"name" : "WAGemStoneRequestContext",
+	"pools" : [
+		 ],
+	"super" : "WARequestContext",
+	"type" : "normal" }

@@ -1,0 +1,19 @@
+{
+	"category" : "Seaside-GemStone-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 05/18/2011 15:21",
+	"instvars" : [
+		"continuation",
+		"level",
+		"method",
+		"source",
+		"mySelf",
+		"receiver" ],
+	"name" : "GsContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 05/18/2011 15:21",
+	"instvars" : [
+		"request" ],
+	"name" : "WAObjectLogEntry",
+	"pools" : [
+		 ],
+	"super" : "RemoteDebuggerLogEntry",
+	"type" : "normal" }

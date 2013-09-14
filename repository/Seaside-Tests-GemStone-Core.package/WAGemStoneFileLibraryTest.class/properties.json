@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Tests-GemStone-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 04/27/2011 15:26",
+	"instvars" : [
+		 ],
+	"name" : "WAGemStoneFileLibraryTest",
+	"pools" : [
+		 ],
+	"super" : "WAContextTest",
+	"type" : "normal" }

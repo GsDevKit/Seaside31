@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Core-Notifications",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 05/18/2011 15:21",
+	"instvars" : [
+		 ],
+	"name" : "WASessionLockNotAcquiredException",
+	"pools" : [
+		 ],
+	"super" : "WARetryHttpRequest",
+	"type" : "normal" }

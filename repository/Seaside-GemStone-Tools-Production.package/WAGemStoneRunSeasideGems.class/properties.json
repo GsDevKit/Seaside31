@@ -1,0 +1,16 @@
+{
+	"category" : "Seaside-GemStone-Tools-Production-Gems",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Default" ],
+	"commentStamp" : "KenTreis 08/10/2010 01:54",
+	"instvars" : [
+		"name",
+		"adaptorClass",
+		"ports" ],
+	"name" : "WAGemStoneRunSeasideGems",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
