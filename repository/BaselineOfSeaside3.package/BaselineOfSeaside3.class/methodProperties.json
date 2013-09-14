@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"baseline310:" : "dkh 09/14/2013 06:56",
+		"baseline310adaptors:" : "dkh 09/14/2013 06:55",
+		"baseline310comet:" : "dkh 09/14/2013 06:55",
+		"baseline310common:" : "dkh 09/14/2013 06:55",
+		"baseline310filesystem:" : "dkh 09/14/2013 06:55",
+		"baseline310gemstone:" : "dkh 09/14/2013 06:55",
+		"baseline310javascript:" : "dkh 09/14/2013 06:55",
+		"baseline310jquery:" : "dkh 09/14/2013 06:55",
+		"baseline310jqueryui:" : "dkh 09/14/2013 06:55",
+		"baseline310json:" : "dkh 09/14/2013 06:55",
+		"baseline310ob:" : "dkh 09/14/2013 06:55",
+		"baseline310pharo:" : "dkh 09/14/2013 06:55",
+		"baseline310rss:" : "dkh 09/14/2013 06:55",
+		"baseline310scriptaculous:" : "dkh 09/14/2013 06:56",
+		"baseline310welcome:" : "dkh 09/14/2013 06:56" } }
