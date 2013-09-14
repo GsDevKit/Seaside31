@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bodyFor:" : "lr 7/25/2011 20:00",
+		"from" : "pmm 9/14/2008 14:55",
+		"handleError:" : "lr 7/25/2011 20:00",
+		"sendFailFor:" : "pmm 9/14/2008 14:48",
+		"subjectFor:" : "lr 7/25/2011 20:00",
+		"to" : "pmm 9/14/2008 14:54" } }

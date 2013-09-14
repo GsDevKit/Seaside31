@@ -1,0 +1,1 @@
+The purpose of WAInteractionTest is to provide a fully initialized WContext all the neccsary objects are are normally there in a Seaside application like request, response, dispatcher application, session and so forth.

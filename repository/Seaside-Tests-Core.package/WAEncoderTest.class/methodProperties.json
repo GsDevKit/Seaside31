@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"shouldInheritSelectors" : "lr 2/7/2009 22:34" },
+	"instance" : {
+		"assert:urlEncodedGives:" : "pmm 8/14/2012 20:06",
+		"assert:xmlEncodedGives:" : "pmm 8/14/2012 20:00",
+		"testEncodedUrl" : "pmm 8/14/2012 20:04",
+		"testEncodedXml" : "pmm 8/14/2012 20:04" } }

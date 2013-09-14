@@ -1,0 +1,1 @@
+I am signaled to indicate that a validation has occurred.  See: Object>>validationError:, WAComponent>>validateWith: and WAValidationDecoration.

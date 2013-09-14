@@ -1,0 +1,1 @@
+(name 'Seaside-Pharo-JSON-Core-pmm.1' message '- Issue 726: 	Rework JSON and JavaScript escaping- add optimized Pharo implementation' id 'c4d1d5c2-39c6-4c6c-9d60-8e685bcc69a1' date '05/06/2012' time '16:00:26' author 'pmm' ancestors () stepChildren ())

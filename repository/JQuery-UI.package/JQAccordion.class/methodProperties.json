@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"activate:" : "lr 10/27/2008 08:24",
+		"active:" : "lr 11/12/2009 08:54",
+		"animated:" : "lr 6/14/2009 19:50",
+		"autoHeight:" : "lr 6/14/2009 19:50",
+		"clearStyle:" : "lr 6/14/2009 19:50",
+		"collapsible:" : "lr 6/14/2009 19:50",
+		"event:" : "lr 6/14/2009 19:50",
+		"fillSpace:" : "lr 6/14/2009 19:50",
+		"header:" : "lr 6/14/2009 19:50",
+		"icons:" : "lr 6/14/2009 19:50",
+		"method" : "lr 10/20/2008 19:51",
+		"navigation:" : "lr 6/14/2009 19:50",
+		"navigationFilter:" : "lr 6/14/2009 19:50",
+		"onChange:" : "lr 11/12/2009 08:54",
+		"onChangestart:" : "lr 11/12/2009 08:54",
+		"resize" : "obi 6/19/2010 17:37" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Widgets-Decorations",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "cds 7/25/2005 10:17",
+	"instvars" : [
+		 ],
+	"name" : "WAValidationNotification",
+	"pools" : [
+		 ],
+	"super" : "WANotification",
+	"type" : "normal" }

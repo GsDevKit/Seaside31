@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Swazoo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 7/30/2008 17:44",
+	"instvars" : [
+		 ],
+	"name" : "WorkingHTTPSetCookie2Field",
+	"pools" : [
+		 ],
+	"super" : "WorkingHTTPSetCookieField",
+	"type" : "normal" }

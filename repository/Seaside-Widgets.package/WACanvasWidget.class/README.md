@@ -1,0 +1,1 @@
+A common superclass for all widgets that want to use WARenderCanvas as their renderer.

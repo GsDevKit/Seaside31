@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"convertCrLfToCrIn:" : "lr 7/25/2011 19:50",
+		"splitIntoLines:" : "lr 7/25/2011 19:50",
+		"splitString:intoChunksNoLongerThan:" : "lr 7/25/2011 19:50",
+		"splitString:intoChunksNoLongerThan:into:" : "pmm 11/4/2008 11:14",
+		"string:" : "lr 7/25/2011 19:50",
+		"string:lineLength:" : "lr 7/25/2011 19:50" },
+	"instance" : {
+		"greaseString" : "jf 9/30/2009 01:10",
+		"string" : "pmm 8/31/2008 15:29",
+		"string:" : "pmm 8/31/2008 15:29" } }

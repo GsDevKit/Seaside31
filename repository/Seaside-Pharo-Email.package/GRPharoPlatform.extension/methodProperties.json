@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"isIpAddress:" : "pmm 1/22/2012 16:31",
+		"seasideDeliverEmailMessage:" : "lr 7/25/2011 18:36",
+		"seasideSmtpPassword" : "pmm 6/19/2011 16:31",
+		"seasideSmtpPort" : "pmm 6/19/2011 16:31",
+		"seasideSmtpServer" : "pmm 6/19/2011 16:31",
+		"seasideSmtpUsername" : "pmm 6/19/2011 16:31" } }

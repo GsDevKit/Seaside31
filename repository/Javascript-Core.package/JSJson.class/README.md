@@ -1,0 +1,1 @@
+I represent the JSON object (www.json.org) that is supported by most modern web browsers. For older browsers I require JSJsonDeploymentLibrary or JSJsonDevelopmentLibrary to be included.

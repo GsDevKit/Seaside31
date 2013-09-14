@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"initialize" : "jf 3/3/2009 22:06",
+		"unload" : "jf 3/3/2009 22:06" },
+	"instance" : {
+		"doIt" : "jf 3/3/2009 22:09",
+		"evaluate" : "jf 3/3/2009 21:50",
+		"fieldsFor:" : "jf 3/3/2009 21:48" } }

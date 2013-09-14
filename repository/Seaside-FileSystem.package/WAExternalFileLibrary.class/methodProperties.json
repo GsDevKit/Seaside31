@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"description" : "lr 2/10/2008 14:49" },
+	"instance" : {
+		"asAbsoluteUrl:relativeTo:" : "jf 2/15/2010 02:13",
+		"contentsOfFile:" : "pmm 4/20/2008 21:18",
+		"defaultConfiguration" : "pmm 10/18/2008 10:56",
+		"directory" : "pmm 10/18/2008 11:10",
+		"filenameForConsumer:" : "pmm 8/31/2009 14:21",
+		"filesIn:do:" : "pmm 11/1/2010 22:14",
+		"handleFiltered:" : "pmm 9/5/2009 10:49",
+		"listing" : "pmm 10/18/2008 11:10",
+		"mimetypeForRequest:" : "pmm 10/18/2008 11:30",
+		"processContext:" : "pmm 8/31/2009 14:22",
+		"processDirectory:context:" : "pmm 11/1/2010 22:14",
+		"processFile:context:" : "pmm 10/28/2010 18:11" } }

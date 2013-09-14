@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "pmm 4/2/2012 20:17",
+		"setUp" : "pmm 4/2/2012 19:52",
+		"testSizeOneInstanceVariable" : "pmm 4/2/2012 19:55",
+		"testSizeStringPadding" : "pmm 4/2/2012 20:16",
+		"testSizeVariableBytes" : "pmm 4/2/2012 20:00",
+		"testSizeVariableBytesLarge" : "pmm 4/2/2012 20:00",
+		"testSizeVariableWords" : "pmm 4/2/2012 20:01" } }

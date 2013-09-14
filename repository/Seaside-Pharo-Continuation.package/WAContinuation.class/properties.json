@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Pharo-Continuation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "pmm 6/1/2008 00:59",
+	"instvars" : [
+		"values" ],
+	"name" : "WAContinuation",
+	"pools" : [
+		 ],
+	"super" : "GRObject",
+	"type" : "normal" }

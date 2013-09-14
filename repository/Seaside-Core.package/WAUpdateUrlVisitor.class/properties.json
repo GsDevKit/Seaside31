@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Core-Rendering",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jf 2/13/2009 19:54",
+	"instvars" : [
+		"url" ],
+	"name" : "WAUpdateUrlVisitor",
+	"pools" : [
+		 ],
+	"super" : "WAPainterVisitor",
+	"type" : "normal" }

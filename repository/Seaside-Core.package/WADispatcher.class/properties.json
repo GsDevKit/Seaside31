@@ -1,0 +1,15 @@
+{
+	"category" : "Seaside-Core-RequestHandling",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jf 7/24/2009 09:34",
+	"instvars" : [
+		"defaultName",
+		"handlers" ],
+	"name" : "WADispatcher",
+	"pools" : [
+		 ],
+	"super" : "WARequestHandler",
+	"type" : "normal" }
