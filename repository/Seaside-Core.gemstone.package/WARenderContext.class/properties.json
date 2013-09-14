@@ -1,0 +1,20 @@
+{
+	"category" : "Seaside-Core-Rendering",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "jf 2/13/2009 19:55",
+	"instvars" : [
+		"visitor",
+		"actionUrl",
+		"actionBaseUrl",
+		"resourceUrl",
+		"callbacks",
+		"document",
+		"properties" ],
+	"name" : "WARenderContext",
+	"pools" : [
+		 ],
+	"super" : "WAObject",
+	"type" : "normal" }

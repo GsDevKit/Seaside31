@@ -1,0 +1,1 @@
+A WAAuthConfigurationError is signaled when no WAAuthConfiguration was to an application that is behind a WAAuthMain.
