@@ -38,6 +38,13 @@ fi
 cat - >> $OUTPUT_PATH << EOF
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
+"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
+
+Metacello new
+  configuration: 'Grease';
+  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+  get.
+
 "Load Seaside31 from git repository"
 
 Metacello new
