@@ -15,7 +15,10 @@ baseline310gemstone: spec
                 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ].
       spec
         package: 'Seaside-Core'
-          with: [ spec includes: #('Seaside-GemStone-Core') ];
+          with: [ 
+              spec
+                includes: #('Seaside-GemStone-Core');
+                file: 'Seaside-Core.gemstone' ];
         package: 'Seaside-Development'
           with: [ spec includes: #('Seaside-GemStone-Development') ];
         package: 'Seaside-Email'
@@ -26,7 +29,8 @@ baseline310gemstone: spec
           with: [ 
               spec
                 includes:
-                  #('Seaside-GemStone-Environment' 'Seaside-GemStone-Tools-Production') ];
+                    #('Seaside-GemStone-Environment' 'Seaside-GemStone-Tools-Production');
+                file: 'Seaside-Environment.gemstone' ];
         package: 'Seaside-Session'
           with: [ 
               spec
@@ -45,7 +49,8 @@ baseline310gemstone: spec
                   #('Seaside-Tests-GemStone-Continuation' 'Seaside-Tests-GemStone-Flow') ];
         package: 'Seaside-Tests-Functional'
           with: [ spec includes: #('Seaside-Tests-GemStone-Functional') ];
-        package: 'Seaside-Core' with: 'Seaside-Core.gemstone';
+        package: 'Seaside-Tools-Core'
+          with: [ spec file: 'Seaside-Tools-Core.gemstone' ];
         package: 'Seaside-GemStone-Basic-Development'
           with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-GemStone-Continuation';
