@@ -6,36 +6,37 @@ GemStone/S port of http://www.seaside.st/
 ##Installation
 
 ```Smalltalk
-"Upgrade to GLASS 1.0-beta.9.1"
+run
 ConfigurationOfGLASS project updateProject.
-GsDeployer deploy: [ (ConfigurationOfGLASS project version: '1.0-beta.9.1') load ].
+GsDeployer deploy: [ 
 
-"Load latest GLASS1 from github"
-Metacello new
-  baseline: 'GLASS1';
-  repository: 'github://glassdb/glass:master/repository';
-  get.
-Metacello image
-  baseline: 'GLASS1';
-  repository: 'github://glassdb/glass:master/repository';
-  load.
+  "Upgrade to GLASS 1.0-beta.9.1"
+  (ConfigurationOfGLASS project version: '1.0-beta.9.1') load].
+%
+commit
 
-"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
+run
+GsDeployer deploy: [ 
 
-Metacello new
-  configuration: 'Grease';
-  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-  get.
+  "Load latest GLASS1 from github"
+  Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository';
+    load.
 
-"Load Seaside31"
-Metacello new
-  baseline: 'Seaside3';
-  repository: 'github://glassdb/Seaside31:master/repository';
-  get.
+  "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
 
-Metacello new
-  baseline: 'Seaside3';
-  repository: 'github://glassdb/Seaside31:master/repository';
-  load: 'CI'.
+  Metacello new
+    configuration: 'Grease';
+    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+    get.
+
+  "Load Seaside31"
+  Metacello new
+    baseline: 'Seaside3';
+    repository: 'github://glassdb/Seaside31:master/repository';
+    load: 'CI'].
+%
+commit
 ```
 

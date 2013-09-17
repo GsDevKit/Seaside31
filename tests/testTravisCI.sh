@@ -46,17 +46,17 @@ Metacello new
 "Load Seaside31 from git repository"
 
 Metacello new
-  baseline: '${BASELINE}';
-  repository: 'filetree://', gitPath, '/${REPOSITORY_BASE}';
+  baseline: 'Seaside3';
+  repository: 'filetree://', gitPath, '/Seaside31/repository';
   get.
 
 Metacello new
-  baseline: '${BASELINE}';
-  repository: 'filetree://', gitPath, '/${REPOSITORY_BASE}';
-  load: #( ${LOADS} ).
+  baseline: 'Seaside3';
+  repository: 'filetree://', gitPath, '/Seaside31/repository';
+  load: 'CI'.
 
 TravisCIHarness
-  value: #( 'BaselineOf${BASELINE}' )
+  value: #( 'BaselineOfSeaside3' )
   value: 'TravisCISuccess.txt' 
   value: 'TravisCIFailure.txt'.
 

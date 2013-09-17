@@ -2,12 +2,7 @@ language: erlang
 
 env:
 
-#   - ST=GemStone-2.4.4.1 GLASS="1.0-beta.9..11" LOADS="'CI'"
-#   - ST=GemStone-2.4.4.7 GLASS="1.0-beta.9.1" LOADS="'CI'"
-#   - ST=GemStone-2.4.5 GLASS="1.0-beta.9.1" LOADS="'CI'"
-   - ST=GemStone-2.4.5.2 GLASS="1.0-beta.9.1" LOADS="'CI'"
-#   - ST=GemStone-3.0.1 GLASS="1.0-beta.9.1" LOADS="'CI'"
-   - ST=GemStone-3.1.0.4 GLASS="1.0-beta.9.1" LOADS="'CI'"
+   - ST=GemStone-3.1.0.4
 
 install:
    - export PROJECT_HOME="$(pwd)"
@@ -18,9 +13,5 @@ install:
    - source build_env_vars
    - ln -s $PROJECT_HOME $GIT_PATH
    - ./build_image.sh
-
-before_script:
-   - export BASELINE="Seaside3"
-   - export REPOSITORY_BASE="Seaside31/repository"
 
 script: $PROJECT_HOME/tests/testTravisCI.sh -verbose
