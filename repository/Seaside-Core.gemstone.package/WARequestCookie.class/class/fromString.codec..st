@@ -1,9 +1,8 @@
 instance creation
 fromString: aString codec: aCodec
 	"Creates an array of cookies from a HTTP Cookie: header value."
-	| version cookieLine current cookies |
+	| version current cookies |
 	version := nil.
-	cookieLine := aString.
 	aString isEmptyOrNil
 		ifTrue: [ ^ #() ].
 	current := nil.
