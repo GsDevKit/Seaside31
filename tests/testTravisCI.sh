@@ -26,11 +26,9 @@ cat - >> $OUTPUT_PATH << EOF
 
 Metacello image
   baseline: 'GLASS1';
-  repository: 'github://glassdb/Seaside31:master/repository';
   get.
 Metacello image
   baseline: 'GLASS1';
-  repository: 'github://glassdb/Seaside31:master/repository';
   load.
 EOF
 fi
