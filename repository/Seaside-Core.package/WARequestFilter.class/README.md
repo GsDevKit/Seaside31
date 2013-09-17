@@ -4,7 +4,7 @@ WARequestFilter is an implementation for the chain-of-responsibility and decorat
  - set up thread locals or expection handlers
  - return a different response (eg. from cache or access denied) 
 
-This functionaly is also known as servlet filters, WSGI infrastructre or rack infrastructure.
+This functionality is also known as servlet filters, WSGI infrastructure or rack infrastructure.
 
 Instance Variables:
 	next	<WAValueHolder<WARequestFilter>>
