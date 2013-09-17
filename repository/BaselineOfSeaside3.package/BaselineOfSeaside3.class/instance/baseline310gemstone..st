@@ -4,7 +4,6 @@ baseline310gemstone: spec
     for: #'gemstone'
     do: [ 
       spec blessing: #'baseline'.
-      spec repository: 'http://seaside.gemtalksystems.com/ss/Seaside30'.
       spec
         project: 'GsCore'
         with: [ 
