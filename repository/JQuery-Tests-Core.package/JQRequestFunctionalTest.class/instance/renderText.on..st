@@ -9,4 +9,4 @@ renderText: aString on: html
 			html textInput
 				id: id;
 				value: aString;
-				callback: [ :value | logger addLast: aString , ': ' , value asString ] ] ]
+				callback: [ :value | logger addLast: aString , ': ' , value greaseString ] ] ]
