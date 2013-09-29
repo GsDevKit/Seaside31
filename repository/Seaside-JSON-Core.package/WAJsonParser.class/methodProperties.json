@@ -24,7 +24,7 @@
 		"parseCharacter" : "lr 6/29/2009 14:39",
 		"parseCharacterHex" : "lr 7/16/2009 08:52",
 		"parseCharacterHexDigit" : "lr 7/26/2011 08:17",
-		"parseNumber" : "lr 6/25/2009 23:17",
+		"parseNumber" : "pmm 9/14/2013 16:43",
 		"parseNumberExponent" : "lr 7/26/2011 08:18",
 		"parseNumberFraction" : "lr 7/26/2011 08:18",
 		"parseNumberInteger" : "lr 7/26/2011 08:18",

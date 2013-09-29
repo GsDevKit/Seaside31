@@ -7,7 +7,7 @@ parseNumber
 	(stream peek = $.) ifTrue: [
 		stream next. 
 		number := number + self parseNumberFraction ].
-	(stream peek = $e or: [ stream peek = $E ]) ifTrue: [
+	('eE' includes: stream peek) ifTrue: [
 		stream next.
 		number := number * self parseNumberExponent ].
 	negated ifTrue: [ number := number negated ].

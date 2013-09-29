@@ -34,6 +34,4 @@ renderSideBarDivingInOn: html
 			html text: 'Seaside '.
 			html anchor
 				url: 'http://code.google.com/p/seaside/wiki/SeasideAddOnLibraries';
-				with: 'add-on libraries'] 		
-		
-		]
+				with: 'add-on libraries' ]	]
