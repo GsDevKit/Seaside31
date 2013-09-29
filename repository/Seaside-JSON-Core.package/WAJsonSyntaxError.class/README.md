@@ -1,1 +1,1 @@
-A JSJsonSyntaxError signals invalid JSON input.
+A WAJsonSyntaxError signals invalid JSON input.

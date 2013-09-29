@@ -3,7 +3,8 @@ I am used to create a link that opens in a new window. A name can be specified u
 Most of the time a popup-anchor is created like this:
 
 	html popupAnchor
-		callback: [ WARenderLoop new call: WACounter new ];
+		callback: [ self session presenter
+			show: WACounter new ];
 		with: 'Open the counter within a new window'
 
 This code creates a new render-loop and displays a new instance of WACounter within the new browser window.		

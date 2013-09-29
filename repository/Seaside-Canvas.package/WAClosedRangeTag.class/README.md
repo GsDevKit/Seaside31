@@ -1,1 +1,1 @@
-abstract class for all the elments that have a step, min and max attribute
+abstract class for all the elements that have a step, min and max attribute

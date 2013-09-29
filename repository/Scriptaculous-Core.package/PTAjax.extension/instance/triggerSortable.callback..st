@@ -4,7 +4,7 @@ triggerSortable: aString callback: aBlock
 	self
 		callback: [ :value |
 			aBlock value: ((value subStrings: ',') 
-				collect: [ :each | self renderContext callbacks passengerAt: each]) ]
+				collect: [ :each | self renderContext callbacks passengerAt: each ]) ]
 		value: (SUSortable new
 			id: aString;
 			sequence)

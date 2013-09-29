@@ -1,1 +1,1 @@
-I'm purely for backwards compatiblity with Seaside 3.0
+I'm purely for backwards compatibility with Seaside 3.0
