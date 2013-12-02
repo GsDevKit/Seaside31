@@ -36,6 +36,14 @@ fi
 cat - >> $OUTPUT_PATH << EOF
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
+"Load latest GLASS1"
+ [ Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository';
+    load.
+  ] on: Warning
+    do:[:ex | Transcript show: ex greaseString. ex resume].
+
 "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
 
 Metacello new
@@ -44,11 +52,6 @@ Metacello new
   get.
 
 "Load Seaside31 from git repository"
-
-Metacello new
-  baseline: 'Seaside3';
-  repository: 'filetree://', gitPath, '/Seaside31/repository';
-  get.
 
 Metacello new
   baseline: 'Seaside3';
