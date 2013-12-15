@@ -11,6 +11,11 @@ http://code.google.com/p/glassdb/wiki/TableOfContents"
 WAFastCGIAdaptor startOn: 9001.
 WAFastCGIAdaptor stop.
 
+"start Zinc adaptor ... does not return. 
+ Use #startGemServerOn: in standalone server gem"
+WAGsZincAdaptor startOn: 8383.
+WAGsZincAdaptor stop.
+
 "start Swazoo adaptor ... does not return. 
  Use #startGemServerOn: in standalone server gem"
 WAGsSwazooAdaptor startOn: 8383.
@@ -40,6 +45,12 @@ WAGemStoneRunSeasideGems default
 	name: ''FastCGI'';
 	adaptorClass: WAFastCGIAdaptor;
 	ports: #(9001 9002 9003).
+WAGemStoneRunSeasideGems restartGems. "execute runSeasideGems30 script"
+"Specify Zinc for runSeasideGems30"
+WAGemStoneRunSeasideGems default
+	name: ''Zinc'';
+	adaptorClass: WAGsZincAdaptor;
+	ports: #(8383).
 WAGemStoneRunSeasideGems restartGems. "execute runSeasideGems30 script"
 "Specify Swazoo for runSeasideGems30"
 WAGemStoneRunSeasideGems default
