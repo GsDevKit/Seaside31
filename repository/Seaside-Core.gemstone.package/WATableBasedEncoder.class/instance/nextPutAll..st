@@ -5,4 +5,4 @@ nextPutAll: aString
 	encodedString := aString encodeUsing: table.
 	encodedString ~~ nil 
 		ifTrue: [ stream nextPutAll: encodedString ]
-		ifFalse: [ aString do: [:aChar | self class encode: aChar on: stream ]].
+		ifFalse: [ 1 to: aString size do: [ :index |self nextPut: (aString at: index) ]].
