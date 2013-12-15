@@ -1,3 +1,3 @@
 initialization
 initializeMutex
-	mutex := WAMutex new
+	mutex := WAGemStoneMutex new

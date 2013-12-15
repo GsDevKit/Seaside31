@@ -1,3 +1,10 @@
 accessing
 default
-	^ default ifNil: [ default := self new ]
+	| singleton |
+	singleton := SessionTemps current at: #WA_SERVER_MANAGER_DEFAULT otherwise:nil.
+	singleton == nil 
+		ifTrue:[
+			singleton := self new.
+			SessionTemps current at: #WA_SERVER_MANAGER_DEFAULT put: singleton.
+		].
+	^singleton
