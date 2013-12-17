@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	mutex := WAMutex new
+	mutex := WAGemStoneMutex new
