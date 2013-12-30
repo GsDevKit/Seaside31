@@ -29,7 +29,7 @@ Hello
 --' , message boundary
 				,
 					'--
-') = message plainMessage
+') withSqueakLineEndings = message plainMessage withSqueakLineEndings
 				or: [ 
 					('From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
@@ -53,4 +53,4 @@ Hello
 --' , message boundary
 						,
 							'--
-') = message plainMessage ])
+') withSqueakLineEndings = message plainMessage withSqueakLineEndings ])

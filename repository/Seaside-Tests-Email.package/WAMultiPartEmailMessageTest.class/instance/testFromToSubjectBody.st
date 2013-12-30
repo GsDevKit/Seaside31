@@ -5,7 +5,7 @@ testFromToSubjectBody
 	message headers removeKey: 'Date'.
 	self
 		assert:
-			'From: "Philippe Marschall" <philippe.marschall@gmail.com>
+			('From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
 Content-Type: multipart/alternative;boundary=' , message boundary
@@ -23,5 +23,5 @@ Hello
 --' , message boundary
 				,
 					'--
-'
-		equals: message plainMessage
+') withSqueakLineEndings
+		equals: message plainMessage withSqueakLineEndings
