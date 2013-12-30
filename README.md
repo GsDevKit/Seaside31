@@ -34,7 +34,7 @@ GsDeployer deploy: [
   "Load Seaside31"
   Metacello new
     baseline: 'Seaside3';
-    repository: 'github://glassdb/Seaside31:master/repository';
+    repository: 'github://glassdb/Seaside31:gemstone3.1/repository';
     load: 'CI'].
 %
 commit
