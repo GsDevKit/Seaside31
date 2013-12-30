@@ -67,7 +67,6 @@ baseline310adaptors: spec
 			group: 'WebClient' with: #('WebClient-Seaside' ) ].
 		
 	spec for: #'gemstone' do: [
-		spec repository: 'http://seaside.gemstone.com/ss/Seaside30'.
 		spec project: 'FastCGI Project' with: [
 				spec
 					className: 'ConfigurationOfGsFastCGI';
