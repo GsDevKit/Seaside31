@@ -3,8 +3,6 @@ baseline310adaptors: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec description: ''.
-		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		
 		spec project: 'Swazoo2' with: [
 			spec
