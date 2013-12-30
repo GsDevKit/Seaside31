@@ -1,6 +1,6 @@
 tests
 testFromToSubjectBody
-	| message cr |
+	| cr |
 	cr := String with: Character cr.
 	message := WAEmailMessage
 		from: self philippeMarschall

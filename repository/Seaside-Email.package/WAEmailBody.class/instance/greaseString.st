@@ -1,3 +1,3 @@
 accessing
 greaseString
-	^ self string
+	^ self contentString
