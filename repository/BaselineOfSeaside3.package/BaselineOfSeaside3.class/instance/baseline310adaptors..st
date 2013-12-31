@@ -3,8 +3,6 @@ baseline310adaptors: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec description: ''.
-		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		
 		spec project: 'Swazoo2' with: [
 			spec
@@ -69,7 +67,6 @@ baseline310adaptors: spec
 			group: 'WebClient' with: #('WebClient-Seaside' ) ].
 		
 	spec for: #'gemstone' do: [
-		spec repository: 'http://seaside.gemstone.com/ss/Seaside30'.
 		spec project: 'FastCGI Project' with: [
 				spec
 					className: 'ConfigurationOfGsFastCGI';

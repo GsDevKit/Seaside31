@@ -3,8 +3,7 @@ baseline310common: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec description: ''.
-		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
+
 		spec project: 'Grease' with: [
 			spec
 				versionString: #bleedingEdge;
@@ -82,4 +81,5 @@ baseline310common: spec
 		
 	
 	spec for: #'squeakCommon' do: [
+		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		spec group: 'Tests' with: #('Comet Tests') ].
