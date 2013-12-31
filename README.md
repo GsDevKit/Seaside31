@@ -1,7 +1,8 @@
 Seaside31
 =========
+Website: http://www.seaside.st/
 
-GemStone/S port of http://www.seaside.st/
+The GemStone/S port of Seaside3.1 can be found in the gemstone3.1 branch.
 
 ##Installation
 
