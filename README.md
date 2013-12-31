@@ -26,7 +26,6 @@ GsDeployer deploy: [
     load.
 
   "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-
   Metacello new
     configuration: 'Grease';
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
@@ -34,10 +33,10 @@ GsDeployer deploy: [
 
   "Load Seaside31"
   Metacello new
-    baseline: 'Seaside3';
-    repository: 'github://glassdb/Seaside31:gemstone3.1/repository';
+    configuration: 'Seaside3';
+    version: #bleedingEdge;
+    repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
     load: 'CI'].
 %
 commit
 ```
-
