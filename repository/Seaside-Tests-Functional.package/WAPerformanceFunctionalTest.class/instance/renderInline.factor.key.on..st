@@ -35,12 +35,7 @@ renderInline: aBlock factor: factor key: key on: html
 					flush ] ].
 	builder closeDocument: document.
 	spi := (count / referenceValue * (10000 / runTime)) rounded.
-	backColor := spi > 800 
-		ifTrue: [ '#5f5' ]
-		ifFalse: [
-			spi < 500 
-				ifTrue: [ '#f55' ]
-				ifFalse: [ '#55f' ] ].
+	backColor := self colorFor: spi.
 	duration := duration + spi.
 	html div
 		class: 'spi';
