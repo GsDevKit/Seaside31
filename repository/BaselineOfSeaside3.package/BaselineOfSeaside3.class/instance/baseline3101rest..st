@@ -15,6 +15,7 @@ baseline3101rest: spec
 
 	spec for: #(squeak 'pharo1.x') do:[
 		spec
+			package: 'Seaside-Pharo-REST-Core';
 			package: 'Seaside-REST-Core' with:[
 				spec includes: #('Seaside-Pharo-REST-Core')]
 	].
