@@ -2,7 +2,7 @@ language: erlang
 
 env:
 
-   - ST=GemStone-3.1.0.4
+   - ST=Pharo-1.4
 
 install:
    - export PROJECT_HOME="$(pwd)"

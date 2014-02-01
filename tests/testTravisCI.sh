@@ -20,39 +20,11 @@ cat - >> $OUTPUT_PATH << EOF
 Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
 EOF
 
-if [ "${GLASS}x" != "x" ] ; then
-cat - >> $OUTPUT_PATH << EOF
-"Load GLASS1 from glassdb repository"
-
-Metacello image
-  baseline: 'GLASS1';
-  get.
-Metacello image
-  baseline: 'GLASS1';
-  load.
-EOF
-fi
-
 cat - >> $OUTPUT_PATH << EOF
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-"Load latest GLASS1"
- [ Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
-    load.
-  ] on: Warning
-    do:[:ex | Transcript show: ex greaseString. ex resume].
-
-"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-
-Metacello new
-  configuration: 'Grease';
-  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-  get.
 
 "Load Seaside31 from git repository"
-
 Metacello new
   baseline: 'Seaside3';
   repository: 'filetree://', gitPath, '/Seaside31/repository';
