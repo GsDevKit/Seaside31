@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-REST-Core-Handler",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WARestfulComponentFilter",
+	"pools" : [
+		 ],
+	"super" : "WARestfulFilter",
+	"type" : "normal" }

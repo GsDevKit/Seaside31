@@ -4,6 +4,7 @@
 	"instance" : {
 		"testCallSuperImplementation" : "jok 1/27/2010 11:19",
 		"testChangesStateWhileRendering" : "jok 1/27/2010 11:19",
+		"testDoNotCombineMultiplePrimaryAjaxCallbacks" : "JohanBrichau 9/1/2012 16:17",
 		"testDoNotUseWhileRendering" : "jok 1/27/2010 11:20",
 		"testDoNotUseWithinCallback" : "jok 1/27/2010 11:20",
 		"testExtractCallbackCodeToMethod" : "jok 1/27/2010 11:20",

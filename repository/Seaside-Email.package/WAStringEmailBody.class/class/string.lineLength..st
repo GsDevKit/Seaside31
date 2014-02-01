@@ -13,5 +13,5 @@ string: aString lineLength: anInteger
 						separatedBy: [ stream nextPut: Character cr ] ] ]
 			separatedBy: [ stream nextPut: Character cr ] ].
 	^ self new
-		string: string;
+		contentString: string;
 		yourself
