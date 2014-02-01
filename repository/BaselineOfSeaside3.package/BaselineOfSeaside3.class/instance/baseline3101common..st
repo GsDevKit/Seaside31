@@ -1,7 +1,7 @@
 baselines-3101
 baseline3101common: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		spec blessing: #'baseline'.
 		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		spec project: 'Grease' with: [

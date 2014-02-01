@@ -1,7 +1,7 @@
 baselines-3101
 baseline3101comet: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'Comet-Core' with: [
