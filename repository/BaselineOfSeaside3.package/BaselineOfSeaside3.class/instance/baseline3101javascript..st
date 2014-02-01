@@ -13,7 +13,7 @@ baseline3101javascript: spec
 			group: 'Javascript Tests' with: #('Javascript-Tests-Core' );
 			group: 'Tests' with: #( 'Javascript Tests' ) ].
 		
-	spec for: #'pharo1.x' do: [
+	spec for: #(squeak #'pharo1.x') do: [
 		spec 
 			package: 'Javascript-Pharo-Core' with: [
 				spec requires: #('Javascript-Core' 'Seaside-Pharo-Core' ) ].
@@ -50,13 +50,4 @@ baseline3101javascript: spec
 			package: 'Javascript-Core' with: [
 				spec includes: #('Javascript-Pharo20-Core' ) ];
 			package: 'Javascript-Tests-Core' with: [
-				spec includes: #('Javascript-Tests-Pharo-Core' ) ] ].
-		
-	spec for: #squeak do:[
-		spec 
-			package: 'Javascript-Core' with: [
-				spec includes: #('Javascript-Pharo-Core' ) ];
-			package: 'Javascript-Tests-Core' with: [
-				spec includes: #('Javascript-Tests-Pharo-Core' ) ] 
-	].	
-	
+				spec includes: #('Javascript-Tests-Pharo-Core' ) ] ]
