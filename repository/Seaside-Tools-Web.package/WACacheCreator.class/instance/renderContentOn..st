@@ -29,4 +29,4 @@ renderContentOn: html
 			with: 'OK'.
 		html button
 			callback: [ self answer: nil ];
-			with: 'Cancel' ]
+			with: 'Cancel' ] 

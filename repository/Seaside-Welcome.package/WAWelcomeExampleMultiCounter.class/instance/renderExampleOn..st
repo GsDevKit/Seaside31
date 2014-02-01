@@ -24,3 +24,4 @@ renderExampleOn: html
 	html paragraph: 'Finally we display each of the components separated by a horizontal rule:'.
 	
 	self renderRenderContentsOnCodeOn: html
+	

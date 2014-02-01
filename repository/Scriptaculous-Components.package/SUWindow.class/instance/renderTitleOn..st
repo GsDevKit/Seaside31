@@ -12,4 +12,4 @@ renderTitleOn: html
 					class: 'label';
 					with: title.
 				html tableData: [ self renderMinimizeOn: html ] .
-				html tableData: [ self renderCloseOn: html ] ] ]
+				html tableData: [ self renderCloseOn: html ] ] ] 
