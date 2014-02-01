@@ -4,3 +4,4 @@ configureApplicationDefaults
 		WAAdmin applicationDefaults
 			at: #responseGenerator put: WAHtmlResponseGenerator.
 		configuredApplicationDefaults := true ]
+	

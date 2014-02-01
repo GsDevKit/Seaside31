@@ -5,3 +5,4 @@ findClasses: aSymbol
 	^ class isNil 
 		ifTrue: [ #() ]
 		ifFalse: [ class withAllSubclasses asArray ]
+	

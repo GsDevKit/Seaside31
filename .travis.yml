@@ -1,8 +1,9 @@
 language: erlang
 
 env:
-
-   - ST=GemStone-3.1.0.4
+   - ST=Pharo-2.0 BASELINE=Seaside3 LOADS="'CI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=Pharo-3.0 BASELINE=Seaside3 LOADS="'CI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=Squeak-4.4 BASELINE=Seaside3 LOADS="'Tests'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
 
 install:
    - export PROJECT_HOME="$(pwd)"
@@ -14,4 +15,4 @@ install:
    - ln -s $PROJECT_HOME $GIT_PATH
    - ./build_image.sh
 
-script: $PROJECT_HOME/tests/testTravisCI.sh -verbose
+script: $PROJECT_HOME/tests/testTravisCI.sh # -verbose

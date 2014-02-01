@@ -12,3 +12,5 @@ scriptHide: anElement on: aScript
 	aScript prototype element
 		id: (self uid: 'head' at: index);
 		removeClassName: 'active'
+		
+	

@@ -8,3 +8,4 @@ testCopyParent
 	
 	self assert: handler parent == parent.
 	self assert: copy parent isNil
+	

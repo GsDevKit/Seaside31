@@ -4,3 +4,5 @@ renderBodyOn: html
 		cellspacing: 0;
 		class: 'main';
 		with: [ self renderCalendarOn: html ]
+
+			

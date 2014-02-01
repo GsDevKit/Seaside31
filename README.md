@@ -1,7 +1,10 @@
 Seaside31
 =========
+The framework for developing sophisticated web applications in Smalltalk. 
+See more at http://www.seaside.st/
 
-GemStone/S port of http://www.seaside.st/
+The master branch of this repository is a copy of the master repository at http://www.smalltalkhub.com/mc/Seaside
+The Gemstone port can be found in the Gemstone3.1 branch.
 
 ##Installation
 

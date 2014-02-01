@@ -1,3 +1,5 @@
 tests
 testImplementedIsAuthorNameSet
-	self shouldnt: [ GRPlatform current seasideIsAuthorNameSet ] raise: Error
+	self shouldnt: [ GRPlatform current seasideIsAuthorNameSet ] raise: Error 
+	
+	

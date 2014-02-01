@@ -9,3 +9,5 @@ testIsVendorSpecifc
 	
 	mimeType := WAMimeType fromString: 'vnd.microsoft.icon/image'.
 	self deny: mimeType isVendorSpecific
+	
+	

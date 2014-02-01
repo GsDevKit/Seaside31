@@ -1,3 +1,3 @@
 rendering
 configureCollectionAttribute: anAttribute 
-	self show: (WACollectionAttributeEditor new configuration: configuration; attribute: anAttribute; yourself)
+	self show: (WACollectionAttributeEditor new configuration: configuration; attribute: anAttribute; yourself) 

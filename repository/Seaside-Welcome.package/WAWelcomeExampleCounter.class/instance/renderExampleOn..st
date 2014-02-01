@@ -14,3 +14,4 @@ renderExampleOn: html
 	html paragraph: 'The second method generates the output and assigns the actions to the anchors (links) which update the current value.'.
 	
 	self renderRenderContentOnCodeOn: html
+	

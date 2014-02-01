@@ -1,0 +1,15 @@
+{
+	"category" : "Seaside-Pharo-Tools-Spec",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Icons",
+		"Instance" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WAPharoToolsIcons",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

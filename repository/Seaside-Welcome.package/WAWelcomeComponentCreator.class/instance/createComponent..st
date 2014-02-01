@@ -28,3 +28,5 @@ createComponent: componentName
 	WAAdmin register: userComponent asApplicationAt: componentName.	
 		
 	^ userComponent new
+
+	

@@ -9,3 +9,4 @@ renderPreviousButtonOn: html
 						self scriptMove: 1 for: uid on: script ];
 						return: false);
 		with: self prevText
+		

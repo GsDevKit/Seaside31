@@ -2,8 +2,8 @@ rendering
 renderContentOn: html
 	html object
 		type: 'image/svg+xml' seasideMimeType;
-		width: 600;
-		height: 800;
+		width: 512;
+		height: 512;
 		standby: 'loading tiger';
-		url: 'http://croczilla.com/bits_and_pieces/svg/samples/tiger/tiger.svg';
+		url: 'http://upload.wikimedia.org/wikipedia/commons/f/fd/Ghostscript_Tiger.svg';
 		with: 'Your browser doesn''t support SVG'

@@ -12,7 +12,8 @@
 		"bcc",
 		"subject",
 		"headers",
-		"body" ],
+		"body",
+		"replyTo" ],
 	"name" : "WAEmailMessage",
 	"pools" : [
 		 ],

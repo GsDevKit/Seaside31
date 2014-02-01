@@ -21,3 +21,4 @@ withNotificationHandlerDo: aBlock
 			[ currentHandler handleExceptionsDuring: aBlock ]
 				on: WARenderNotification
 				 do: [ :n | ] ]
+		

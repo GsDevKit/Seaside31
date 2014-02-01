@@ -1,71 +1,54 @@
 #!/bin/bash -x
 #
-#  GLASS test driver for running GLASS builds on travisCI ... for now the code
-#    is hosted elsewhere, but ultimately the packages will be managed here.
-#
-#  This boyo generates an old-style configuration load script similar to those 
-#    used by GemTools and builderCI in before_gemstone.sh, but we're testing
-#    a barebones load and test so no need for Metacello Scripting API, to be
-#    pre-installed.
+#  Sample test driver that allows for customizing build/tests based on env vars defined in .travis.yml
 #
 #      -verbose flag causes unconditional transcript display
 #
 # Copyright (c) 2013 VMware, Inc. All Rights Reserved <dhenrich@vmware.com>.
 #
 
+echo "--->$TRAVIS_BUILD_DIR"
+echo "`pwd`"
+
+if [ "${CONFIGURATION}x" = "x" ]; then
+  if [ "${BASELINE}x" = "x" ]; then
+    echo "Must specify either BASELINE or CONFIGURATION"
+    exit 1
+  else
+    PROJECT_LINE="  baseline: '${BASELINE}';"
+    VERSION_LINE=""
+    FULL_CONFIG_NAME="BaselineOf${BASELINE}"
+  fi
+else
+  PROJECT_LINE="  configuration: '${CONFIGURATION}';"
+  VERSION_LINE="  version: '$VERSION';"
+  FULL_CONFIG_NAME="ConfigurationOf${CONFIGURATION}"
+fi
+
+if [ "${REPOSITORY}x" = "x" ]; then
+  echo "Must specify REPOSITORY"
+  exit 1
+fi
+REPOSITORY_LINE="  repository: '$REPOSITORY';"
+
 OUTPUT_PATH="${PROJECT_HOME}/tests/travisCI.st"
 
 cat - >> $OUTPUT_PATH << EOF
-| gitPath |
-Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
-EOF
-
-if [ "${GLASS}x" != "x" ] ; then
-cat - >> $OUTPUT_PATH << EOF
-"Load GLASS1 from glassdb repository"
-
-Metacello image
-  baseline: 'GLASS1';
-  get.
-Metacello image
-  baseline: 'GLASS1';
-  load.
-EOF
-fi
-
-cat - >> $OUTPUT_PATH << EOF
-gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
-
-"Load latest GLASS1"
- [ Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
-    load.
-  ] on: Warning
-    do:[:ex | Transcript show: ex greaseString. ex resume].
-
-"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-
-Metacello new
-  configuration: 'Grease';
-  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-  get.
-
-"Load Seaside31 from git repository"
-
-Metacello new
-  baseline: 'Seaside3';
-  repository: 'filetree://', gitPath, '/Seaside31/repository';
-  load: 'CI'.
-
-TravisCIHarness
-  value: #( 'BaselineOfSeaside3' )
-  value: 'TravisCISuccess.txt' 
-  value: 'TravisCIFailure.txt'.
-
+ Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
+ "Load the configuration or baseline"
+ Metacello new
+ $PROJECT_LINE
+ $VERSION_LINE
+ $REPOSITORY_LINE
+   load: #( ${LOADS} ).
+  "Run the tests"
+  TravisCIHarness
+    value: #( '${FULL_CONFIG_NAME}' )
+    value: 'TravisCISuccess.txt' 
+    value: 'TravisCIFailure.txt'.
 EOF
 
 cat $OUTPUT_PATH
 
 $BUILDER_CI_HOME/testTravisCI.sh "$@"
- 
+if [[ $? != 0 ]] ; then exit 1; fi

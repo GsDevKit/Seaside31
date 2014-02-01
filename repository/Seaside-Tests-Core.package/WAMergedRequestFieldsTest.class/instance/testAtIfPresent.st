@@ -13,6 +13,6 @@ testAtIfPresent
 	self assert: (merged 
 		at: 'foo' 
 		ifPresent: [ :value | self assert: value = 1. true ]).
-	self assert: (merged
+	merged
 		at: 'zork'
-		ifPresent: [ :value | self fail ]) isNil
+		ifPresent: [ :value | self assert: false ]

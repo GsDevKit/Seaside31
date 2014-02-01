@@ -4,5 +4,5 @@ testCrLf
 	cr := String with: Character cr.
 	lf := String with: Character lf.
 	crlf := cr , lf.
-	body := WAStringEmailBody string: 'hello' , crlf , 'world'.
+	body := WAStringEmailBody contentString: 'hello' , crlf , 'world'.
 	self assert: ('hello' , cr , 'world') = body greaseString

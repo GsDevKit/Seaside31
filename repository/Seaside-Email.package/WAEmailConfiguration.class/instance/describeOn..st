@@ -1,5 +1,5 @@
 description
-describeOn: config 
+describeOn: config
 	(config string: #smtpServer)
 		group: #email;
 		label: 'SMTP Server';
