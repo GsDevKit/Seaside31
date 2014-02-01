@@ -21,7 +21,9 @@ Transcript cr; show: 'travis--->${OUTPUT_PATH}'.
 EOF
 
 cat - >> $OUTPUT_PATH << EOF
-gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
+gitPath := (Smalltalk at: #'FileDirectory' ifAbsent: [  ])
+  ifNil: [ ((Smalltalk at: #'FileSystem') workingDirectory / gitCache) pathString ]
+  ifNotNil: [:fileDirectoryClass | (fileDirectoryClass default directoryNamed: gitCache ) fullName].
 
 
 "Load Seaside31 from git repository"
