@@ -1,7 +1,5 @@
-as yet unclassified
+testing
 testFromToSubjectBody
-	| cr |
-	cr := String with: Character cr.	"we don't test them here: "
 	message headers removeKey: 'Date'.
 	self
 		assert:
