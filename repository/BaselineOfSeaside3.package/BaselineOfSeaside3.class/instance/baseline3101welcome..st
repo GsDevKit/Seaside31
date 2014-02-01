@@ -1,7 +1,7 @@
-baselines-31
-baseline310welcome: spec
+baselines-3101
+baseline3101welcome: spec
 
-	spec for: #'common' do: [
+	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'Seaside-Welcome' with: [
@@ -18,7 +18,9 @@ baseline310welcome: spec
 			package: 'Seaside-Welcome' with: [
 				spec includes: #('Seaside-Squeak-Welcome' ). ];
 			package: 'Seaside-Squeak-Welcome' with: [
-				spec requires: #('Seaside-Welcome' ). ]. ].
+				spec requires: #('Seaside-Welcome' ). ]. 
+		spec
+			group: 'OneClick' with: #('Development' 'Welcome' 'RSS-Examples' 'Seaside-Email' 'Seaside-Examples' 'Seaside-Tools-Web' 'WebClient') ].
 
 	spec for: #'pharo' do: [
 		spec 
@@ -33,9 +35,3 @@ baseline310welcome: spec
 	spec for: #'pharo1.x' do: [
 		spec
 			group: 'OneClick' with: #('Comet Examples' 'Seaside-Tools-OmniBrowser' 'Kom') ].
-
-	spec for: #'gemstone' do: [
-		spec
-			package: 'Seaside-GemStone-Welcome';
-			package: 'Seaside-Welcome' with: [
-				spec includes: #('Seaside-GemStone-Welcome' ) ] ]

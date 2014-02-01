@@ -1,9 +1,8 @@
-baselines-31
-baseline310common: spec
+baselines-3101
+baseline3101common: spec
 
-	spec for: #'common' do: [
+	spec for: #'squeakCommon' do: [
 		spec blessing: #'baseline'.
-		spec description: ''.
 		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		spec project: 'Grease' with: [
 			spec
@@ -13,7 +12,7 @@ baseline310common: spec
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
 		spec
 			project: 'Grease Core Tests' copyFrom: 'Grease' with: [
-				spec loads: #('Grease-Tests-Core') ].
+				spec loads: #('Core Tests') ].
 		spec
 			package: 'Seaside-Canvas' with: [
 				spec requires: #('Seaside-Core' ). ];
@@ -73,13 +72,11 @@ baseline310common: spec
 				spec requires: #('Seaside-Tests-Core' ) ].
 		spec 
 			group: 'default' with: #('Core');
-			group: 'CI' with: #('Tests' 'Zinc' 'Development Tests');
+			group: 'CI' with: #('Tests' 'Zinc' 'Development Tests' 'REST Tests');
 			group: 'Core' with: #('Seaside-Core' 'Seaside-Canvas' 'Seaside-Session' 'Seaside-Component' 'Seaside-RenderLoop' 'Seaside-Tools-Core' 'Seaside-Flow' 'Seaside-Environment' 'Seaside-Widgets' );
-			group: 'Tests' with: #('Core' 'Seaside-Tests-Core' 'Seaside-Tests-Canvas' 'Seaside-Tests-Session' 'Seaside-Tests-Component' 'Seaside-Tests-RenderLoop' 'Seaside-Tests-Environment' 'Seaside-Tests-Flow' 'Seaside-Tests-UTF8' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Email' 'Seaside-Tests-Examples' 'RSS Tests' 'Welcome Tests');
+			group: 'Tests' with: #('Core' 'Seaside-Tests-Core' 'Seaside-Tests-Canvas' 'Seaside-Tests-Session' 'Seaside-Tests-Component' 'Seaside-Tests-RenderLoop' 'Seaside-Tests-Environment' 'Seaside-Tests-Flow' 'Seaside-Tests-UTF8' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Email' 'Seaside-Tests-Examples' 'RSS Tests' 'Welcome Tests' 'Comet Tests');
 			group: 'Development' with: #('Core' 'Seaside-Development' );
 			group: 'Development Tests' with: #('Development' 'Core' 'Seaside-Tests-Development' );
-			group: 'Examples' with: #('Core' 'Seaside-Examples' ) ].
-		
-	
-	spec for: #'squeakCommon' do: [
-		spec group: 'Tests' with: #('Comet Tests') ].
+			group: 'Email' with: #('Seaside-Email');
+			group: 'Examples' with: #('Core' 'Seaside-Examples' );
+			group: 'Base' with: #('Core')  ].

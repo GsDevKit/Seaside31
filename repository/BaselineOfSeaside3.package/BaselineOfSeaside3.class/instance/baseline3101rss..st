@@ -1,7 +1,7 @@
-baselines-31
-baseline310rss: spec
+baselines-3101
+baseline3101rss: spec
 
-	spec for: #'common' do: [	
+	spec for: #'squeakCommon' do: [	
 		spec blessing: #baseline.
 		spec 
 			package: 'RSS-Core' with: [

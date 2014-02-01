@@ -1,7 +1,7 @@
-baselines-31
-baseline310jquery: spec
+baselines-3101
+baseline3101jquery: spec
 
-	spec for: #'common' do: [
+	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'JQuery-Core' with: [

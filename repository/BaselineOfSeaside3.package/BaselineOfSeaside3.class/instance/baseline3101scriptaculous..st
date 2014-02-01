@@ -1,7 +1,7 @@
-baselines-31
-baseline310scriptaculous: spec
+baselines-3101
+baseline3101scriptaculous: spec
 
-	spec for: #'common' do: [
+	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'Prototype-Core' with: [
