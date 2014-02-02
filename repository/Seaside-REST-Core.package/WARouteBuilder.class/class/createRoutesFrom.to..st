@@ -5,7 +5,7 @@ createRoutesFrom: aClass to: aSuperClass
 	seen := IdentitySet new.
 	routes := OrderedCollection new.
 	[ current notNil ] whileTrue: [ 
-		current methodDictionary keysAndValuesDo: [ :selector :method |
+		current selectorsAndMethodsDo: [ :selector :method |
 			(seen includes: selector) ifFalse: [
 				| pragmas |
 				pragmas := method pragmas
