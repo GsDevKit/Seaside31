@@ -20,4 +20,5 @@ baseline3101comet: spec
 		spec 
 			group: 'Comet' with: #('Comet-Core');
 			group: 'Comet Tests' with: #('Comet-Tests-Core' );
-			group: 'Comet Examples' with: #('Comet-Examples' ) ]
+			group: 'Comet Examples' with: #('Comet-Examples' );
+			group: 'Tests' with: #('Comet Tests') ]
