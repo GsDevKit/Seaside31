@@ -20,4 +20,4 @@ datePickerCss
 	.calendar .time {border:1px solid #ccc}
 	.calendar .time input.text {width:18px}
 	.calendar .time a.button {border:1px solid #aaa;background:#ccc;padding:2px;-moz-border-radius:5px;border-radius:5px}
-	.calendar .time a.button:hover {background:#69c}'
+	.calendar .time a.button:hover {background:#69c}' 

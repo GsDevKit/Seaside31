@@ -11,3 +11,4 @@ testRemoveFromOldParent
 	self assert: handler parent == parent2.
 	self assert: (parent2 handlers includes: handler).
 	self deny: (parent handlers includes: handler)
+	

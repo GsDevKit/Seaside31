@@ -2,7 +2,7 @@ accessing
 sortedWorkingCopies
 	| categories packageNames workingCopies |
 	categories := Dictionary new.
-	packageNames := GRPackage packages collect: [ :each | each name ].
+	packageNames := GRPackage grPackages collect: [ :each | each name ].
 	workingCopies := MCWorkingCopy allManagers select: [ :each | packageNames includes: each packageName ].
 	workingCopies do: 
 		[ :each | 

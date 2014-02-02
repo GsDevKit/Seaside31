@@ -15,3 +15,5 @@ testIsNonStandard
 	
 	mimeType := WAMimeType fromString: 'X-icon/image'.
 	self assert: mimeType isNonStandard
+	
+	

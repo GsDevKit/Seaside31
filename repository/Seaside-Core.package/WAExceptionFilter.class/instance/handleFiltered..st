@@ -6,3 +6,4 @@ handleFiltered: aRequestContext
 		WACurrentExceptionHandler
 			use: handler
 			during: [ super handleFiltered: aRequestContext ] ]
+		

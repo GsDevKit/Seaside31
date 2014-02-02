@@ -3,4 +3,4 @@ gofers
 	"Answer a collection of gopher instances of all Seaside packages."
 	"self gofers do: [ :each | each load; recompile ]"
 	
-	^ self gofersFor: self allPackages
+	^ self gofersFor: self allGRPackages

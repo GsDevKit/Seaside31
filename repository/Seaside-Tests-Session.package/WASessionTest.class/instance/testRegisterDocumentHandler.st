@@ -44,3 +44,4 @@ testRegisterDocumentHandler
 		on: WAResponseNotification
 		do: [ :notification | ].
 	self assert: response status = WAResponse statusNotFound
+	

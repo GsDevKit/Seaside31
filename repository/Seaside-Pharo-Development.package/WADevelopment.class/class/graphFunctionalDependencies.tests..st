@@ -3,7 +3,7 @@ graphFunctionalDependencies: functionalBool tests: testsBool
 	"self graphFunctionalDependencies: true tests: true"
 
 	| packages analyzer |
-	packages := self allPackages
+	packages := self allGRPackages
 		collect: [ :each | PackageInfo named: each name ].
 	testsBool ifFalse: [
 		packages := packages reject: [ :each |
@@ -20,7 +20,7 @@ graphFunctionalDependencies: functionalBool tests: testsBool
 	analyzer := (Smalltalk classNamed: #PDGraphPackageAnalyzer)
 		onPackages: packages.
 	functionalBool ifTrue: [ 
-		GRPackage packages 
+		GRPackage grPackages 
 			do: [ :package | 
 				package dependencies do: [ :dep | 
 					| source target |

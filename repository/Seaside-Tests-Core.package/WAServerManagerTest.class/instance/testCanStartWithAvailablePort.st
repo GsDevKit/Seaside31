@@ -14,3 +14,4 @@ testCanStartWithAvailablePort
 	adaptor1 port: adaptor port.
 	adaptor1 stopped.
 	self assert: (manager canStart: adaptor1)
+	

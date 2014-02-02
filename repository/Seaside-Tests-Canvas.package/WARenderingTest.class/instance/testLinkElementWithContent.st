@@ -10,3 +10,4 @@ testLinkElementWithContent
 			html stylesheet
 				add: 'E[foo$="bar"]'  ]
 		gives: '<title></title><style type="text/css">/*<![CDATA[*/E[foo$="bar"]/*]]>*/</style>'
+	

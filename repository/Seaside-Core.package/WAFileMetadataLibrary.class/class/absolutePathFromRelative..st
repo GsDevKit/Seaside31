@@ -9,3 +9,5 @@ absolutePathFromRelative: aRelativeFilePath
 	filePart := GRPlatform current localNameOf: absoluteFile.
 	
 	^ absoluteFile allButLast: filePart size
+	
+	

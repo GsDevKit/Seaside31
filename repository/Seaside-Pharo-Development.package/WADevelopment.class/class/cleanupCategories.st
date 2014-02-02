@@ -5,8 +5,8 @@ cleanupCategories
 
 	| cleanup new |
 	cleanup := [ :class :protocol |
-		(new := protocol asLowercase).
-		(new = #'initialize-release' or: [ new = #'class-initialization' ])
+		new := protocol asLowercase.
+		(#(#'initialize-release' #'class-initialization') includes: new)
 			ifTrue: [ new := #initialization ].
 		(new = #'instance-creation')
 			ifTrue: [ new := #'instance creation' ].
@@ -16,7 +16,7 @@ cleanupCategories
 			ifFalse: [ class organization renameCategory: protocol toBe: new ].
 		class organization removeEmptyCategories ].
 	Smalltalk organization removeEmptyCategories.
-	self allPackages
+	self allGRPackages
 		do: [ :each |
 			| package |
 			package := PackageInfo named: each name.
