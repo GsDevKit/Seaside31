@@ -15,4 +15,6 @@ renderCalendarOn: html
 	html tableRow: [
 		html tableData
 			colSpan: 9;
-			with: [ self renderYearNavigationOn: html ] ]
+			with: [ self renderYearNavigationOn: html ] ]	
+
+			

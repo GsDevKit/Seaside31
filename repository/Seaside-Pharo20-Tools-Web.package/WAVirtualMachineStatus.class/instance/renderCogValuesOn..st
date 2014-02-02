@@ -11,3 +11,4 @@ renderCogValuesOn: html
 	self renderLabel: 'Cog VM - ForceInterruptChecks since startup' value: (self image vmParameterAt: 58) on: html.
 	self renderLabel: 'Cog VM - Stack page overflows since startup' value: (self image vmParameterAt: 60) on: html.
 	self renderLabel: 'Cog VM - Stack page divorces since startup' value: (self image vmParameterAt: 61) on: html.
+

@@ -3,7 +3,7 @@ WAAlphabeticBatchedList organizes a collection of items into pages for display. 
 Use WAAlphabeticBatchedList>>items: to set the collections of items.
 Use WAAlphabeticBatchedList>>batch to get the items to display on the current page
 
-See WABatchTest for example of usage.
+See WABatchFunctionalTest for example of usage.
 Select "Batch" tab of the Functional Seaside Test Suite to run an example  (http://127.0.0.1:xxxx/seaside/tests/alltests)
 
 Instance Variables:

@@ -1,3 +1,4 @@
 tasks
 chooseComponentName
-	^ self call: WAWelcomeComponentNamePrompter new
+	^ self call: WAWelcomeComponentNamePrompter new 
+	

@@ -1,3 +1,3 @@
-as yet unclassified
+configuration
 messageClass
 	^ WAMultiPartEmailMessage

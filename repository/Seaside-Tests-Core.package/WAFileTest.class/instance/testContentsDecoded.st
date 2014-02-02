@@ -6,3 +6,5 @@ testContentsDecoded
 	self should: [ file contentsDecoded ] raise: WAIllegalStateException.
 	file contentType: 'text/plain; charset=iso-8859-1' seasideMimeType.
 	self assert: file contentsDecoded = 'Seaside'
+	
+	

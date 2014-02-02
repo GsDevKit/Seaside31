@@ -11,3 +11,4 @@ testCanStartWithUnavailablePort
 	self deny: (manager canStart: adaptor1).
 	adaptor1 stopped.
 	self deny: (manager canStart: adaptor1)
+	

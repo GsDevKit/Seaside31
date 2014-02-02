@@ -9,3 +9,4 @@ testActions
 	self
 		assert: ((self jQuery: 'img') resizable destroy)
 		equals: self function , '("img").resizable("destroy")'
+		

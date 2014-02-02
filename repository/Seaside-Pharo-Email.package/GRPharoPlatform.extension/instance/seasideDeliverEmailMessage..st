@@ -4,9 +4,9 @@ seasideDeliverEmailMessage: aWAEmailMessage
 	| client server serverAddress |
 	client := SMTPClient new.
 	"user login information if applicable"
-	self seasideSmtpUsername ifNotNilDo: [ :username | 
+	self seasideSmtpUsername ifNotNil: [ :username | 
 		client user: username.
-		self seasideSmtpPassword ifNotNilDo: [ :password |
+		self seasideSmtpPassword ifNotNil: [ :password |
 			client password: password ] ].
 	"use HELO/EHLO ip address format [127.0.0.1] if local host name is ip"
 	(self isIpAddress: client localHostName) 

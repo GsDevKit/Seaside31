@@ -2,7 +2,7 @@
 	"class" : {
 		"shouldInheritSelectors" : "lr 2/7/2009 22:34" },
 	"instance" : {
-		"assert:urlEncodedGives:" : "JohanBrichau 09/28/2013 06:59",
-		"assert:xmlEncodedGives:" : "JohanBrichau 09/28/2013 07:00",
+		"assert:urlEncodedGives:" : "JohanBrichau 9/29/2013 13:10",
+		"assert:xmlEncodedGives:" : "JohanBrichau 9/29/2013 13:10",
 		"testEncodedUrl" : "pmm 8/14/2012 20:04",
 		"testEncodedXml" : "pmm 8/14/2012 20:04" } }

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"defaultSpec" : "StephanEggermont 8/31/2012 14:59",
+		"open" : "pmm 9/13/2013 15:23",
+		"title" : "StephanEggermont 8/31/2012 14:50" },
+	"instance" : {
+		"adapters:" : "StephanEggermont 8/31/2012 16:50",
+		"adaptor" : "pmm 9/13/2013 15:11",
+		"disableAllButtons" : "pmm 9/13/2013 15:03",
+		"enableBrowseButton" : "BenjaminVanRyseghem 9/13/2013 14:49",
+		"enableStartButton" : "BenjaminVanRyseghem 9/13/2013 14:49",
+		"enableStopButton" : "BenjaminVanRyseghem 9/13/2013 14:49",
+		"initializePresenter" : "pmm 9/13/2013 15:22",
+		"initializeWidgets" : "pmm 9/13/2013 15:20",
+		"listModel" : "pmm 9/13/2013 15:19",
+		"textModel" : "pmm 9/13/2013 15:20",
+		"toolbarModel" : "pmm 9/13/2013 15:20" } }

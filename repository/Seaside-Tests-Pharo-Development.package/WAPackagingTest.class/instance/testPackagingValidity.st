@@ -7,7 +7,7 @@ testPackagingValidity
 		ifPresent: [ :cl | 
 			| gr me exceptions grease |
 			gr := Dictionary new.
-			GRPackage packages do: [ :pkg | gr at: pkg name put: pkg ].
+			GRPackage grPackages do: [ :pkg | gr at: pkg name put: pkg ].
 			me := Dictionary new.
 			cl project currentVersion packages do: [ :pkg | me at: pkg name put: pkg ].	"the following only apply when the system if fully loaded"
 			false

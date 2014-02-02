@@ -1,7 +1,7 @@
 tests
 testNoDuplicateUuids
 	| workingCopies versionAncestries uuidsToVersion |
-	workingCopies := WADevelopment allPackages
+	workingCopies := WADevelopment allGRPackages
 		collect: [ :each | WADevelopment workingCopyFor: each ].
 	versionAncestries := workingCopies
 		gather: [ :each | each ancestry breadthFirstAncestors ].

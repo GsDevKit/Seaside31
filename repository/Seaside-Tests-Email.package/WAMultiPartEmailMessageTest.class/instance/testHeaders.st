@@ -1,7 +1,6 @@
-as yet unclassified
+testing
 testHeaders
-	| cr now |
-	cr := String with: Character cr.
+	| now |
 	now := GRPrinter rfc822 print: DateAndTime now.
 	message replyTo: self philippeMarschall.
 	message headerAt: 'Date' put: now.	" We have to take into account, that the header order is not implied."

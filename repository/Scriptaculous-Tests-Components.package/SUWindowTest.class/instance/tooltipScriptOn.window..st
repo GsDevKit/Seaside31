@@ -20,3 +20,5 @@ tooltipScriptOn: html window: aWindow
 					((html prototype element id: aWindow windowId; visible) then:
 						(html prototype evaluator 
 							callback: [ :script | aWindow closeOn: script ]))) ])
+
+	

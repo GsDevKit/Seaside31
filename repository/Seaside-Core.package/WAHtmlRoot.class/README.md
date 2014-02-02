@@ -27,7 +27,7 @@ headElements
 	- the elements inside the <head> section
 
 htmlAttrs
-	- the attriebutes of the <html> element
+	- the attributes of the <html> element
 
 scripts
 	- contains the strings returned by WAPresenter >> #script

@@ -1,7 +1,7 @@
 handling
 processDirectory: aString context: aRequestContext 
 	| contents |
-	contents := WARenderCanvas builder
+	contents := WAHtmlCanvas builder
 		fullDocument: true;
 		rootBlock: [ :html | html title: aRequestContext request url greaseString ];
 		render: [ :html | 

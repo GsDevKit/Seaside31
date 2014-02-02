@@ -1,8 +1,10 @@
 Seaside31
 =========
-Website: http://www.seaside.st/
+The framework for developing sophisticated web applications in Smalltalk. 
+See more at http://www.seaside.st/
 
-The GemStone/S port of Seaside3.1 can be found in the gemstone3.1 branch.
+The master branch of this repository is a copy of the master repository at http://www.smalltalkhub.com/mc/Seaside
+The Gemstone port can be found in the Gemstone3.1 branch.
 
 ##Installation
 
@@ -26,6 +28,7 @@ GsDeployer deploy: [
     load.
 
   "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
+
   Metacello new
     configuration: 'Grease';
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
@@ -33,10 +36,10 @@ GsDeployer deploy: [
 
   "Load Seaside31"
   Metacello new
-    configuration: 'Seaside3';
-    version: #bleedingEdge;
-    repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+    baseline: 'Seaside3';
+    repository: 'github://glassdb/Seaside31:master/repository';
     load: 'CI'].
 %
 commit
 ```
+

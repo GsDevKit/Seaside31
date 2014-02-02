@@ -1,7 +1,7 @@
-as yet unclassified
+testing
 testParts
 	| parts |
-	message setHtmlBody: [ :h | h paragraph: 'hello' ].
+	message setHtmlBody: [ :html | html paragraph: 'hello' ].
 	parts := message parts asArray sort.
 	self assert: parts size equals: 2.
 	self assert: parts last isHtml.

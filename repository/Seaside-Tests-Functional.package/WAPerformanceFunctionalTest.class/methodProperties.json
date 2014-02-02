@@ -1,8 +1,10 @@
 {
 	"class" : {
+		"colors" : "pmm 2/1/2014 17:25",
 		"referenceDict" : "lr 7/25/2011 19:48",
 		"scale" : "pmm 1/22/2012 16:13" },
 	"instance" : {
+		"colorFor:" : "pmm 2/1/2014 16:34",
 		"initialize" : "as 2/6/2011 22:06",
 		"renderAnchorsOn:" : "lr 7/25/2011 18:55",
 		"renderBreakOn:" : "lr 7/25/2011 18:55",
@@ -12,7 +14,7 @@
 		"renderFormOn:" : "pmm 6/26/2011 14:13",
 		"renderHtmlTextOn:" : "lr 7/25/2011 18:55",
 		"renderIdTestOn:" : "lr 7/25/2011 18:55",
-		"renderInline:factor:key:on:" : "obi 8/3/2011 20:43",
+		"renderInline:factor:key:on:" : "pmm 2/1/2014 16:34",
 		"renderInline:key:on:" : "obi 3/13/2009 21:09",
 		"renderLineBreaksOn:" : "lr 7/25/2011 18:56",
 		"renderNativeBreakOn:" : "lr 7/25/2011 18:56",

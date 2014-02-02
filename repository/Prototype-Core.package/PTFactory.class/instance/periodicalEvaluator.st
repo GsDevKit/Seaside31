@@ -1,3 +1,3 @@
 creational-ajax
 periodicalEvaluator
-	^ self create: PTPeriodicalEvaluator
+	^ self create: PTPeriodicalEvaluator 
