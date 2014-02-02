@@ -1,7 +1,7 @@
 baselines-3101
 baseline3101welcome: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'Seaside-Welcome' with: [
@@ -35,3 +35,9 @@ baseline3101welcome: spec
 	spec for: #'pharo1.x' do: [
 		spec
 			group: 'OneClick' with: #('Comet Examples' 'Seaside-Tools-OmniBrowser' 'Kom') ].
+		
+	spec for: #'gemstone' do: [
+		spec
+			package: 'Seaside-GemStone-Welcome';
+			package: 'Seaside-Welcome' with: [
+				spec includes: #('Seaside-GemStone-Welcome' ) ] ]

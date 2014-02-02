@@ -1,7 +1,7 @@
 baselines-3101
 baseline3101json: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		spec blessing: #baseline.
 		spec 
 			package: 'Seaside-JSON-Core' with: [
@@ -26,3 +26,12 @@ baseline3101json: spec
 		spec 
 			package: 'Seaside-Tests-Pharo-JSON-Core' with: [
 				spec requires: #('Seaside-Tests-JSON') ] ].
+		
+  spec
+    for: #'gemstone'
+    do: [ 
+      spec
+        package: 'Seaside-JSON-Core'
+          with: [ spec includes: #('Seaside-GemStone-JSON-Core') ];
+        package: 'Seaside-GemStone-JSON-Core'
+          with: [ spec requires: #('Seaside-JSON-Core') ] ]

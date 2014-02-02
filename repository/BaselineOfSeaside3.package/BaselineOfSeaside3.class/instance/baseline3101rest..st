@@ -26,3 +26,10 @@ baseline3101rest: spec
 			package: 'Seaside-REST-Core' with:[
 				spec includes: #('Seaside-Pharo20-REST-Core')]
 	].
+
+	spec for: #gemstone do:[
+		spec
+			package: 'Seaside-GemStone-REST-Core';
+			package: 'Seaside-REST-Core' with:[
+				spec includes: #('Seaside-GemStone-REST-Core')]
+	].

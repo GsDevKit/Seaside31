@@ -1,7 +1,7 @@
 baselines-3101
 baseline3101common: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		spec blessing: #'baseline'.
 		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		spec project: 'Grease' with: [
@@ -74,7 +74,7 @@ baseline3101common: spec
 			group: 'default' with: #('Core');
 			group: 'CI' with: #('Tests' 'Zinc' 'Development Tests');
 			group: 'Core' with: #('Seaside-Core' 'Seaside-Canvas' 'Seaside-Session' 'Seaside-Component' 'Seaside-RenderLoop' 'Seaside-Tools-Core' 'Seaside-Flow' 'Seaside-Environment' 'Seaside-Widgets' );
-			group: 'Tests' with: #('Core' 'Seaside-Tests-Core' 'Seaside-Tests-Canvas' 'Seaside-Tests-Session' 'Seaside-Tests-Component' 'Seaside-Tests-RenderLoop' 'Seaside-Tests-Environment' 'Seaside-Tests-Flow' 'Seaside-Tests-UTF8' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Email' 'Seaside-Tests-Examples' 'RSS Tests' 'Welcome Tests' 'Comet Tests'  'REST Tests');
+			group: 'Tests' with: #('Core' 'Seaside-Tests-Core' 'Seaside-Tests-Canvas' 'Seaside-Tests-Session' 'Seaside-Tests-Component' 'Seaside-Tests-RenderLoop' 'Seaside-Tests-Environment' 'Seaside-Tests-Flow' 'Seaside-Tests-UTF8' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Email' 'Seaside-Tests-Examples' 'RSS Tests' 'Welcome Tests' 'REST Tests');
 			group: 'Development' with: #('Core' 'Seaside-Development' );
 			group: 'Development Tests' with: #('Development' 'Core' 'Seaside-Tests-Development' );
 			group: 'Email' with: #('Seaside-Email');
