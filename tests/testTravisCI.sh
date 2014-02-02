@@ -39,7 +39,7 @@ cat - >> $OUTPUT_PATH << EOF
 Metacello new
     configuration: 'Grease';
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    get.
+    load: 'Slime Tests'. "temporary bugfix to load slime because baseline does not seem to pull it in"
 
 "Load the ConfigurationOfSeaside3 as well to make the packageValidityTest work"
 Metacello new
