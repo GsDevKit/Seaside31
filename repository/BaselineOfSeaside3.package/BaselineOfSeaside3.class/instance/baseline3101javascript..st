@@ -50,4 +50,13 @@ baseline3101javascript: spec
 			package: 'Javascript-Core' with: [
 				spec includes: #('Javascript-Pharo20-Core' ) ];
 			package: 'Javascript-Tests-Core' with: [
-				spec includes: #('Javascript-Tests-Pharo-Core' ) ] ]
+				spec includes: #('Javascript-Tests-Pharo-Core' ) ] ].
+		
+  spec
+    for: #'gemstone'
+    do: [ 
+      spec
+        package: 'Javascript-Core'
+          with: [ spec includes: #('Javascript-GemStone-Core') ];
+        package: 'Javascript-GemStone-Core'
+          with: [ spec requires: #('Javascript-Core') ] ].

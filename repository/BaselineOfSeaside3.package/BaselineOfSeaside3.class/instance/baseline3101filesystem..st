@@ -25,3 +25,14 @@ baseline3101filesystem: spec
 			group: 'Filesystem Tests' with: #( 'Filesystem' 'Seaside-Tests-FileSystem');
 			group: 'Tests' with: #('Filesystem Tests') 
 	].
+
+	spec for: #'gemstone' do: [
+		
+		spec 
+			project: 'GsCore' with: [
+				spec
+					className: 'ConfigurationOfGsCore';
+					versionString: #'stable'].
+		spec
+			package: 'Seaside-FileSystem' with: [
+				spec requires: #('GsCore' ) ] ]
