@@ -35,3 +35,9 @@ baseline3101welcome: spec
 	spec for: #'pharo1.x' do: [
 		spec
 			group: 'OneClick' with: #('Comet Examples' 'Seaside-Tools-OmniBrowser' 'Kom') ].
+		
+	spec for: #'gemstone' do: [
+		spec
+			package: 'Seaside-GemStone-Welcome';
+			package: 'Seaside-Welcome' with: [
+				spec includes: #('Seaside-GemStone-Welcome' ) ] ]
