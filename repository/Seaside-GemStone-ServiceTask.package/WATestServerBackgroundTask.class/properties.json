@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-ServiceTask",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NickAger 06/21/2011 20:15",
+	"instvars" : [
+		"backgroundTask" ],
+	"name" : "WATestServerBackgroundTask",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
