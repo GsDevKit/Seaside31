@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101rss: spec
+baselines
+baselinerss: spec
 
 	spec for: #'common' do: [	
 		spec blessing: #baseline.

@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101common: spec
+baselines
+baselinecommon: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.

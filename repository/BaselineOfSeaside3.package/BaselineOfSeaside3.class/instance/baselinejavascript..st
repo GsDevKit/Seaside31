@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101javascript: spec
+baselines
+baselinejavascript: spec
 
 	spec for: #'common' do: [
 		spec blessing: #baseline.

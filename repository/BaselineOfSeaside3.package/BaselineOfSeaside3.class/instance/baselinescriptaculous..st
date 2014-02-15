@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101scriptaculous: spec
+baselines
+baselinescriptaculous: spec
 
 	spec for: #'common' do: [
 		spec blessing: #baseline.

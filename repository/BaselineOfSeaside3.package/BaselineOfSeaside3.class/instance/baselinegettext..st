@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101gettext: spec
+baselines
+baselinegettext: spec
 
 	spec for: #'common' do: [	
 		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main'.

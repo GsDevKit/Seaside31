@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101json: spec
+baselines
+baselinejson: spec
 
 	spec for: #'common' do: [
 		spec blessing: #baseline.

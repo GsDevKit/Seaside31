@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101ob: spec
+baselines
+baselineob: spec
 
     spec
         for: #(#'squeak' #'pharo1.x')

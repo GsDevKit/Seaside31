@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101jqueryui: spec
+baselines
+baselinejqueryui: spec
 
 	spec for: #'common' do: [
 		spec blessing: #baseline.

@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101filesystem: spec
+baselines
+baselinefilesystem: spec
 
 	spec for: #'squeakCommon' do: [
 		

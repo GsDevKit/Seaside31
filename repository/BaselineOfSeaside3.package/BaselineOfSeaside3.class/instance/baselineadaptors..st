@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101adaptors: spec
+baselines
+baselineadaptors: spec
 	spec
 		for: #squeakCommon
 		do: [ 
