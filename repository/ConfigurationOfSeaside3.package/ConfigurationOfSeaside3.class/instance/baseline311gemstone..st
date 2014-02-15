@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101gemstone: spec
+baselines-311
+baseline311gemstone: spec
 
 	spec for: #'gs3.x' do: [
 		spec

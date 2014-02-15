@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101rest: spec
+baselines-311
+baseline311rest: spec
 
 	spec for: #'common' do: [	
 		spec blessing: #baseline.
@@ -9,8 +9,8 @@ baseline3101rest: spec
 			package: 'Seaside-Tests-REST-Core' with: [
 				spec requires: #('Seaside-REST-Core' 'Seaside-Tests-Core') ].
 		spec 
-			group: 'REST' with: #('Seaside-REST-Core');
-			group: 'REST Tests' with: #('Seaside-Tests-REST-Core')
+			group: 'REST' with: #('Core' 'Seaside-REST-Core');
+			group: 'REST Tests' with: #('REST' 'Seaside-Tests-REST-Core')
 	].
 
 	spec for: #(squeak 'pharo1.x') do:[

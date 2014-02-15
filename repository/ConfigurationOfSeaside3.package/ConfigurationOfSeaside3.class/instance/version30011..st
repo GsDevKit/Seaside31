@@ -1,12 +1,12 @@
 versions-30
-version3010: spec
-	<version: '3.0.10' imports: #('3.0.10-baseline')>
+version30011: spec
+	<version: '3.0.11' imports: #('3.0.10-baseline')>
 	spec
 		for: #common
 		do: [ 
 			spec blessing: #development.
-			spec description: 'http://code.google.com/p/seaside/wiki/Seaside3010Changelog' ].	" split method into two for too many literals "
-	self version3010common: spec.
+			spec description: 'http://code.google.com/p/seaside/wiki/Seaside3011Changelog' ].	" split method into two for too many literals "
+	self version30011common: spec.
 	spec
 		for: #squeakCommon
 		do: [ 
@@ -16,8 +16,8 @@ version3010: spec
 				project: 'Kom' with: '1.0.9';
 				project: 'OB' with: #stable;
 				project: 'SPort2' with: '2.33';
-				project: 'Grease Slime' with: '1.0.10';
-				project: 'Grease Slime Tests' with: '1.0.10';
+				project: 'Grease Slime' with: '1.0.11';
+				project: 'Grease Slime Tests' with: '1.0.11';
 				project: 'WebClient Project' with: '1.5'.
 			spec
 				package: 'Comet-Core' with: 'Comet-Core-lr.51';
@@ -28,19 +28,19 @@ version3010: spec
 				package: 'Seaside-Pharo-Canvas' with: 'Seaside-Pharo-Canvas-lr.3';
 				package: 'Seaside-Pharo-Continuation' with: 'Seaside-Pharo-Continuation-lr.5';
 				package: 'Seaside-Pharo-Core' with: 'Seaside-Pharo-Core-JohanBrichau.17';
-				package: 'Seaside-Pharo-Development' with: 'Seaside-Pharo-Development-lr.57';
+				package: 'Seaside-Pharo-Development' with: 'Seaside-Pharo-Development-JohanBrichau.58';
 				package: 'Seaside-Pharo-Email' with: 'Seaside-Pharo-Email-lr.13';
 				package: 'Seaside-Pharo-Environment' with: 'Seaside-Pharo-Environment-lr.6';
 				package: 'Seaside-Pharo-Flow' with: 'Seaside-Pharo-Flow-lr.5';
 				package: 'Seaside-Pharo-Tools-OmniBrowser' with: 'Seaside-Pharo-Tools-OmniBrowser.pharoOB-NickAger.7';
-				package: 'Seaside-Pharo-Tools-Web' with: 'Seaside-Pharo-Tools-Web-NickAger.39';
+				package: 'Seaside-Pharo-Tools-Web' with: 'Seaside-Pharo-Tools-Web-JohanBrichau.40';
 				package: 'Seaside-Slime' with: 'Seaside-Slime-JohanBrichau.83';
 				package: 'Comet-Tests-Core' with: 'Comet-Tests-Core-lr.11';
 				package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
 				package: 'Seaside-Tests-Adaptors-Comanche' with: 'Seaside-Tests-Adaptors-Comanche-pmm.14';
 				package: 'Seaside-Tests-Pharo-Continuation' with: 'Seaside-Tests-Pharo-Continuation-lr.8';
 				package: 'Seaside-Tests-Pharo-Core' with: 'Seaside-Tests-Pharo-Core-JohanBrichau.26';
-				package: 'Seaside-Tests-Pharo-Development' with: 'Seaside-Tests-Pharo-Development-pmm.24';
+				package: 'Seaside-Tests-Pharo-Development' with: 'Seaside-Tests-Pharo-Development-JohanBrichau.25';
 				package: 'Seaside-Tests-Pharo-Email' with: 'Seaside-Tests-Pharo-Email-pmm.1';
 				package: 'Seaside-Tests-Pharo-Functional' with: 'Seaside-Tests-Pharo-Functional-lr.13';
 				package: 'Seaside-Tests-Slime' with: 'Seaside-Tests-Slime-JohanBrichau.43';

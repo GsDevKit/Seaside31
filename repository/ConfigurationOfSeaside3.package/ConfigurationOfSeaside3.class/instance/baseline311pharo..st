@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101pharo: spec
+baselines-311
+baseline311pharo: spec
 
 	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.

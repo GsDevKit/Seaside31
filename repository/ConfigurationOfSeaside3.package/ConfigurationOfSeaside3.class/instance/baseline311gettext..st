@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101gettext: spec
+baselines-311
+baseline311gettext: spec
 
 	spec for: #'common' do: [	
 		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main'.
@@ -7,12 +7,11 @@ baseline3101gettext: spec
 		spec
 			project: 'Gettext-Project'
 			with: [	spec
-						loads: #('Core');
 						className: 'ConfigurationOfGettext';
 						repository: 'http://www.smalltalkhub.com/mc/PharoExtras/Gettext/main' ].
 				
 		spec
-			package: 'Seaside-Gettext-Core' with: [ spec requires: #('Gettext-Project' 'Core') ];
+			package: 'Seaside-Gettext-Core' with: [ spec requires: #('Gettext-Project' 'Seaside-Session') ];
 			package: 'Seaside-Gettext-Examples' with: [ spec requires: #('Seaside-Gettext-Core') ].
 		
 		spec
@@ -21,16 +20,12 @@ baseline3101gettext: spec
 	
 	].
 
-	spec for: #(#squeak 'pharo1.x') do:[
-		spec
-			package: 'Seaside-Gettext-Slime' with: [ spec requires: #('Slime') ].
-			
-		spec 
-			group: 'GettextSlime' with: #('Seaside-Gettext-Slime')
-	].
-
-	spec for: #pharo do: [ 
+	spec for: #pharo do:[
 		spec
 			package: 'Seaside-Pharo-Gettext-Core';
-			package: 'Seaside-Gettext-Core' with:[spec includes: 'Seaside-Pharo-Gettext-Core'].
-	].
+			package: 'Seaside-Gettext-Core' with:[spec includes: 'Seaside-Pharo-Gettext-Core'];
+			package: 'Seaside-Gettext-Slime' with: [ spec requires: #('Seaside-Gettext-Core' 'Seaside-Slime') ].
+			
+		spec 
+			group: 'Gettext-Slime' with: #('Seaside-Gettext-Slime')
+	]

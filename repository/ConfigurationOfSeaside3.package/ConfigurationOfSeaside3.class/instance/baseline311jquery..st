@@ -1,5 +1,5 @@
-baselines-3101
-baseline3101jquery: spec
+baselines-311
+baseline311jquery: spec
 
 	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.
