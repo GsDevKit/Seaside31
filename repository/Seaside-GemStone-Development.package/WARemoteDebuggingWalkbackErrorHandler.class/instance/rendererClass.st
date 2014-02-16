@@ -1,3 +1,3 @@
 rendering error
 rendererClass
-	^ WARenderCanvas
+	^ WARenderer default
