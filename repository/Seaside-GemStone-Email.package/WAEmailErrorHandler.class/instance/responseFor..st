@@ -1,7 +1,7 @@
 private
 responseFor: anException
 	| content |
-	content := WARenderCanvas builder
+	content := WARenderer default builder
 		fullDocument: true;
 		rootBlock: [ :root | root title: 'Internal Error ' ];
 		render: [ :html |
