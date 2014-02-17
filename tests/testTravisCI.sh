@@ -46,6 +46,7 @@ Metacello new
     configuration: 'Seaside3';
     repository: 'filetree://${TRAVIS_BUILD_DIR}/repository';
     get.
+Deprecation raiseWarning: false.
  "Load the configuration or baseline"
  Metacello new
  $PROJECT_LINE

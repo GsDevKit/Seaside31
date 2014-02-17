@@ -1,4 +1,4 @@
-*seaside-pharo-core
+*seaside-pharo20-core
 seasideMimeDocumentType: aMimeType
 	"Converts the receiver to a WAMimeDocument. The argument should ideally be an instance for WAMimeType. For various crappy reasons Strings and nil are also allowed."
 	
