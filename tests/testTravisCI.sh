@@ -46,7 +46,6 @@ Metacello new
     configuration: 'Seaside3';
     repository: 'filetree://${TRAVIS_BUILD_DIR}/repository';
     get.
-Deprecation raiseWarning: false.
  "Load the configuration or baseline"
  Metacello new
  $PROJECT_LINE
@@ -54,6 +53,7 @@ Deprecation raiseWarning: false.
  $REPOSITORY_LINE
    load: #( ${LOADS} ).
   "Run the tests"
+  Smalltalk at: #Author ifPresent:[Author fullName: 'Travis'].
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
