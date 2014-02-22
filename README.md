@@ -6,6 +6,10 @@ See more at http://www.seaside.st/
 The master branch of this repository is a copy of the master repository at http://www.smalltalkhub.com/mc/Seaside
 The Gemstone port can be found in the Gemstone3.1 branch.
 
+##Build Status
+[![gemstone3.1 branch:](https://travis-ci.org/glassdb/Seaside31.png?branch=gemstone3.1)](https://travis-ci.org/glassdb/Seaside31)
+[![master branch (pharo/squeak):](https://travis-ci.org/glassdb/Seaside31.png?branch=master)](https://travis-ci.org/glassdb/Seaside31)
+
 ##Installation
 
 ```Smalltalk
