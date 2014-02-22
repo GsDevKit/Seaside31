@@ -7,8 +7,8 @@ The master branch of this repository is a copy of the master repository at http:
 The Gemstone port can be found in the Gemstone3.1 branch.
 
 ##Build Status
-![gemstone3.1 branch:](https://travis-ci.org/glassdb/Seaside31.png?branch=gemstone3.1)](https://travis-ci.org/glassdb/Seaside31)
-![master branch (pharo/squeak):](https://travis-ci.org/glassdb/Seaside31.png?branch=master)](https://travis-ci.org/glassdb/Seaside31)
+ - [![gemstone3.1 branch:](https://travis-ci.org/glassdb/Seaside31.png?branch=gemstone3.1)](https://travis-ci.org/glassdb/Seaside31) gemstone3.1 branch
+ - [![master branch (pharo/squeak):](https://travis-ci.org/glassdb/Seaside31.png?branch=master)](https://travis-ci.org/glassdb/Seaside31)  master branch (pharo/squeak)
 
 ##Installation
 
