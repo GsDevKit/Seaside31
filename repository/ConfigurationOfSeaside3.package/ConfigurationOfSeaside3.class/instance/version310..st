@@ -3,7 +3,7 @@ version310: spec
 	<version: '3.1.0' imports: #('3.1.0-baseline' )>
 
 	spec for: #'common' do: [
-		spec blessing: #'development'.
+		spec blessing: #'released'.
 		spec author: 'JohanBrichau'.
 		spec timestamp: '12/31/2013 08:50'.
 		spec 

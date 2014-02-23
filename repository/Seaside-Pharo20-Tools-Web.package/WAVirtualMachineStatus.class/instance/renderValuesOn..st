@@ -13,10 +13,10 @@ renderValuesOn: html
 	self
 		renderLabel: 'Builtin Modules'
 		value: [
-			html unorderedList list: self image listBuiltinModules ]
+			html unorderedList list: ((self image vm respondsTo: #listBuiltinModules) ifTrue:[self image vm listBuiltinModules] ifFalse:[self image listBuiltinModules])]
 		on: html.
 	self
 		renderLabel: 'Loaded Modules'
 		value: [
-			html unorderedList list: self image listLoadedModules ]
+			html unorderedList list: ((self image vm respondsTo: #listLoadedModules) ifTrue:[self image vm listLoadedModules] ifFalse:[self image listLoadedModules]) ]
 		on: html

@@ -5,8 +5,6 @@ version3010common: spec
 	hence, no pragma."
 	spec for: #'common' do: [
 		spec 
-			project: 'Grease Core' with: '1.0.10';
-			project: 'Grease Core Tests' with: '1.0.10';
 			project: 'Swazoo2' with: '2.3.0.0'.
 		spec 
 			package: 'Javascript-Core' with: 'Javascript-Core-pmm.94';

@@ -1,4 +1,4 @@
-*seaside-pharo-core
+*seaside-pharo20-core
 initializeMemorySettingsProfileSeaside
         "Initialize the memory and GC settings to be more in line with Seaside requirements"
         

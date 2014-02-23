@@ -1,4 +1,4 @@
-*seaside-pharo-core
+*seaside-pharo20-core
 writerForMimeType: mimeType
 	| sub |
 	mimeType main ~= 'image'

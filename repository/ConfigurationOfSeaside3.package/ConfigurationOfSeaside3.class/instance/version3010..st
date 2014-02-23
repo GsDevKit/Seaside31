@@ -11,6 +11,8 @@ version3010: spec
 		for: #squeakCommon
 		do: [ 
 			spec
+				project: 'Grease Core' with: '1.0.11';
+				project: 'Grease Core Tests' with: '1.0.11';
 				project: 'Kom' with: '1.0.9';
 				project: 'OB' with: #stable;
 				project: 'SPort2' with: '2.33';
@@ -68,6 +70,8 @@ version3010: spec
 		for: #gemstone
 		do: [ 
 			spec
+				project: 'Grease Core' with: '1.0.9';
+				project: 'Grease Core Tests' with: '1.0.9';
 				project: 'GsCore' with: '0.246';
 				project: 'FastCGI' with: '0.235';
 				project: 'OB' with: #stable;
