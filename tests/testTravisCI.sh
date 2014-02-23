@@ -56,7 +56,7 @@ Metacello new
 Metacello new
   baseline: 'Seaside3';
   repository: 'filetree://', gitPath, '/Seaside31/repository';
-  load: 'CI'.
+  load: #('CI' 'Zinc' 'FastCGI').
 
 TravisCIHarness
   value: #( 'BaselineOfSeaside3' )
