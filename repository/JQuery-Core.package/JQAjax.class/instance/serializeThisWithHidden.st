@@ -4,4 +4,4 @@ serializeThisWithHidden
 	
 	self serialize: (self jQuery this
 		next: 'input:hidden';
-		andSelf)
+		addBack)

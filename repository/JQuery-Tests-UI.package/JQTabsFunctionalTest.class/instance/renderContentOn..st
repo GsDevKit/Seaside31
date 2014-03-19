@@ -2,8 +2,8 @@ rendering
 renderContentOn: html
 	html div
 		script: (html jQuery new tabs
-			selected: selectedTab;
-			onSelect: (html jQuery ajax 
+			active: selectedTab;
+			onBeforeActivate: (html jQuery ajax 
 				callbackTabs: [ :event | selectedTab:= event at: #index ]));
 		with: [
 			html unorderedList: [

@@ -10,11 +10,8 @@ testOptions
 		assert: ((self jQuery: 'div') positioned collision: 'flip fit')
 		equals: self function , '("div").position({"collision":"flip fit"})'.
 	self
-		assert: ((self jQuery: 'div') positioned my: 'top center')
-		equals: self function , '("div").position({"my":"top center"})'.
+		assert: ((self jQuery: 'div') positioned my: 'top+10 center-20')
+		equals: self function , '("div").position({"my":"top+10 center-20"})'.
 	self
 		assert: ((self jQuery: 'div') positioned of: '#id')
 		equals: self function , '("div").position({"of":"#id"})'.
-	self
-		assert: ((self jQuery: 'div') positioned offset: '10 20')
-		equals: self function , '("div").position({"offset":"10 20"})'

@@ -1,6 +1,6 @@
 This is a convenience class which provides a result of a rendering operation as a string. It is expected to be used like this:
 
-WARenderCanvas builder render: [ :html |
+WAHtmlCanvas builder render: [ :html |
 	html anchor
 		url: 'htttp://www.seaside.st';
 		with: 'Seaside Homepage' ]
