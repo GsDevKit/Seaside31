@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Adaptors-Swazoo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 05/18/2011 15:22",
+	"instvars" : [
+		 ],
+	"name" : "WAGsSwazooAdaptor",
+	"pools" : [
+		 ],
+	"super" : "WASwazooAdaptor",
+	"type" : "normal" }
