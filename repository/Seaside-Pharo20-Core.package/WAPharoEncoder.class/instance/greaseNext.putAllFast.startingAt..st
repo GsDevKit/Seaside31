@@ -1,4 +1,4 @@
-*seaside-pharo-core-document
+*seaside-pharo20-core-document
 greaseNext: anInteger putAllFast: aByteString startingAt: startIndex
 	| lastIndex nextIndex |
 	lastIndex := startIndex.

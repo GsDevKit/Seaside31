@@ -4,6 +4,7 @@
 	"instance" : {
 		"assert:gives:" : "pmm 1/22/2012 16:24",
 		"testArray" : "pmm 2/18/2012 14:26",
+		"testDateAndTime" : "DiegoLont 2/17/2014 10:52",
 		"testNestedArray" : "pmm 8/24/2011 12:03",
 		"testNestedObject" : "pmm 8/24/2011 12:06",
 		"testObject" : "pmm 8/24/2011 13:58",

@@ -75,7 +75,7 @@ baselinepharo: spec
 			package: 'Seaside-Slime' with: [
 				spec requires: #('Grease Slime' ). ];
 			package: 'Seaside-Tests-Slime' with: [
-				spec requires: #('Seaside-Slime' 'Seaside-Tests-Component' 'Grease Slime Tests' ). ].
+				spec requires: #('Seaside-Slime' 'Seaside-Tests-Component' 'Grease Slime Tests'). ].
 		spec 
 			group: 'Development' with: #('Seaside-Slime' );
 			group: 'Development Tests' with: #('Seaside-Tests-Slime' ) ].
@@ -121,8 +121,6 @@ baselinepharo: spec
 				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
 		
 	"Spec based tools"
-	
-
 	spec for: #(#'pharo2.x' #'pharo3.x') do: [
 		spec
 			package: 'Seaside-Tools-Core' with: [

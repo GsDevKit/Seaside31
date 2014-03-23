@@ -4,6 +4,6 @@ renderWithContext: aRenderContext
 	It should not normally be overridden. Subclasses should override #renderContentOn:.
 	
 	You DO NOT normally need to call this method directly. Usually you have an instance
-	of a Renderer (e.g. a WARenderCanvas) and can call the #render: method."
+	of a Renderer (e.g. a WAHtmlCanvas) and can call the #render: method."
 	
 	aRenderContext visitor visit: self
