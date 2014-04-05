@@ -1,15 +1,15 @@
 parsing
 parseObject
 	| result |
-	self expectChar: ${.
+	self expect: '{'.
 	result := self createObject.
-	(self matchChar: $})
+	(self match: '}')
 		ifTrue: [ ^ result ].
 	[ stream atEnd ] whileFalse: [
 		result := self
 			addProperty: self parseProperty
 			to: result.
-		(self matchChar: $})
+		(self match: '}')
 			ifTrue: [ ^ result ].
-		self expectChar: $, ].
+		self expect: ',' ].
 	self error: 'end of object expected'

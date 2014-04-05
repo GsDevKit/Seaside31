@@ -112,9 +112,6 @@ version310: spec
 
 	spec for: #'pharo1.x' do: [
 		spec 
-			project: 'Grease Slime' with: '1.1.5';
-			project: 'Grease Slime Tests' with: '1.1.5'.
-		spec 
 			package: 'Seaside-Slime' with: 'Seaside-Slime-pmm.85';
 			package: 'Seaside-Tests-Slime' with: 'Seaside-Tests-Slime-pmm.44';
 			package: 'Javascript-Pharo-Core' with: 'Javascript-Pharo-Core-JohanBrichau.12';
@@ -144,6 +141,9 @@ version310: spec
 			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1'. ].
 
 	spec for: #'pharo' do: [
+		spec 
+			project: 'Grease Slime' with: '1.1.5';
+			project: 'Grease Slime Tests' with: '1.1.5'.
 		spec 
 			package: 'Seaside-Adaptors-Comanche' with: 'Seaside-Adaptors-Comanche-pmm.79';
 			package: 'Seaside-Tests-Adaptors-Comanche' with: 'Seaside-Tests-Adaptors-Comanche-pmm.15';
