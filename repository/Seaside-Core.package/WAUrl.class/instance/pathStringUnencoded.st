@@ -4,6 +4,8 @@ pathStringUnencoded
 
 	"allocate with correct size, avoid copy"
 	| string stream |
+	self pathIsUnencodedSafe ifFalse: [
+		^ self pathStringSafeUnencoded].
 	string := String new: self pathStringUnencodedSize.
 	stream := WriteStream on: string.
 	self pathUnencodedOn: stream.

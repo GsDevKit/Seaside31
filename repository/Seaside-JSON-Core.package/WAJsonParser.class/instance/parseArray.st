@@ -1,15 +1,15 @@
 parsing
 parseArray
 	| result |
-	self expectChar: $[.
+	self expect: '['.
 	result := self createArray.
-	(self matchChar: $])
+	(self match: ']')
 		ifTrue: [ ^ result ].
 	[ stream atEnd ] whileFalse: [
 		result := self
 			addValue: self parseValue
 			to: result.
-		(self matchChar: $]) 
+		(self match: ']') 
 			ifTrue: [ ^ result ].
-		self expectChar: $, ].
+		self expect: ',' ].
 	self error: 'end of array expected'

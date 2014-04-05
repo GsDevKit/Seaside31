@@ -1,11 +1,11 @@
 specs
 defaultSpec
+
 	<spec>
-	^{ #Panel.
-			#changeTableLayout.
-			#listDirection:. #rightToLeft.
-			#addMorph:. {#model. #startButton.}.
-			#addMorph:. {#model. #stopButton.}.
-			#addMorph:. {#model. #browseButton.}.
-			#hResizing:. #spaceFill.
-			#vResizing:. #shrinkWrap. }
+	^ SpecLayout composed
+		newRow: [ :row | 
+			row
+				add: #(model startButton);
+				add: #(model stopButton);
+				add: #(model browseButton) ];
+		yourself
