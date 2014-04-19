@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #ConfigurationOfSeaside3!
+SystemOrganization addCategory: 'ConfigurationOfSeaside3'!
