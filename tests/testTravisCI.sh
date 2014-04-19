@@ -54,7 +54,7 @@ Metacello new
    load: #( ${LOADS} ).
   "Run the tests"
   Smalltalk at: #Author ifPresent:[Author fullName: 'Travis'].
-  Smalltalk at: #Utilities ifPresent:[Utilities authorName: 'Travis'].
+  ((Smalltalk includesKey: #Utilities) and:[Utilities respondsTo: #authorName:]) ifTrue:[Utilities authorName: 'Travis'].
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
