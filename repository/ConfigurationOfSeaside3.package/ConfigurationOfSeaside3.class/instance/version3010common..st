@@ -47,7 +47,7 @@ version3010common: spec
 			package: 'Seaside-Tests-Component' with: 'Seaside-Tests-Component-jok.33';
 			package: 'Seaside-Tests-Core' with: 'Seaside-Tests-Core-pmm.259';
 			package: 'Seaside-Tests-Development' with: 'Seaside-Tests-Development-pmm.43';
-			package: 'Seaside-Tests-Email' with: 'Seaside-Tests-Email-JohanBrichau.18';
+			package: 'Seaside-Tests-Email' with: 'Seaside-Tests-Email-dkh.19';
 			package: 'Seaside-Tests-Environment' with: 'Seaside-Tests-Environment-lr.27';
 			package: 'Seaside-Tests-Examples' with: 'Seaside-Tests-Examples-lr.9';
 			package: 'Seaside-Tests-FileSystem' with: 'Seaside-Tests-FileSystem-lr.13';

@@ -1,29 +1,28 @@
 versions-30
-version3010: spec
-  <version: '3.0.10' imports: #('3.0.10-baseline')>
+version3091: spec
+  <version: '3.0.9.1' imports: #('3.0.9-baseline')>
   spec
     for: #'common'
     do: [ 
       spec blessing: #'development'.
       spec
         description:
-          '3.0.10 (dkh.127):
-- porting Seaside3.0.10 to GemStone3.2
-3.0.10 (dkh.130)
-- merge changes from Seaside-Core-pmm.773 into Seaside-Core.gemstone
-- revise some tests in Seaside-Tests-Email to be more GemStone friendly' ].
-  self version3010common: spec.
+          '3.0.9.1 (dkh.128)
+- port to GemStone 3.2
+3.0.9.1 (dkh.129)
+- fix UnorderedCollection)>>restoreFromSnapshot: for GemStone 3.2 
+- ExecutableBlock is an Obsolete class in GemStone 3.2
+- tests greeen in GemStone 3.2' ].
+  self version309common: spec.
   spec
     for: #'squeakCommon'
     do: [ 
       spec
-        project: 'Grease Core' with: '1.0.11';
-        project: 'Grease Core Tests' with: '1.0.11';
         project: 'Kom' with: '1.0.9';
         project: 'OB' with: #'stable';
         project: 'SPort2' with: '2.33';
-        project: 'Grease Slime' with: '1.0.10';
-        project: 'Grease Slime Tests' with: '1.0.10';
+        project: 'Grease Slime' with: '1.0.8';
+        project: 'Grease Slime Tests' with: '1.0.8';
         project: 'WebClient Project' with: '1.5'.
       spec
         package: 'Comet-Core' with: 'Comet-Core-lr.51';
@@ -72,7 +71,7 @@ version3010: spec
     do: [ 
       spec
         package: 'Seaside-Tools-OmniBrowser'
-          with: 'Seaside-Tools-OmniBrowser-lr.25';
+          with: 'Seaside-Tools-OmniBrowser-lr.26';
         package: 'Seaside-Pharo-Tools-OmniBrowser'
           with: 'Seaside-Pharo-Tools-OmniBrowser-pmm.9';
         package: 'Seaside-Squeak-Tools-OmniBrowser'
@@ -88,6 +87,9 @@ version3010: spec
         with: 'Seaside-Pharo-Welcome-NickAger.2' ].
   spec for: #'pharo1.4.x' do: [ spec project: 'Kom' with: '1.1.1' ].
   spec
+    for: #'pharo1.0.x'
+    do: [ spec package: 'Seaside-Slime' with: 'Seaside-Slime-jok.80' ].
+  spec
     for: #('pharo1.x' 'squeak')
     do: [ 
       spec
@@ -97,8 +99,6 @@ version3010: spec
     for: #'gemstone'
     do: [ 
       spec
-        project: 'Grease Core' with: '1.0.9';
-        project: 'Grease Core Tests' with: '1.0.9';
         project: 'GsCore' with: '0.246';
         project: 'FastCGI' with: '0.235';
         project: 'OB' with: #'stable';
@@ -110,7 +110,7 @@ version3010: spec
         package: 'JQuery-UI' with: 'JQuery-UI.gemstone-dkh.81';
         package: 'Seaside-Adaptors-FastCGI'
           with: 'Seaside-Adaptors-FastCGI-dkh.26';
-        package: 'Seaside-Core' with: 'Seaside-Core.gemstone-dkh.774';
+        package: 'Seaside-Core' with: 'Seaside-Core.gemstone-dkh.771';
         package: 'Seaside-GemStone-Adaptors-Swazoo'
           with: 'Seaside-GemStone-Adaptors-Swazoo-dkh.5';
         package: 'Seaside-GemStone-Adaptors-Zinc'

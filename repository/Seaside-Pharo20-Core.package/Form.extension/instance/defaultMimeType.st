@@ -1,3 +1,3 @@
 *seaside-pharo20-core
 defaultMimeType
-	^ WAMimeType imageGif
+	^ WAMimeType imagePng
