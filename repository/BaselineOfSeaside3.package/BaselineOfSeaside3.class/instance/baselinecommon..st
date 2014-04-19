@@ -6,7 +6,7 @@ baselinecommon: spec
 		spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 		spec project: 'Grease' with: [
 			spec
-				versionString: #bleedingEdge;
+				versionString: #'release1.1';
 				className: 'ConfigurationOfGrease';
 				loads: #( 'Grease-Core');
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
