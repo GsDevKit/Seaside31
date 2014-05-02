@@ -2,19 +2,13 @@ baselines
 baselinefilesystem: spec
 
 	spec for: #'common' do: [
-		
-		spec project: 'SPort2' with: [
-			spec
-				versionString: '2.33';
-				className: 'ConfigurationOfSPort2';
-				loads: #('Sport');
-				repository: 'http://smalltalkhub.com/mc/Sport/Sport/main' ].
-		
+
 		spec 
 			package: 'Seaside-FileSystem' with: [
 				spec 
-					requires: #('Seaside-Core' 'SPort2');
+					requires: #('Seaside-Core');
 					repository: 'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main' ];
+				
 			package: 'Seaside-Tests-FileSystem' with: [
 				spec 
 					requires: #('Seaside-FileSystem');
@@ -26,6 +20,20 @@ baselinefilesystem: spec
 			group: 'Tests' with: #('Filesystem Tests') 
 	].
 
+	spec for: #'squeakCommon' do: [
+		
+		spec project: 'SPort2' with: [
+			spec
+				versionString: '2.33';
+				className: 'ConfigurationOfSPort2';
+				loads: #('Sport');
+				repository: 'http://smalltalkhub.com/mc/Sport/Sport/main' ].
+			
+		spec
+			package: 'Seaside-FileSystem' with: [ spec requires: #('SPort2') ]
+		
+	].
+
 	spec for: #'gemstone' do: [
 		
 		spec 
@@ -34,5 +42,4 @@ baselinefilesystem: spec
 					className: 'ConfigurationOfGsCore';
 					versionString: #'stable'].
 		spec
-			package: 'Seaside-FileSystem' with: [
-				spec requires: #('GsCore' ) ] ]
+			package: 'Seaside-FileSystem' with: [ spec requires: #('GsCore' ) ] ]
