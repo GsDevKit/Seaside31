@@ -1,7 +1,7 @@
 baselines
 baselinefilesystem: spec
 
-	spec for: #'squeakCommon' do: [
+	spec for: #'common' do: [
 		
 		spec project: 'SPort2' with: [
 			spec
