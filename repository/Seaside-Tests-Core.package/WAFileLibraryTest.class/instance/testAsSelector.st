@@ -8,4 +8,5 @@ testAsSelector
 	"https://code.google.com/p/seaside/issues/detail?id=786"
 	self assert: (WAFileLibrary asSelector: 'main') = #main.
 	self assert: (WAFileLibrary asSelector: 'main.') = #main.
-	self assert: (WAFileLibrary asSelector: ').find(') = #'Find'.
+	self assert: (WAFileLibrary asSelector: ').find(') isNil.
+	self assert: (WAFileLibrary asSelector: '),10)') isNil
