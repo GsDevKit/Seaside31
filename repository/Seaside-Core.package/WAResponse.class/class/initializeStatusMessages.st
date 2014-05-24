@@ -13,6 +13,8 @@ initializeStatusMessages
 		at: self statusResetContent put: 'Reset Content';
 		at: self statusPartialContent put: 'Partial Content';
 		at: self statusMultiStatus put: 'Multi-Status';
+		at: self statusAlreadyReported put: 'Already Reported';
+		at: self statusInstanceManipulationUsed put: 'IM Used';		
 		at: self statusMultipleChoices put: 'Multiple Choices';
 		at: self statusMovedPermanently put: 'Moved Permanently';
 		at: self statusFound put: 'Found';
@@ -20,6 +22,7 @@ initializeStatusMessages
 		at: self statusNotModified put: 'Not Modified';
 		at: self statusUseProxy put: 'Use Proxy';
 		at: self statusTemporaryRedirect put: 'Temporary Redirect';
+		at: self statusPermanentRedirect put: 'Permanent Redirect';
 		at: self statusBadRequest put: 'Bad Request';
 		at: self statusUnauthorized put: 'Unauthorized';
 		at: self statusPaymentRequired put: 'Payment Required';
@@ -42,10 +45,18 @@ initializeStatusMessages
 		at: self statusUnprocessableEntity put: 'Unprocessable Entity';
 		at: self statusLocked put: 'Locked';
 		at: self statusFailedDependency put: 'Failed Dependency';
+		at: self statusUpgradeRequired put: 'Upgrade Required';
+		at: self statusPreconditionRequired put: 'Precondition Required';
+		at: self statusTooManyRequests put: 'Too Many Requests';
+		at: self statusRequestHeaderFieldsTooLarge put: 'Request Header Fields Too Large';
 		at: self statusInternalServerError put: 'Internal Server Error';
 		at: self statusNotImplemented put: 'Not Implemented';
 		at: self statusBadGateway put: 'Bad Gateway';
 		at: self statusServiceUnavailable put: 'Service Unavailable';
 		at: self statusGatewayTimeout put: 'Gateway Timeout';
 		at: self statusHttpVersionNotSupported put: 'HTTP Version Not Supported';
-		at: self statusInsufficientStorage put: 'Insufficient Storage'
+		at: self statusVariantAlsoNegotiates put: 'Variant Also Negotiates';
+		at: self statusInsufficientStorage put: 'Insufficient Storage';
+		at: self statusLoopDetected put: 'Loop Detected';
+		at: self statusNotExtended put: 'Not Extended';
+		at: self statusNetworkAuthenticationRequired put: 'Network Authentication Required'

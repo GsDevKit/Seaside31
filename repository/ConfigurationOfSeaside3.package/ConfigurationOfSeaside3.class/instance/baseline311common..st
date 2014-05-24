@@ -10,9 +10,18 @@ baseline311common: spec
 				className: 'ConfigurationOfGrease';
 				loads: #( 'Grease-Core');
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
-		spec
-			project: 'Grease Core Tests' copyFrom: 'Grease' with: [
+			
+		spec project: 'Parasol' with: [
+			spec
+				className: 'ConfigurationOfParasol';
+				versionString: #development;
+				repository: 'http://ss3.gemtalksystems.com/ss/Parasol'].
+			
+		spec  
+			project: 'Grease Core Tests' 
+			copyFrom: 'Grease' with: [ 
 				spec loads: #('Core Tests') ].
+			
 		spec
 			package: 'Seaside-Canvas' with: [
 				spec requires: #('Seaside-Core' ). ];
@@ -69,14 +78,16 @@ baseline311common: spec
 			package: 'Seaside-Tests-Tools-Web' with: [
 				spec requires: #('Seaside-Tools-Web' 'Seaside-Tests-Environment' ). ];
 			package: 'Seaside-Tests-UTF8' with: [
-				spec requires: #('Seaside-Tests-Core' ) ].
+				spec requires: #('Seaside-Tests-Core' ) ];
+			package: 'Seaside-Tests-Webdriver' with: [
+				spec requires: #('Seaside-Tests-Core' 'Parasol') ].
 		spec 
 			group: 'default' with: #('Core');
 			group: 'CI' with: #('Tests' 'Zinc' 'Development Tests');
 			group: 'Core' with: #('Seaside-Core' 'Seaside-Canvas' 'Seaside-Session' 'Seaside-Component' 'Seaside-RenderLoop' 'Seaside-Tools-Core' 'Seaside-Flow' 'Seaside-Environment' 'Seaside-Widgets' );
 			group: 'Tests' with: #('Core' 'Seaside-Tests-Core' 'Seaside-Tests-Canvas' 'Seaside-Tests-Session' 'Seaside-Tests-Component' 'Seaside-Tests-RenderLoop' 'Seaside-Tests-Environment' 'Seaside-Tests-Flow' 'Seaside-Tests-UTF8' 'Seaside-Tests-InternetExplorer' 'Seaside-Tests-Email' 'Seaside-Tests-Examples' 'RSS Tests' 'Welcome Tests' 'Comet Tests'  'REST Tests');
 			group: 'Development' with: #('Core' 'Seaside-Development' );
-			group: 'Development Tests' with: #('Development' 'Core' 'Seaside-Tests-Development' );
+			group: 'Development Tests' with: #('Development' 'Core' 'Seaside-Tests-Development');
 			group: 'Email' with: #('Seaside-Email');
 			group: 'Examples' with: #('Core' 'Seaside-Examples' );
 			group: 'Base' with: #('Core')  ].
