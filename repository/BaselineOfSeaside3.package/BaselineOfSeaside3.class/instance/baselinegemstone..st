@@ -85,7 +85,8 @@ baselinegemstone: spec
         package: 'Seaside-Tests-GemStone-Functional'
           with: [ spec requires: #('Seaside-Tests-Functional') ].
       spec
-        group: 'CI' overrides: #('Tests' 'Development Tests' 'FastCGI' 'Zinc' 'Swazoo');
+        group: 'CI'
+          overrides: #('Tests' 'Development Tests' 'FastCGI' 'Zinc' 'Swazoo');
         group: 'Development' with: #('Seaside-GemStone-Basic-Development');
         group: 'Production' with: #('Seaside-GemStone-Tools-Production') ].
   spec
@@ -102,7 +103,7 @@ baselinegemstone: spec
         package: 'Seaside-GemStone-Core'
           with: [ spec requires: #('Seaside-GemStone240-Core') ] ].
   spec
-    for: #'gs3.x'
+    for: #(#'gs3.0.x' #'gs3.1.x')
     do: [ 
       spec
         package: 'Seaside-Core'
@@ -113,4 +114,17 @@ baselinegemstone: spec
                 requires: #('Seaside-Core');
                 includes: #('Seaside-GemStone-Core') ];
         package: 'Seaside-GemStone-Core'
-          with: [ spec requires: #('Seaside-GemStone300-Core') ] ]
+          with: [ spec requires: #('Seaside-GemStone300-Core') ] ].
+  spec
+    for: #'gs3.2.x'
+    do: [ 
+      spec
+        package: 'Seaside-Core'
+          with: [ spec includes: #('Seaside-GemStone320-Core') ];
+        package: 'Seaside-GemStone320-Core'
+          with: [ 
+              spec
+                requires: #('Seaside-Core');
+                includes: #('Seaside-GemStone-Core') ];
+        package: 'Seaside-GemStone-Core'
+          with: [ spec requires: #('Seaside-GemStone320-Core') ] ]

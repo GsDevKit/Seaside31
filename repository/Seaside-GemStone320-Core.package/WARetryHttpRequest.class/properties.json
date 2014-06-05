@@ -1,14 +1,14 @@
 {
-	"category" : "Seaside-GemStone-Core",
+	"category" : "Seaside-GemStone320-Core-Notifications",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"request" ],
-	"name" : "WAObjectLogEntry",
+		 ],
+	"name" : "WARetryHttpRequest",
 	"pools" : [
 		 ],
-	"super" : "RemoteDebuggerLogEntry",
+	"super" : "Exception",
 	"type" : "normal" }
