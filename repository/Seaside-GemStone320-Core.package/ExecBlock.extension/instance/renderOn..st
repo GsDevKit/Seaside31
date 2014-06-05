@@ -1,5 +1,5 @@
-*Seaside-GemStone-Core
+*seaside-gemstone320-core
 renderOn: aRenderer
-	numberArgs == 0 
+	self numArgs == 0 
 		ifTrue: [self value]
 		ifFalse: [self value: aRenderer]

@@ -1,4 +1,4 @@
-*Seaside-GemStone-Core
+*seaside-gemstone300-core
 restoreFromSnapshot: anObject
 	"restore from a shallow copy"
 	| class x |
