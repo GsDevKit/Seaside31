@@ -3,15 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Tasks" ],
-	"commentStamp" : "",
+		 ],
+	"commentStamp" : "dkh 06/06/2014 19:48",
 	"instvars" : [
-		"name",
-		"frequency",
-		"valuable",
-		"state",
-		"resetBlock" ],
-	"name" : "WAGemStoneMaintenanceTask",
+		 ],
+	"name" : "WAAbstractGemServer",
 	"pools" : [
 		 ],
 	"super" : "Object",
