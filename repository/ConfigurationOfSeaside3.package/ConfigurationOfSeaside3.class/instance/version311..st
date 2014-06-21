@@ -2,10 +2,12 @@ versions-31
 version311: spec
 	<version: '3.1.1' imports: #('3.1.1-baseline' )>
 
-	spec for: #'squeakCommon' do: [
-		spec blessing: #'development'.
+	spec for: #'common' do: [
+		spec blessing: #'release'.
 		spec author: 'JohanBrichau'.
-		spec timestamp: '04/19/2014 10:57'.
+		spec timestamp: '05/25/2014 15:40'].
+
+	spec for: #'squeakCommon' do: [
 		spec 
 			project: 'Grease' with: #'release1.1';
 			project: 'Grease Core Tests' with: #'release1.1';
@@ -78,7 +80,7 @@ version311: spec
 
 	spec for: #'gs3.x' do: [
 		spec baseline: 'Seaside3' with: [
-				spec repository: 'github://glassdb/Seaside31:gemstone3.1/repository' ]. ].
+				spec repository: 'github://glassdb/Seaside31:3.1.1-gs31/repository' ]. ].
 
 	spec for: #'squeakCommon' do: [
 		spec project: 'WebClient Project' with: '1.5'.
@@ -117,7 +119,8 @@ version311: spec
 			package: 'Seaside-Tests-Slime' with: 'Seaside-Tests-Slime-pmm.44';
 			package: 'Javascript-Pharo-Core' with: 'Javascript-Pharo-Core-JohanBrichau.12';
 			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
-			package: 'Seaside-Tests-Adaptors-Comanche' with: 'Seaside-Tests-Adaptors-Comanche-pmm.15'. ].
+			package: 'Seaside-Tests-Adaptors-Comanche' with: 'Seaside-Tests-Adaptors-Comanche-pmm.15';
+			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-pmm.2' ].
 
 	spec for: #'pharo2.x' do: [
 		spec 
@@ -128,9 +131,10 @@ version311: spec
 			package: 'Seaside-Pharo20-REST-Core' with: 'Seaside-Pharo20-REST-Core-JohanBrichau.2';
 			package: 'Seaside-Pharo-Tools-Spec' with: 'Seaside-Pharo-Tools-Spec-pmm.9';
 			package: 'Javascript-Pharo20-Core' with: 'Javascript-Pharo20-Core-JohanBrichau.4';
-			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1'. ].
+			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
+			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-pmm.2' ].
 
-	spec for: #'pharo3.x' do: [
+	spec for: #(#'pharo3.x' #'pharo4.x') do: [
 		spec 
 			package: 'Seaside-Pharo20-Tools-Web' with: 'Seaside-Pharo20-Tools-Web-JohanBrichau.4';
 			package: 'Seaside-Pharo20-Core' with: 'Seaside-Pharo20-Core-pmm.5';
@@ -139,7 +143,8 @@ version311: spec
 			package: 'Seaside-Pharo20-REST-Core' with: 'Seaside-Pharo20-REST-Core-JohanBrichau.2';
 			package: 'Seaside-Pharo-Tools-Spec' with: 'Seaside-Pharo-Tools-Spec-JohanBrichau.10';
 			package: 'Javascript-Pharo20-Core' with: 'Javascript-Pharo20-Core-JohanBrichau.4';
-			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1'. ].
+			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
+			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-JohanBrichau.3'.  ].
 
 	spec for: #'pharo' do: [
 		spec 
@@ -148,8 +153,7 @@ version311: spec
 		spec 
 			package: 'Seaside-Adaptors-Comanche' with: 'Seaside-Adaptors-Comanche-pmm.81';
 			package: 'Seaside-Tests-Adaptors-Comanche' with: 'Seaside-Tests-Adaptors-Comanche-pmm.15';
-			package: 'Seaside-Pharo-Welcome' with: 'Seaside-Pharo-Welcome-NickAger.2';
-			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-pmm.2'. ].
+			package: 'Seaside-Pharo-Welcome' with: 'Seaside-Pharo-Welcome-NickAger.2'].
 
 	spec for: #'squeak' do: [
 		spec 

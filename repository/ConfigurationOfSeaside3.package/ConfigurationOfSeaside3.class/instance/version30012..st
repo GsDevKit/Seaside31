@@ -4,7 +4,7 @@ version30012: spec
 	spec
 		for: #common
 		do: [ 
-			spec blessing: #development.
+			spec blessing: #deprecated.
 			spec description: 'http://code.google.com/p/seaside/wiki/Seaside3011Changelog' ].	" split method into two for too many literals "
 	self version30011common: spec.
 	spec

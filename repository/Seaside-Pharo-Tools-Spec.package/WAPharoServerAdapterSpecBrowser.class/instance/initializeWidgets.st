@@ -2,7 +2,7 @@ initialization
 initializeWidgets
 
 	self instantiateModels: #(
-		listModel IconListModel
+		listModel NewListModel
 		textModel TextModel
 		toolbarModel WAServerAdapterToolbar).
 	
@@ -12,5 +12,7 @@ initializeWidgets
 		add: textModel.
 	
 	textModel aboutToStyle: false.
-	listModel displayBlock: [ :item | item name].
+	listModel displayBlock: [ :item | item class name,' ',item statusString ].
+	listModel menu: [ :aMenu | self adaptorsMenu: aMenu].
+	
 	self disableAllButtons

@@ -1,4 +1,4 @@
-as yet unclassified
+private
 disableAllButtons
 
 	self toolbarModel startButton enabled: false.

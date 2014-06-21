@@ -129,7 +129,7 @@ baseline3010: spec
 				overrides:
 					#('Base' 'Development' 'RSS-Core' 'Javascript-Core' 'Prototype-Core' 'Scriptaculous-Core' 'JQuery-Core' 'JQuery-UI' 'Seaside-Email' 'Seaside-HTML5' 'Seaside-InternetExplorer' 'Seaside-Examples' 'RSS-Examples' 'Seaside-Tools-Web' 'Scriptaculous-Components' 'Seaside-Welcome' 'Seaside-FileSystem' 'Zinc-Seaside') ].
 	spec
-		for: #'pharo3.x'
+		for: #(#'pharo3.x' #'pharo4.x')
 		do: [ 
 			spec
 				removeProject: 'OB';
