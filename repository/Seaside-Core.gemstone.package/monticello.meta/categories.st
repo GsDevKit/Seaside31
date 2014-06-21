@@ -1,4 +1,4 @@
-SystemOrganization addCategory: 'Seaside-Core'!
+SystemOrganization addCategory: #'Seaside-Core'!
 SystemOrganization addCategory: 'Seaside-Core-Backtracking'!
 SystemOrganization addCategory: 'Seaside-Core-Cache'!
 SystemOrganization addCategory: 'Seaside-Core-Callbacks'!

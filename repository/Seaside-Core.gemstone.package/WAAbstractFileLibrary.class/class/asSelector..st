@@ -6,7 +6,7 @@ asSelector: aFilename
 	[ mainPart isEmpty not and: [ mainPart first isDigit ] ]
 		whileTrue: [ mainPart := mainPart allButFirst ].
 	
-	mainPart isEmpty ifTrue: [ ^ nil ].	
+	mainPart isEmpty ifTrue: [ ^ nil ].
 		
 	extension := ((aFilename copyAfterLast: $.)
 		select: [ :each | each isAlphaNumeric ]) asLowercase capitalized.
