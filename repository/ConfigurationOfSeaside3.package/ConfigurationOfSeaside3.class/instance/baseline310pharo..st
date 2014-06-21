@@ -10,6 +10,7 @@ baseline310pharo: spec
 				spec includes: #('Seaside-Pharo-Development' ). ];
 			package: 'Seaside-Email' with: [
 				spec includes: #('Seaside-Pharo-Email' ). ];
+			package: 'Seaside-Pharo-Email';
 			package: 'Seaside-Environment' with: [
 				spec includes: #('Seaside-Pharo-Environment' ). ];
 			package: 'Seaside-Flow' with: [
@@ -100,7 +101,7 @@ baseline310pharo: spec
 			package: 'Seaside-Pharo-Email' with: [
 				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
 		
-	spec for: #'pharo3.x' do: [
+	spec for: #(#'pharo3.x' #'pharo4.x') do: [
             spec
 			package: 'Seaside-Tools-Web' with: [
 				spec includes: #('Seaside-Pharo20-Tools-Web') ];

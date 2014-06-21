@@ -1,3 +1,3 @@
-as yet unclassified
+private
 adapters: aList
 	self listModel items: aList

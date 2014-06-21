@@ -1,7 +1,7 @@
 initialization
 initializePresenter
 
-	self adapters: WAServerManager default adaptors.
+	self initializeAdaptors.
 	
 	listModel whenSelectedItemChanged: [ :selection |
 		adaptor := selection.
@@ -11,9 +11,9 @@ initializePresenter
 				textModel text: ''.
 				textModel behavior: nil ]
 	             ifFalse: [ 
-				adaptor isStopped
+				adaptor canStart
 					ifTrue: [ self enableStartButton ].
-				adaptor isRunning
+				adaptor canStop
 					ifTrue: [ self enableStopButton	 ].
 				self enableBrowseButton.
 				textModel text: (String streamContents: [ :stream |
