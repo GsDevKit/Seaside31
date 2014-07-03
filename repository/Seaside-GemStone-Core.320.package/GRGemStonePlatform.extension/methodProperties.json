@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"retryCount" : "dkh 12/23/2009 12:26",
+		"retryDelay" : "dkh 12/23/2009 12:26",
+		"seasideLogServerStart:port:" : "dkh 12/23/2009 14:40",
+		"seasideProcessRequest:adaptor:resultBlock:" : "DaleHenrichs 08/04/2010 16:46",
+		"seasideProcessRequestWithRetry:resultBlock:" : "dkh 05/31/2011 13:59" } }
