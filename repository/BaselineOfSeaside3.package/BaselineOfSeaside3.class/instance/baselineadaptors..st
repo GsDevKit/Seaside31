@@ -42,6 +42,14 @@ baselineadaptors: spec
     do: [ 
       spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
       spec
+        project: 'WebClient Project'
+        with: [ 
+          spec
+            versionString: '1.5';
+            className: 'ConfigurationOfWebClient';
+            loads: #('Core');
+            repository: 'http://ss3.gemtalksystems.com/ss/WebClient' ].
+      spec
         package: 'WebClient-Seaside'
         with: [ 
           spec repository: 'http://ss3.gemtalksystems.com/ss/WebClient'.
