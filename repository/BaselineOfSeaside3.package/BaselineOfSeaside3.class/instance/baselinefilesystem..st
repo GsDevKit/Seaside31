@@ -32,14 +32,4 @@ baselinefilesystem: spec
             className: 'ConfigurationOfSPort2';
             loads: #('Sport');
             repository: 'http://smalltalkhub.com/mc/Sport/Sport/main' ].
-      spec package: 'Seaside-FileSystem' with: [ spec requires: #('SPort2') ] ].
-  spec
-    for: #'gemstone'
-    do: [ 
-      spec
-        project: 'GsCore'
-        with: [ 
-          spec
-            className: 'ConfigurationOfGsCore';
-            versionString: #'stable' ].
-      spec package: 'Seaside-FileSystem' with: [ spec requires: #('GsCore') ] ]
+      spec package: 'Seaside-FileSystem' with: [ spec requires: #('SPort2') ] ]

@@ -5,13 +5,12 @@ baselinegemstone: spec
     do: [ 
       spec blessing: #'baseline'.
       spec
-        project: 'GsCore'
-        with: [ 
-          spec
-            className: 'ConfigurationOfGsCore';
-            versionString: #'stable';
-            repository:
-                'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ].
+        baseline: 'GLASS1'
+          with: [ 
+              spec
+                loads: #('Base');
+                repository: 'github://glassdb/glass:master/repository' ];
+        yourself.
       spec
         package: 'Seaside-Core'
           with: [ 
@@ -54,7 +53,7 @@ baselinegemstone: spec
           with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-GemStone-Continuation';
         package: 'Seaside-GemStone-Core'
-          with: [ spec requires: #('Seaside-Core' 'GsCore') ];
+          with: [ spec requires: #('Seaside-Core' 'GLASS1') ];
         package: 'Seaside-GemStone-Development'
           with: [ 
               spec
