@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		"Default" ],
-	"commentStamp" : "KenTreis 08/10/2010 01:54",
+	"commentStamp" : "",
 	"instvars" : [
 		"name",
 		"adaptorClass",
