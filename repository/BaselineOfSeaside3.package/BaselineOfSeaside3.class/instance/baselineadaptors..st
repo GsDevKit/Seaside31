@@ -21,41 +21,16 @@ baselineadaptors: spec
             repository: 'http://mc.stfx.eu/ZincHTTPComponents' ].
       spec
         package: 'Zinc-Seaside'
-        with: [ 
-          spec
-            repository: 'http://mc.stfx.eu/ZincHTTPComponents';
-            requires: #('Zinc Project' 'Seaside-Core') ].
+        with: [ spec requires: #('Zinc Project' 'Seaside-Core') ].
       spec
         package: 'Seaside-Swazoo'
-          with: [ 
-              spec
-                requires: #('Grease' 'Swazoo2');
-                repository:
-                    'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main' ];
+          with: [ spec requires: #('Grease' 'Swazoo2');                repository:                    'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main'  ];
         package: 'Seaside-Adaptors-Swazoo'
           with: [ spec requires: #('Seaside-Core' 'Seaside-Swazoo') ].
       spec
         group: 'Swazoo' with: #('Seaside-Adaptors-Swazoo');
         group: 'Zinc' with: #('Zinc-Seaside') ].
-  spec
-    for: #'squeakCommon'
-    do: [ 
-      spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
-      spec
-        project: 'WebClient Project'
-        with: [ 
-          spec
-            versionString: '1.5';
-            className: 'ConfigurationOfWebClient';
-            loads: #('Core');
-            repository: 'http://ss3.gemtalksystems.com/ss/WebClient' ].
-      spec
-        package: 'WebClient-Seaside'
-        with: [ 
-          spec repository: 'http://ss3.gemtalksystems.com/ss/WebClient'.
-          spec requires: #('WebClient Project' 'Seaside-Core') ].
-      spec group: 'WebClient' with: #('WebClient-Seaside') ].
-  spec
+  spec    for: #'squeakCommon'    do: [       spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.      spec        project: 'WebClient Project'        with: [           spec            versionString: '1.5';            className: 'ConfigurationOfWebClient';            loads: #('Core');            repository: 'http://ss3.gemtalksystems.com/ss/WebClient' ].      spec        package: 'WebClient-Seaside'        with: [           spec repository: 'http://ss3.gemtalksystems.com/ss/WebClient'.          spec requires: #('WebClient Project' 'Seaside-Core') ].      spec group: 'WebClient' with: #('WebClient-Seaside') ].  spec
     for: #(#'squeak' #'pharo1.x')
     do: [ 
       spec
