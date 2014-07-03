@@ -5,7 +5,7 @@
 	"classvars" : [
 		"InProcess",
 		"Queue" ],
-	"commentStamp" : "NickAger 05/27/2011 10:54",
+	"commentStamp" : "",
 	"instvars" : [
 		"taskBlock",
 		"taskValue",
