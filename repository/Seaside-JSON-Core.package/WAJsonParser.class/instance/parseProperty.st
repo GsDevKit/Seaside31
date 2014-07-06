@@ -2,6 +2,6 @@ parsing-internal
 parseProperty
 	| name value |
 	name := self parseString.
-	self expect: ':'.
+	self expectChar: $:.
 	value := self parseValue.
 	^ self createProperty: name with: value

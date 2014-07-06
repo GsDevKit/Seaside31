@@ -3,7 +3,7 @@ baseline311: spec
 	<version: '3.1.1-baseline'>
 	"This groups all baseline"
 	self baseline311common: spec.
-	self baseline311gemstone: spec.
+	"self baseline311gemstone: spec."
 	self baseline311pharo: spec.
 	self baseline311filesystem: spec.
 	self baseline311adaptors: spec.

@@ -12,10 +12,10 @@ parseValue
 			ifTrue: [ ^ self parseString ].
 		(char = $- or: [ char between: $0 and: $9 ])
 			ifTrue: [ ^ self parseNumber ].
-		(self match: 'true')
-			ifTrue: [ ^ self createTrue ].
-		(self match: 'false')
-			ifTrue: [ ^ self createFalse ].
-		(self match: 'null')
-			ifTrue: [ ^ self createNull ] ].
+		(char = $t)
+			ifTrue: [ self match: 'true' ifTrue: [ ^self createTrue ] ].
+		(char = $f)
+			ifTrue: [ self match: 'false' ifTrue: [ ^self createFalse ] ].
+		(char = $n)
+			ifTrue: [ self match: 'null' ifTrue: [ ^self createNull ] ] ].
 	self error: 'invalid input'

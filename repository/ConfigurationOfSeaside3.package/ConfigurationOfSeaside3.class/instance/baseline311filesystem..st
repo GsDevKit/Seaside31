@@ -5,7 +5,7 @@ baseline311filesystem: spec
 		
 		spec project: 'SPort2' with: [
 			spec
-				versionString: '2.33';
+				versionString: '2.34';
 				className: 'ConfigurationOfSPort2';
 				loads: #('Sport');
 				repository: 'http://smalltalkhub.com/mc/Sport/Sport/main' ].
