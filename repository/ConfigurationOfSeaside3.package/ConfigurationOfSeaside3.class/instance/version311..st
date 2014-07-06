@@ -79,8 +79,10 @@ version311: spec
 			package: 'Seaside-Gettext-Examples' with: 'Seaside-Gettext-Examples-pmm.5'. ].
 
 	spec for: #'gs3.x' do: [
-		spec baseline: 'Seaside3' with: [
-				spec repository: 'github://glassdb/Seaside31:3.1.1-gs31/repository' ]. ].
+		spec
+			baseline: 'Seaside3' 
+			with: [ spec repository: 'github://glassdb/Seaside31:3.1.1-gs31/repository' ];
+			import: 'Seaside3'].
 
 	spec for: #'squeakCommon' do: [
 		spec project: 'WebClient Project' with: '1.5'.

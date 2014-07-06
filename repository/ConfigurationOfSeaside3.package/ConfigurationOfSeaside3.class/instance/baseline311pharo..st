@@ -113,12 +113,21 @@ baseline311pharo: spec
 				spec includes: #('Seaside-Pharo20-Core' ) ];
 			package: 'Seaside-Pharo20-Core' with: [
 				spec requires: #('Seaside-Core' ). ];
+			package: 'Seaside-Pharo-Email' with: [
+				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
+	spec for: #'pharo3.x' do: [
+            spec
 			package: 'Seaside-Tests-Core' with: [
 				spec includes: #('Seaside-Tests-Pharo20-Core' ) ];
 			package: 'Seaside-Tests-Pharo20-Core' with: [
-				spec requires: #('Seaside-Pharo20-Core' 'Seaside-Tests-Core' ) ];
-			package: 'Seaside-Pharo-Email' with: [
-				spec requires: #('Seaside-Email' 'Seaside-Pharo20-Core' ) ] ].
+				spec requires: #('Seaside-Pharo20-Core' 'Seaside-Tests-Core' ) ]].
+		
+	spec for: #'pharo4.x' do: [
+            spec
+			package: 'Seaside-Tests-Core' with: [
+				spec includes: #('Seaside-Tests-Pharo40-Core' ) ];
+			package: 'Seaside-Tests-Pharo40-Core' with: [
+				spec requires: #('Seaside-Pharo20-Core' 'Seaside-Tests-Core' ) ]].
 		
 	"Spec based tools"
 	

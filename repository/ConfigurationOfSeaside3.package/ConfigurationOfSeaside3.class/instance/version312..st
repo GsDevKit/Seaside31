@@ -5,13 +5,13 @@ version312: spec
 	spec for: #'common' do: [
 		spec blessing: #'development'.
 		spec author: 'JohanBrichau'.
-		spec timestamp: '05/25/2014 15:40'].
+		spec timestamp: '7/6/2014 15:17'. ].
 
 	spec for: #'squeakCommon' do: [
 		spec 
 			project: 'Grease' with: #'release1.1';
 			project: 'Grease Core Tests' with: #'release1.1';
-			project: 'SPort2' with: '2.33';
+			project: 'SPort2' with: '2.34';
 			project: 'Swazoo2' with: #'stable';
 			project: 'Zinc Project' with: #'stable';
 			project: 'Gettext-Project' with: #'stable'.
@@ -54,7 +54,7 @@ version312: spec
 			package: 'JQuery-Tests-UI' with: 'JQuery-Tests-UI-JohanBrichau.86';
 			package: 'Seaside-FileSystem' with: 'Seaside-FileSystem-JohanBrichau.27';
 			package: 'Seaside-Tests-FileSystem' with: 'Seaside-Tests-FileSystem-JohanBrichau.14';
-			package: 'Seaside-JSON-Core' with: 'Seaside-JSON-Core-JohanBrichau.30';
+			package: 'Seaside-JSON-Core' with: 'Seaside-JSON-Core-DiegoLont.31';
 			package: 'Seaside-Tests-JSON' with: 'Seaside-Tests-JSON-pmm.13';
 			package: 'RSS-Core' with: 'RSS-Core-pmm.69';
 			package: 'RSS-Tests-Core' with: 'RSS-Tests-Core-lr.30';
@@ -81,12 +81,13 @@ version312: spec
 	spec for: #'gs3.x' do: [
 		spec baseline: 'Seaside3' with: [
 				spec
+		 			import: 'Seaside3';
 					repository: 'github://glassdb/Seaside31:gemstone3.1/repository' ]. ].
 
 	spec for: #'squeakCommon' do: [
 		spec project: 'WebClient Project' with: '1.5'.
 		spec 
-			package: 'WebClient-Seaside' with: 'WebClient-Seaside-ar.10';
+			package: 'WebClient-Seaside' with: 'WebClient-Seaside-topa.11';
 			package: 'Seaside-Pharo-Canvas' with: 'Seaside-Pharo-Canvas-pmm.4';
 			package: 'Seaside-Tests-Pharo-Canvas' with: 'Seaside-Tests-Pharo-Canvas-pmm.1';
 			package: 'Seaside-Pharo-Continuation' with: 'Seaside-Pharo-Continuation-pmm.6';
@@ -135,17 +136,22 @@ version312: spec
 			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
 			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-pmm.2'. ].
 
-	spec for: #(#'pharo3.x' #'pharo4.x') do: [
+	spec for: #(#'pharo3.x' #'pharo4.x' ) do: [
 		spec 
 			package: 'Seaside-Pharo20-Tools-Web' with: 'Seaside-Pharo20-Tools-Web-JohanBrichau.4';
 			package: 'Seaside-Pharo20-Core' with: 'Seaside-Pharo20-Core-pmm.5';
-			package: 'Seaside-Tests-Pharo20-Core' with: 'Seaside-Tests-Pharo20-Core-JohanBrichau.6';
 			package: 'Seaside-Pharo-Email' with: 'Seaside-Pharo-Email-pmm.16';
 			package: 'Seaside-Pharo20-REST-Core' with: 'Seaside-Pharo20-REST-Core-JohanBrichau.2';
-			package: 'Seaside-Pharo-Tools-Spec' with: 'Seaside-Pharo-Tools-Spec-JohanBrichau.10';
+			package: 'Seaside-Pharo-Tools-Spec' with: 'Seaside-Pharo-Tools-Spec-JohanBrichau.12';
 			package: 'Javascript-Pharo20-Core' with: 'Javascript-Pharo20-Core-JohanBrichau.4';
 			package: 'Javascript-Tests-Pharo-Core' with: 'Javascript-Tests-Pharo-Core-lr.1';
 			package: 'Seaside-Pharo-Gettext-Core' with: 'Seaside-Pharo-Gettext-Core-JohanBrichau.3'. ].
+
+	spec for: #'pharo3.x' do: [
+		spec package: 'Seaside-Tests-Pharo20-Core' with: 'Seaside-Tests-Pharo20-Core-JohanBrichau.6'. ].
+
+	spec for: #'pharo4.x' do: [
+		spec package: 'Seaside-Tests-Pharo40-Core' with: 'Seaside-Tests-Pharo40-Core-StephanEggermont.2'. ].
 
 	spec for: #'pharo' do: [
 		spec 
