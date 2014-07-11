@@ -67,12 +67,6 @@ GsDeployer deploy: [
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
     get.
 
-  "Load latest GLASS1 from github"
-  Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
-    load.
-
   "Load the configuration or baseline"
   Metacello new
   $PROJECT_LINE
