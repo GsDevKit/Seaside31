@@ -60,15 +60,14 @@ GsDeployer deploy: [
         cr;
         show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
- "Load the configuration or baseline"
+"Load the configuration or baseline"
  Metacello new
  $PROJECT_LINE
  $VERSION_LINE
  $REPOSITORY_LINE
    load: #( ${LOADS} ).
-  "Run the tests"
-  Smalltalk at: #Author ifPresent:[Author fullName: 'Travis'].
-  ((Smalltalk includesKey: #Utilities) and:[Utilities respondsTo: #setAuthorInitials:]) ifTrue:[Utilities setAuthorInitials: 'TCI'].
+   
+"Run the tests"
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
