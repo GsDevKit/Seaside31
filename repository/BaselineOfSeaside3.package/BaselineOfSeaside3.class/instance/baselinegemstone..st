@@ -5,6 +5,13 @@ baselinegemstone: spec
     do: [ 
       spec blessing: #'baseline'.
       spec
+        baseline: 'GLASS1'
+          with: [ 
+              spec
+                loads: #('Base');
+                repository: 'github://glassdb/glass:master/repository' ];
+        yourself.
+      spec
         package: 'Seaside-Core'
           with: [ 
               spec
@@ -46,7 +53,7 @@ baselinegemstone: spec
           with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-GemStone-Continuation';
         package: 'Seaside-GemStone-Core'
-          with: [ spec requires: #('Seaside-Core') ];
+          with: [ spec requires: #('Seaside-Core' 'GLASS1') ];
         package: 'Seaside-GemStone-Development'
           with: [ 
               spec
