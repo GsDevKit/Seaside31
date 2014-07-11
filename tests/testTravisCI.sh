@@ -60,13 +60,20 @@ GsDeployer deploy: [
         cr;
         show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
+"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
+
+Metacello new
+  configuration: 'Grease';
+  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
+  get.
+
 "Load the configuration or baseline"
  Metacello new
  $PROJECT_LINE
  $VERSION_LINE
  $REPOSITORY_LINE
    load: #( ${LOADS} ).
-   
+
 "Run the tests"
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
