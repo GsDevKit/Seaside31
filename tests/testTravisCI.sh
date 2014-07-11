@@ -61,11 +61,17 @@ GsDeployer deploy: [
         show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
 "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-
 Metacello new
   configuration: 'Grease';
   repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
   get.
+
+"Load latest GLASS1 from github"
+  Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository';
+    load.
+
 
 "Load the configuration or baseline"
  Metacello new
