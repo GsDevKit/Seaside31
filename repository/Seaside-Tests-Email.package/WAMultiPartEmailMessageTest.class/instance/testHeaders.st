@@ -6,7 +6,7 @@ testHeaders
 	message headerAt: 'Date' put: now.	" We have to take into account, that the header order is not implied."
 	self
 		assert:
-			(('From: "Philippe Marschall" <philippe.marschall@gmail.com>
+			((self convertLineEndingsToCr: ('From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
 Reply-To: "Philippe Marschall" <philippe.marschall@gmail.com>
@@ -28,9 +28,9 @@ Hello
 --' , message boundary
 				,
 					'--
-') withSqueakLineEndings = message plainMessage withSqueakLineEndings
+')) = (self convertLineEndingsToCr: message plainMessage)
 				or: [ 
-					('From: "Philippe Marschall" <philippe.marschall@gmail.com>
+					(self convertLineEndingsToCr: ('From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
 Reply-To: "Philippe Marschall" <philippe.marschall@gmail.com>
@@ -52,4 +52,4 @@ Hello
 --' , message boundary
 						,
 							'--
-') withSqueakLineEndings = message plainMessage withSqueakLineEndings ])
+')) = (self convertLineEndingsToCr: message plainMessage) ])

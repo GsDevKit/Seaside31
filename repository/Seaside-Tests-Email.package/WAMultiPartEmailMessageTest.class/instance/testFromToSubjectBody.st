@@ -3,7 +3,7 @@ testFromToSubjectBody
 	message headers removeKey: 'Date'.
 	self
 		assert:
-			('From: "Philippe Marschall" <philippe.marschall@gmail.com>
+			(self convertLineEndingsToCr: ('From: "Philippe Marschall" <philippe.marschall@gmail.com>
 To: "Seaside Developers Mailinglist" <seaside-dev@lists.squeakfoundation.org>
 Subject: new email package
 Content-Type: multipart/alternative;boundary=' , message boundary
@@ -21,5 +21,5 @@ Hello
 --' , message boundary
 				,
 					'--
-') withSqueakLineEndings
-		equals: message plainMessage withSqueakLineEndings
+'))
+		equals: (self convertLineEndingsToCr: message plainMessage)
