@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"convertLineEndingsToCr:" : "pmm 7/9/2014 19:18",
 		"messageClass" : "PaulDeBruicker 10/25/2013 13:27",
-		"testFromToSubjectBody" : "pmm 2/1/2014 13:16",
-		"testHeaders" : "pmm 2/1/2014 13:15",
+		"testFromToSubjectBody" : "pmm 7/9/2014 19:19",
+		"testHeaders" : "pmm 7/9/2014 19:20",
 		"testParts" : "pmm 2/1/2014 13:14" } }
