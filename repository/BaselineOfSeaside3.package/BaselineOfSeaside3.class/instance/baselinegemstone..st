@@ -100,7 +100,12 @@ baselinegemstone: spec
                 requires: #('Seaside-Core');
                 includes: #('Seaside-GemStone-Core') ];
         package: 'Seaside-GemStone-Core'
-          with: [ spec requires: #('Seaside-GemStone240-Core') ] ].
+          with: [ spec requires: #('Seaside-GemStone240-Core') ];
+        package: 'Seaside-GemStone-Flow'
+          with: [ spec includes: #('Seaside-GemStone240-Flow') ];
+        package: 'Seaside-GemStone240-Flow'
+          with: [ spec requires: #('Seaside-GemStone-Flow') ];
+        yourself ].
   spec
     for: #(#'gs3.0.x' #'gs3.1.x')
     do: [ 
