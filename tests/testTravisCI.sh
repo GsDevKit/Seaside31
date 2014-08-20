@@ -61,11 +61,12 @@ GsDeployer deploy: [
         show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
 GsDeployer deploy: [
+false ifTrue: [ "dkh - don't think we need to load Grease config explicitly anymore ... the Grease issues were fixed"
   "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
   Metacello new
     configuration: 'Grease';
     repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    get.
+    get ].
 
   "Load the configuration or baseline"
   Metacello new
