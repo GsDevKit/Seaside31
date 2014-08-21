@@ -2,11 +2,8 @@ baselines
 baselinecommon: spec
   spec
     for: #'squeakCommon'
-    do: [ spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main' ].
-  spec
-    for: #'common'
     do: [ 
-      spec blessing: #'baseline'.
+      spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
       spec
         project: 'Grease'
         with: [ 
@@ -19,7 +16,25 @@ baselinecommon: spec
       spec
         project: 'Grease Core Tests'
         copyFrom: 'Grease'
-        with: [ spec loads: #('Core Tests') ].
+        with: [ spec loads: #('Core Tests') ] ].
+  spec
+    for: #'gemstone'
+    do: [ 
+      spec
+        baseline: 'Grease'
+          with: [ 
+              spec
+                loads: #('Core');
+                repository: 'github://GsDevKit/Grease:master/repository' ];
+        yourself.
+      spec
+        project: 'Grease Core Tests'
+        copyFrom: 'Grease'
+        with: [ spec loads: #('Core Tests') ] ].
+  spec
+    for: #'common'
+    do: [ 
+      spec blessing: #'baseline'.
       spec
         package: 'Seaside-Canvas' with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-Component' with: [ spec requires: #('Seaside-Core') ];
