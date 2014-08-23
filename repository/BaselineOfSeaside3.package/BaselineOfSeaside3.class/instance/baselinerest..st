@@ -29,6 +29,6 @@ baselinerest: spec
     for: #'gemstone'
     do: [ 
       spec
-        package: 'Seaside-GemStone-REST-Core';
+        package: 'Seaside-GemStone-REST-Core'with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-REST-Core'
           with: [ spec includes: #('Seaside-GemStone-REST-Core') ] ]
