@@ -4,7 +4,7 @@ env:
 
 #   - ST=GemStone-2.4.5.2   BASELINE=Seaside3 LOADS="'CI' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository" ## fair amount of tests failing/erroring ... needs work
    - ST=GemStone-3.1.0.6   BASELINE=Seaside3 LOADS="'CI' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.2.0     BASELINE=Seaside3 LOADS="'CI' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
+   - ST=GemStone-3.2.2     BASELINE=Seaside3 LOADS="'CI' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
 
 install:
    - export PROJECT_HOME="$(pwd)"
