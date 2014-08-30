@@ -1,9 +1,11 @@
 {
 	"class" : {
+		"ask:session:" : "PaulDeBruicker 08/30/2014 11:17",
 		"value:" : "NickAger 06/13/2011 20:34" },
 	"instance" : {
 		"exception" : "NickAger 06/13/2011 20:34",
 		"hasError" : "NickAger 06/13/2011 20:34",
 		"hasValue" : "NickAger 06/13/2011 20:34",
+		"task:session:" : "PaulDeBruicker 08/30/2014 11:17",
 		"value" : "NickAger 06/21/2011 19:20",
 		"value:" : "NickAger 06/13/2011 20:34" } }
