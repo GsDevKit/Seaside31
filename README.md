@@ -13,7 +13,8 @@ Install the master HEAD version:
   GsDeployer deploy: [
     Metacello new
       baseline: 'Seaside3';
-      repository: 'github://GsDevKit/Seaside31:gs_master/repository';
+      repository: 'github://GsDevKit/Seaside31:gs_master/repository';
+      onLock: [:ex | ex honor];
       load: 'CI' ].
   ```
 
@@ -23,6 +24,7 @@ Install a particular version, e.g. 3.1.2 (see [Releases](https://github.com/GsDe
     Metacello new
       baseline: 'Seaside3';
       repository: 'github://GsDevKit/Seaside31:v3.1.2-gs/repository';
+      onLock: [:ex | ex honor];
       load: 'ALL' ].
   ```
 
