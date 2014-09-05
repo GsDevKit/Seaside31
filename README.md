@@ -5,10 +5,10 @@ See more at http://www.seaside.st/
 
 ## Loading into Gemstone
 
-1. [Upgrade to GLASS 1.0-beta.9.3][1]
+1. [Upgrade to GLASS1][1]
 2. Install Seaside 3.1:
 
-Install the master HEAD version:
+Install the latest commit from the master branch:
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
