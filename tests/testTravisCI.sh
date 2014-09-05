@@ -84,7 +84,8 @@ GsDeployer deploy: [
   Metacello new
     baseline: 'Grease';
     repository: 'github://GsDevKit/Grease:master/repository';
-    lock ] ].
+    lock 
+].
 
 GsDeployer deploy: [
   "Load the configuration or baseline"
