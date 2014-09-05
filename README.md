@@ -32,4 +32,4 @@ Install a particular version, e.g. 3.1.2 (see [Releases](https://github.com/GsDe
  - [![gs_master branch:](https://travis-ci.org/GsDevKit/Seaside31.png?branch=gs_master)](https://travis-ci.org/GsDevKit/Seaside31) gs_master (Gemstone)
  - [![master branch (pharo/squeak):](https://travis-ci.org/GsDevKit/Seaside31.png?branch=master)](https://travis-ci.org/GsDevKit/Seaside31)  master (Pharo/Squeak)
 
- [1]: https://github.com/GsDevKit/gsDevKitHome/blob/master/projects/glass/upgradeTo1.0-beta9.3.md#upgrade-to-glass-10-beta93
+ [1]: https://github.com/GsDevKit/gsDevKitHome/blob/master/projects/glass/upgradeToGLASS1.md#upgrade-to-glass1
