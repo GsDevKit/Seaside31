@@ -2,8 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"renderContentOn:" : "lr 4/25/2011 13:41",
-		"renderReadmeOn:" : "lr 12/4/2009 23:00",
-		"selectors" : "lr 12/4/2009 22:15",
-		"style" : "lr 12/4/2009 22:49",
-		"title" : "lr 12/4/2009 22:15" } }
+		"renderContentOn:" : "JohanBrichau 8/21/2014 17:01",
+		"renderExternalJsonOn:" : "JohanBrichau 8/22/2014 09:16",
+		"renderJsonCallbackOn:" : "JohanBrichau 8/22/2014 09:51",
+		"seasidePackagesOn:" : "JohanBrichau 8/22/2014 09:50",
+		"selectors" : "JohanBrichau 8/21/2014 17:00",
+		"style" : "JohanBrichau 8/22/2014 09:52",
+		"title" : "JohanBrichau 8/21/2014 17:08" } }

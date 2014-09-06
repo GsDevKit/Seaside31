@@ -4,6 +4,6 @@ style
 
 	This is done for all visible components (see class comment of WAComponent for what visible means).
 
-	Nice for demos but consider using WAFileLibrary or exernal files instead."
+	Nice for demos but consider using WAFileLibrary or external files instead."
 
 	^ nil

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 	| mimeParameters |
 	super initialize.

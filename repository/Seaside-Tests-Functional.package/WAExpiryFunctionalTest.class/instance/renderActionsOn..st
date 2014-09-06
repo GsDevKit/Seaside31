@@ -7,7 +7,7 @@ renderActionsOn: html
 				with: 'New Session'.
 			html break.
 			html anchor
-				callback: [ self session unregister . self redirect ];
+				callback: [ self session unregister. self redirect ];
 				with: 'Expire'.
 			html break.
 			html anchor

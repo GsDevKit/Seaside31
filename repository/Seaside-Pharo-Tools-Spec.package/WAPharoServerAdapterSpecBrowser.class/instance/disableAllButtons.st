@@ -1,4 +1,4 @@
-private
+private - enablement
 disableAllButtons
 
 	self toolbarModel startButton enabled: false.

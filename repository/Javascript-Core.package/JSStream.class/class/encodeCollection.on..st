@@ -1,6 +1,6 @@
 encoding
 encodeCollection: aCollection on: aStream
-	"Writes aCollection of elements to aStream enclosed in square brakets."
+	"Writes aCollection of elements to aStream enclosed in square brackets."
 	
 	aStream nextPut: $[.
 	aCollection
