@@ -69,6 +69,9 @@ GsDeployer deploy: [
   $PROJECT_LINE
   $VERSION_LINE
   $REPOSITORY_LINE
+    onConflict: [ :ex :existing :new | 
+      (existing baseName = 'Grease' and:[new baseName = 'Grease'])
+        ifTrue: [ ex disallow ]. ex pass];
     load: #( ${LOADS} )
 ].
 
