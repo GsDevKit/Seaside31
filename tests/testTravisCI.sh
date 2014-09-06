@@ -62,6 +62,8 @@ GsDeployer deploy: [
         ex resume ];
   load: 'default' ].
 
+GsDeployer deploy: [
+
   "Load the configuration or baseline"
   Metacello new
   $PROJECT_LINE
