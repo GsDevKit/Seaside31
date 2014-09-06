@@ -6,4 +6,9 @@ messageList
 				ifTrue: [ #() ]
 				ifFalse: [ self selectedClass selectors ] ]
 		ifFalse: [
-			self selectedClass organization protocolOrganizer methodsInProtocolNamed: selectedMessageCategory ]) sorted
+			| organization organizer |
+			organization := self selectedClass organization.
+			organizer := (organization respondsTo: #protocolOrganizer) "Only in Pharo 3.0+"
+				ifTrue: [ organization protocolOrganizer ]
+				ifFalse: [ (ClassOrganization importFrom: self selectedClass organization) protocolOrganizer ].
+			organizer methodsInProtocolNamed: selectedMessageCategory ]) sorted

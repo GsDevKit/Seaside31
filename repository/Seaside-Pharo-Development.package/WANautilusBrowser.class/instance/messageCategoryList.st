@@ -1,10 +1,13 @@
 accessing
 messageCategoryList
-	| categories unclassified |
+	| all categories unclassified |
+	all := #'-- all --'. "AllProtocol defaultName is fucked in Pharo 2.0"
 	self selectedClass isNil
-		ifTrue: [ ^ Array with: (Smalltalk at: #AllProtocol) defaultName ].
+		ifTrue: [ ^ Array with: all ].
 	categories := self selectedClass organization categories.
-	unclassified := (Smalltalk at: #Protocol) unclassified.
+	categories first = all ifFalse: [ "all is only in 3.0+"
+		categories := (Array with: all), categories ].
+	unclassified := (Smalltalk at: #Protocol) defaultName. "#unclassified only in 3.0+"
 	^ (categories includes: unclassified)
 		ifTrue: [
 			"'-- all --', 'as yet unclassified', rest sorted alphabetically"
