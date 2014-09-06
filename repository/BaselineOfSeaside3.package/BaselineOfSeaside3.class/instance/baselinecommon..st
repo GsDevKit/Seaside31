@@ -1,25 +1,45 @@
 baselines
 baselinecommon: spec
+
   spec
     for: #'squeakCommon'
-    do: [ spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main' ].
+    do: [ 
+	spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
+	spec
+		project: 'Grease'
+		with: [ 
+			spec
+				versionString: #'release1.1';
+				className: 'ConfigurationOfGrease';
+				loads: #('Grease-Core');
+				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
+	spec
+		project: 'Grease Core Tests'
+		copyFrom: 'Grease'
+		with: [ spec loads: #('Core Tests') ] 
+	].
+
+  spec
+	for: #gemstone
+	do: [  
+		spec
+		baseline: 'Grease'
+		with: [ 
+			spec
+				loads: #('Grease-Core');
+				repository: 'github://GsDevKit/Grease:master/repository' ].
+	spec
+		baseline: 'Grease Core Tests'
+		with: [ 
+			spec
+				loads: #('Core-Tests');
+				repository: 'github://GsDevKit/Grease:master/repository' ].
+	].
+
   spec
     for: #'common'
     do: [ 
       spec blessing: #'baseline'.
-      spec
-        project: 'Grease'
-        with: [ 
-          spec
-            versionString: #'release1.1';
-            className: 'ConfigurationOfGrease';
-            loads: #('Grease-Core');
-            repository:
-                'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
-      spec
-        project: 'Grease Core Tests'
-        copyFrom: 'Grease'
-        with: [ spec loads: #('Core Tests') ].
       spec
         package: 'Seaside-Canvas' with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-Component' with: [ spec requires: #('Seaside-Core') ];
@@ -102,4 +122,4 @@ baselinecommon: spec
           with: #('Development' 'Core' 'Seaside-Tests-Development');
         group: 'Email' with: #('Seaside-Email');
         group: 'Examples' with: #('Core' 'Seaside-Examples');
-        group: 'Base' with: #('Core') ]
+        group: 'Base' with: #('Core') ] 
