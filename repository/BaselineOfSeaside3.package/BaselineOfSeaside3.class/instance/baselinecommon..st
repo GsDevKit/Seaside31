@@ -29,11 +29,9 @@ baselinecommon: spec
 				loads: #('Grease-Core');
 				repository: 'github://GsDevKit/Grease:master/repository' ].
 	spec
-		baseline: 'Grease Core Tests'
-		with: [ 
-			spec
-				loads: #('Core Tests');
-				repository: 'github://GsDevKit/Grease:master/repository' ].
+		project: 'Grease Core Tests'
+		copyFrom: 'Grease'
+		with: [ spec loads: #('Core Tests') ] 
 	].
 
   spec
@@ -122,4 +120,4 @@ baselinecommon: spec
           with: #('Development' 'Core' 'Seaside-Tests-Development');
         group: 'Email' with: #('Seaside-Email');
         group: 'Examples' with: #('Core' 'Seaside-Examples');
-        group: 'Base' with: #('Core') ] 
+        group: 'Base' with: #('Core') ]
