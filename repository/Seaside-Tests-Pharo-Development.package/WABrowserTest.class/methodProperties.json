@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedFailures" : "JohanBrichau 9/6/2014 12:20",
 		"notify:at:in:" : "pmm 8/17/2014 10:25",
 		"runCase" : "pmm 8/17/2014 10:25",
 		"selectFrom:to:" : "pmm 8/17/2014 10:32",
