@@ -1,6 +1,6 @@
 accessing
 decorations
-	"Answer an ordered colleciton of all decorations active in the receiver."
+	"Answer an ordered collection of all decorations active in the receiver."
 	
 	| current result |
 	current := self decoration.

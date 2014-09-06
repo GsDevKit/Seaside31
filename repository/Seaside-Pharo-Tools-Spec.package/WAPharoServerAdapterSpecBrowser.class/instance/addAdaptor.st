@@ -7,9 +7,10 @@ addAdaptor
 		values: allAdaptors
 		lines: #()
 		title: 'Add Seaside Adaptor' translated.
-	port := UIManager default
-		request: 'Enter a port number' 
-		initialAnswer: class basicNew defaultPort greaseString.
-	(port isNil or: [ port isEmpty or: [ port isAllDigits not ] ]) ifTrue: [ ^ self ].
-	adaptor := class port: port greaseInteger.
-	self initializeAdaptors
+	class ifNotNil:[
+		port := UIManager default
+			request: 'Enter a port number' 
+			initialAnswer: class basicNew defaultPort greaseString.
+		(port isNil or: [ port isEmpty or: [ port isAllDigits not ] ]) ifFalse:[
+			adaptor := class port: port greaseInteger.
+			self initializeAdaptors]]

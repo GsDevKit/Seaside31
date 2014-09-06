@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"isAbstract" : "jf 1/19/2009 12:36",
-		"sortedConcreteSubinstances" : "jf 2/15/2010 23:38" },
+		"sortedConcreteSubinstances" : "pmm 8/16/2014 16:35" },
 	"instance" : {
 		"<=" : "jf 1/19/2009 12:27",
 		"isSupported" : "pmm 8/28/2011 15:57",

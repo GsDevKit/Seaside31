@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self model: Browser new
+	self model: self class browserClass new

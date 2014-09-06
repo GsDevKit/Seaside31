@@ -1,3 +1,3 @@
 accessing
 title
-	^ 'Load External JSON'
+	^ 'Load JSON'

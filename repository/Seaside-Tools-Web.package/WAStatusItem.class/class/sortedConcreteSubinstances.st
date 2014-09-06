@@ -1,5 +1,6 @@
 instance creation
 sortedConcreteSubinstances
-	^ ((self allSubclasses select: [ :each | each isAbstract not ])
+	^ ((self allSubclasses
+		reject: [ :each | each isAbstract ])
 		collect: [ :each | each new ])
 			sorted

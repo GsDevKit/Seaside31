@@ -1,6 +1,6 @@
 *seaside-tools-core
 default
-	"Helper method that returns a single adaptor of this class from the default ServerManager.
+	"Helper method that returns a single adaptor of this class from the default WAServerManager.
 	If there are no adaptors of this class registered, return nil. If there are multiple adaptors
 	of this type, signal an error."
 	
