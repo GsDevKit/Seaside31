@@ -32,7 +32,7 @@ baselinecommon: spec
 		baseline: 'Grease Core Tests'
 		with: [ 
 			spec
-				loads: #('Core-Tests');
+				loads: #('Core Tests');
 				repository: 'github://GsDevKit/Grease:master/repository' ].
 	].
 
