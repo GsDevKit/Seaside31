@@ -1,3 +1,3 @@
 testing
 canStop
-	^ self manager canStop: self
+	^ manager notNil and:[self manager canStop: self]
