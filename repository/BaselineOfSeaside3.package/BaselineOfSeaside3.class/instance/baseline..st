@@ -18,5 +18,4 @@ baseline: spec
 	self baselinejson: spec.
 	self baselineob: spec.
 	self baselinegettext: spec.
-	self baselinesecurity: spec.
 	self baselinewelcome: spec.
