@@ -37,41 +37,63 @@ cat - >> $OUTPUT_PATH << EOF
 "Load and run tests to be performed by TravisCI"
 Transcript cr; show: 'travis---->travisCI.st'.
 
-"Upgrade GLASS to to 1.0-beta.9.3"
-Gofer new
-    url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
-    package: 'ConfigurationOfGLASS';
-    load.
-ConfigurationOfGLASS project updateProject.
-GsDeployer
-  deploy: [ (ConfigurationOfGLASS project version: '1.0-beta.9.3') load ].
-"Install GLASS from github"
 GsDeployer deploy: [
- Metacello new
-  baseline: 'GLASS1';
-  repository: 'github://glassdb/glass:master/repository';
-  get.
- Metacello new
-  baseline: 'GLASS1';
-  repository: 'github://glassdb/glass:master/repository';
-  onConflict: [ :ex | ex allow ];
-  onWarning: [ :ex | 
-        Transcript
-          cr;
-          show: ex description.
-        ex resume ];
-  load: 'default' ].
+  | glassVersion |
+  glassVersion := ConfigurationOfGLASS project currentVersion.
+  glassVersion versionNumber < '1.0-beta.9.3' asMetacelloVersionNumber
+    ifTrue: [
+      Transcript
+        cr;
+        show: '-----Upgrading GLASS to 1.0-beta.9.3'.
+      GsDeployer deploy: [
+        Gofer new
+          package: 'ConfigurationOfGLASS';
+          url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
+          load.
+        (((System stoneVersionAt: 'gsVersion') beginsWith: '2.') and: [glassVersion versionNumber < '1.0-beta.9.2' asMetacelloVersionNumber])
+          ifTrue: [
+            ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.2') load ].
+        ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.3') load.
+      ] ]
+    ifFalse: [
+      Transcript
+        cr;
+        show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
 GsDeployer deploy: [
+  | greaseLocked metacello |
+  Transcript
+    cr;
+    show: '-----Upgrading Metacello'.
+  metacello := Metacello new
+    baseline: 'Metacello';
+    repository: 'github://dalehenrich/metacello-work:master/repository'.
+  metacello copy get.
+  metacello copy load.
+  Transcript
+    cr;
+    show: '-----Loading GLASS1'.
+  metacello := Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository'.
+  metacello copy get.
+  metacello copy load.
+  Transcript
+    cr;
+    show: '-----Locking Grease'.
+  Metacello new
+    baseline: 'Grease';
+    repository: 'github://GsDevKit/Grease:master/repository';
+    lock 
+].
 
+GsDeployer deploy: [
   "Load the configuration or baseline"
   Metacello new
-  $PROJECT_LINE
-  $VERSION_LINE
-  $REPOSITORY_LINE
-    onConflict: [ :ex :existing :new | 
-      (existing baseName = 'Grease' and:[new baseName = 'Grease'])
-        ifTrue: [ ex disallow ]. ex pass];
+    $PROJECT_LINE
+    $VERSION_LINE
+    $REPOSITORY_LINE
+    onLock: [:ex | ex honor];
     load: #( ${LOADS} )
 ].
 
