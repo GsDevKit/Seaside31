@@ -61,17 +61,39 @@ GsDeployer deploy: [
         show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
 
 GsDeployer deploy: [
-  "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
+  | greaseLocked metacello |
+  Transcript
+    cr;
+    show: '-----Upgrading Metacello'.
+  metacello := Metacello new
+    baseline: 'Metacello';
+    repository: 'github://dalehenrich/metacello-work:master/repository'.
+  metacello copy get.
+  metacello copy load.
+  Transcript
+    cr;
+    show: '-----Loading GLASS1'.
+  metacello := Metacello new
+    baseline: 'GLASS1';
+    repository: 'github://glassdb/glass:master/repository'.
+  metacello copy get.
+  metacello copy load.
+  Transcript
+    cr;
+    show: '-----Locking Grease'.
   Metacello new
-    configuration: 'Grease';
-    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    get.
+    baseline: 'Grease';
+    repository: 'github://GsDevKit/Grease:master/repository';
+    lock 
+].
 
+GsDeployer deploy: [
   "Load the configuration or baseline"
   Metacello new
-  $PROJECT_LINE
-  $VERSION_LINE
-  $REPOSITORY_LINE
+    $PROJECT_LINE
+    $VERSION_LINE
+    $REPOSITORY_LINE
+    onLock: [:ex | ex honor];
     load: #( ${LOADS} )
 ].
 
