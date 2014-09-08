@@ -16,6 +16,7 @@ baselinegemstone: spec
           with: [ 
               spec
                 includes: #('Seaside-GemStone-Core');
+		    requires: #('GLASS1');
                 file: 'Seaside-Core.gemstone' ];
         package: 'Seaside-Development'
           with: [ spec includes: #('Seaside-GemStone-Development') ];
@@ -53,7 +54,7 @@ baselinegemstone: spec
           with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-GemStone-Continuation';
         package: 'Seaside-GemStone-Core'
-          with: [ spec requires: #('Seaside-Core' 'GLASS1') ];
+          with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-GemStone-Development'
           with: [ 
               spec
