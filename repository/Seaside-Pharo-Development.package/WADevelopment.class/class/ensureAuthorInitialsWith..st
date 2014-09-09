@@ -1,7 +1,7 @@
 requests
 ensureAuthorInitialsWith: aOneArgumentBlock
 	"Makes sure the author initials for the image are set.
-	aOneArgumentBlock is called with a qestion string as an argument when the initials are not set, it answers the initials"
+	aOneArgumentBlock is called with a question string as an argument when the initials are not set, it answers the initials"
 	
 	(Smalltalk version beginsWithSubCollection: 'Pharo')
 		ifTrue: [
@@ -10,7 +10,7 @@ ensureAuthorInitialsWith: aOneArgumentBlock
 			author := Smalltalk at: #Author.
 			author isNil
 				ifTrue: [ ^ self error: 'unsupported Pharo version' ].
-			author fullNamePerSe isEmpty
+			author fullNamePerSe isEmptyOrNil
 				ifTrue: [ author fullName: (aOneArgumentBlock value: 'Please enter your initials:') ] ]
 		ifFalse: [
 			| utilies |

@@ -1,6 +1,6 @@
 private
 captureFrom: aSourceContext to: aTargetContext
-	"Utilitiy method to capture the contexts between aSourceContext and aTargetContext."
+	"Utility method to capture the contexts between aSourceContext and aTargetContext."
 
 	| stream context |
 	context := aSourceContext.

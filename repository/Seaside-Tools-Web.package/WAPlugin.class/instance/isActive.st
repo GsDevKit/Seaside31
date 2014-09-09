@@ -1,5 +1,5 @@
 testing
 isActive
-	"Answer wheter the plugin is usable with the current target."
+	"Answer whether the plugin is usable with the current target."
 
 	^ true

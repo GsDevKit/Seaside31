@@ -1,9 +1,10 @@
 {
 	"class" : {
+		"browserClass" : "pmm 8/17/2014 16:12",
 		"canBeRoot" : "lr 1/8/2008 20:14",
 		"description" : "lr 2/12/2007 23:18",
 		"fullOnClass:" : "lr 11/3/2006 13:50",
-		"fullOnClass:selector:" : "lr 11/3/2006 13:50",
+		"fullOnClass:selector:" : "pmm 8/17/2014 16:04",
 		"initialize" : "pmm 2/18/2011 22:14" },
 	"instance" : {
 		"accept" : "pmm 12/13/2008 11:25",
@@ -11,7 +12,7 @@
 		"contents" : "lr 7/25/2011 19:58",
 		"contents:" : "jf 9/30/2009 00:19",
 		"initialRequest:" : "pmm 8/31/2008 18:11",
-		"initialize" : "lr 5/28/2007 18:09",
+		"initialize" : "pmm 8/17/2014 16:04",
 		"model" : "lr 7/25/2011 19:58",
 		"model:" : "jf 3/14/2009 01:23",
 		"notify:at:in:" : "ab 10/10/2002 23:36",

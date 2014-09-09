@@ -1,5 +1,5 @@
 Seaside31
-=========
+========= 
 The framework for developing sophisticated web applications in Smalltalk. 
 See more at http://www.seaside.st/
 

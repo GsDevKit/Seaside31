@@ -10,7 +10,7 @@
 		"testGenericCodecUtf16be" : "pmm 8/6/2011 15:49",
 		"testGenericCodecUtf16le" : "pmm 8/6/2011 15:49",
 		"testInstantiateUtf8" : "jf 9/30/2009 00:45",
-		"testSqueakCodecLatin1" : "pmm 8/16/2010 00:49",
+		"testSqueakCodecLatin1" : "pmm 8/19/2014 10:13",
 		"utf16beString" : "pmm 7/17/2009 21:32",
 		"utf16leString" : "pmm 7/17/2009 21:32",
 		"utf8String" : "pmm 7/17/2009 21:30" } }

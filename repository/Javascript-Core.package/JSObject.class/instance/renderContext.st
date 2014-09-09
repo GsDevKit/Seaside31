@@ -1,5 +1,5 @@
 accessing
 renderContext
-	"Answer the current RenderContext."
+	"Answer the current WARenderContext."
 
 	^ renderContext
