@@ -5,7 +5,15 @@ See more at http://www.seaside.st/
 
 ## Loading into Gemstone
 
-1. [Upgrade to GLASS1][1]
+1. Upgrade to the latest version of Metacello and Grease using [GsUpgrader](https://github.com/GsDevKit/gsUpgrader#gsupgrader-):
+  ```Smalltalk
+  Gofer new
+    package: 'GsUpgrader-Core';
+    url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
+    load.
+  (Smalltalk at: #GsUpgrader) upgradeGrease.
+  ```
+  
 2. Install Seaside 3.1:
 
 Install the latest commit from the master branch:
@@ -18,14 +26,14 @@ Install the latest commit from the master branch:
       load: 'CI' ].
   ```
 
-Install a particular version, e.g. 3.1.2 (see [Releases](https://github.com/GsDevKit/Seaside31/releases) for a list of possible versions):
+Install a particular version, e.g. 3.1.3 (see [Releases](https://github.com/GsDevKit/Seaside31/releases) for a list of possible versions):
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
       baseline: 'Seaside3';
-      repository: 'github://GsDevKit/Seaside31:v3.1.2-gs/repository';
+      repository: 'github://GsDevKit/Seaside31:v3.1.3-gs/repository';
       onLock: [:ex | ex honor];
-      load: 'ALL' ].
+      load: #('Development' 'Examples' 'Zinc') ].
   ```
 
 ## Build Status
