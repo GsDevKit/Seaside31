@@ -16,7 +16,7 @@ See more at http://www.seaside.st/
   
 2. Install Seaside 3.1:
 
-Install the latest commit from the master branch:
+  Install the latest commit from the master branch:
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
@@ -26,7 +26,7 @@ Install the latest commit from the master branch:
       load: 'CI' ].
   ```
 
-Install a particular version, e.g. 3.1.3 (see [Releases](https://github.com/GsDevKit/Seaside31/releases) for a list of possible versions):
+  Install a particular version, e.g. 3.1.3 (see [Releases](https://github.com/GsDevKit/Seaside31/releases) for a list of possible versions):
   ```Smalltalk
   GsDeployer deploy: [
     Metacello new
