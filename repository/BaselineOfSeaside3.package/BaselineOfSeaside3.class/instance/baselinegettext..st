@@ -15,6 +15,7 @@ baselinegettext: spec
 			package: 'Seaside-Gettext-Examples' with: [ spec requires: #('Seaside-Gettext-Core') ].
 		
 		spec
+			group: 'CI' with: #('Seaside-Gettext-Examples');
 			group: 'Gettext' with: #('Seaside-Gettext-Core');
 			group: 'Gettext-Examples' with: #('Gettext' 'Seaside-Gettext-Examples')		
 	
