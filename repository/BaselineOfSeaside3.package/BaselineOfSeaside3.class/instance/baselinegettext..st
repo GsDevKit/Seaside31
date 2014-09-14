@@ -7,7 +7,6 @@ baselinegettext: spec
 		spec
 			project: 'Gettext-Project'
 			with: [	spec
-						loads: #('Core');
 						className: 'ConfigurationOfGettext';
 						repository: 'http://www.smalltalkhub.com/mc/PharoExtras/Gettext/main' ].
 				
