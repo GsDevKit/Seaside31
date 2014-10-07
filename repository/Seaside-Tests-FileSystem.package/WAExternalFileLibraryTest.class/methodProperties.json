@@ -2,9 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"crossPlatformPathFromArray:finalSlash:" : "NickAger 9/5/2009 14:27",
+		"crossPlatformPathFromArray:finalSlash:" : "JohanBrichau 9/27/2014 16:40",
 		"requestWithUrl:" : "lr 8/2/2009 12:50",
 		"setUp" : "pmm 9/5/2009 15:55",
-		"testAsAbsoluteUrlRelativeTo" : "JohanBrichau 9/13/2013 10:30",
+		"testAsAbsoluteUrlRelativeTo" : "dkh 10/07/2014 16:17",
 		"testMimetypeForRequest" : "pmm 10/18/2008 11:31",
-		"testPathForRequest" : "JohanBrichau 9/13/2013 10:30" } }
+		"testPathForRequest" : "dkh 10/07/2014 16:16" } }

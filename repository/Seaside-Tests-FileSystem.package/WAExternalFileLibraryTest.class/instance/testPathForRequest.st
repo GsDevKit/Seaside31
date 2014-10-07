@@ -4,6 +4,9 @@ testPathForRequest
 
 	| consumer requestPath resultPath filename |
 
+  Transcript
+    cr;
+    show: 'WAExternalFileLibraryTest>>testPathForRequest [0]'.	
 	"/home/philppe/files"
 	requestPath := self crossPlatformPathFromArray: #('home' 'philppe' 'files') finalSlash: false.
 	fileSystem configuration at: #directory put: requestPath.
@@ -14,7 +17,7 @@ testPathForRequest
 	"/home/philppe/files/cleopatra.jpeg"
 	resultPath := self crossPlatformPathFromArray: #('home' 'philppe' 'files' 'cleopatra.jpeg') finalSlash: false.
 	filename := fileSystem filenameForConsumer: consumer.
-	self assert: filename asString "on SpFileName" = resultPath.
+	self assert: filename = resultPath.
 	
 
 	consumer := WAPathConsumer path: #('culture' 'cleopatra.jpeg') asOrderedCollection.
@@ -26,7 +29,7 @@ testPathForRequest
 	"/home/philppe/files/cleopatra.jpeg"
 	resultPath := self crossPlatformPathFromArray: #('home' 'philppe' 'files' 'cleopatra.jpeg') finalSlash: false.
 	filename := fileSystem filenameForConsumer: consumer.
-	self assert: filename greaseString = resultPath.
+	self assert: filename = resultPath.
 	
 	
 	consumer := WAPathConsumer path: #('cleopatra.jpeg') asOrderedCollection.
@@ -36,7 +39,7 @@ testPathForRequest
 	
 	"/home/philppe/files/cleopatra.jpeg"
 	resultPath := self crossPlatformPathFromArray: #('home' 'philppe' 'files' 'cleopatra.jpeg') finalSlash: false.
-	self assert: (fileSystem filenameForConsumer: consumer) greaseString = resultPath.
+	self assert: (fileSystem filenameForConsumer: consumer) = resultPath.
 	
 	
 	consumer := WAPathConsumer path: #('cleopatra.jpeg') asOrderedCollection.
@@ -47,4 +50,7 @@ testPathForRequest
 	consumer := WAPathConsumer path: #('cleopatra.jpeg') asOrderedCollection.
 	"/home/philppe/files/cleopatra.jpeg"
 	resultPath := self crossPlatformPathFromArray: #('home' 'philppe' 'files' 'cleopatra.jpeg') finalSlash: false.
-	self assert: (fileSystem filenameForConsumer: consumer) greaseString = resultPath.
+	self assert: (fileSystem filenameForConsumer: consumer) = resultPath.
+  Transcript
+    cr;
+    show: 'WAExternalFileLibraryTest>>testPathForRequest [1]'.
