@@ -5,9 +5,9 @@ baselinegettext: spec
 		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main'.
 		
 		spec
-			project: 'Gettext-Project'
+			configuration: 'Gettext-Project'
 			with: [	spec
-						className: 'ConfigurationOfGettext';
+						versionString: #'stable';
 						repository: 'http://www.smalltalkhub.com/mc/PharoExtras/Gettext/main' ].
 				
 		spec
