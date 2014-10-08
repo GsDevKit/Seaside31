@@ -6,11 +6,10 @@ baselinecommon: spec
     do: [ 
 	spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 	spec
-		project: 'Grease'
+		configuration: 'Grease'
 		with: [ 
 			spec
 				versionString: #'release1.1';
-				className: 'ConfigurationOfGrease';
 				loads: #('Grease-Core');
 				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
 	spec
