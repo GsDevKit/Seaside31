@@ -1,7 +1,7 @@
 testing
 crossPlatformPathFromArray: pathArray finalSlash: finalSlash
 	| separator path|
-	separator := GRPlatform current pathSeparator.
+	separator := String with: SpFilename new separator.
 	
 	path := String new.
 	pathArray do: [:pathElement | 
