@@ -2,8 +2,6 @@ baselines
 baselinegettext: spec
 
 	spec for: #'common' do: [	
-		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main'.
-		
 		spec
 			project: 'Gettext-Project'
 			with: [	spec
@@ -19,9 +17,11 @@ baselinegettext: spec
 			group: 'CI' with: #('Seaside-Gettext-Examples');
 			group: 'Gettext' with: #('Seaside-Gettext-Core');
 			group: 'Gettext-Examples' with: #('Gettext' 'Seaside-Gettext-Examples')		
-	
 	].
 
+	spec for: #'squeakCommon' do: [	
+		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main' ].
+		
 	spec for: #(#squeak 'pharo1.x') do:[
 		spec
 			package: 'Seaside-Gettext-Slime' with: [ spec requires: #('Slime') ].
