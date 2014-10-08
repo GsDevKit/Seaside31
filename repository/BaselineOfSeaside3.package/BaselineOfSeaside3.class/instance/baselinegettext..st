@@ -12,7 +12,7 @@ baselinegettext: spec
 						repository: 'http://www.smalltalkhub.com/mc/PharoExtras/Gettext/main' ].
 				
 		spec
-			package: 'Seaside-Gettext-Core' with: [ spec requires: #('Gettext-Project' 'Core') ];
+			package: 'Seaside-Gettext-Core' with: [ spec requires: #('Gettext-Project' 'Seaside-Core') ];
 			package: 'Seaside-Gettext-Examples' with: [ spec requires: #('Seaside-Gettext-Core') ].
 		
 		spec
