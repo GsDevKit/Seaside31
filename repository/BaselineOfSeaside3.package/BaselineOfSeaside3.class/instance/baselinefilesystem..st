@@ -5,17 +5,9 @@ baselinefilesystem: spec
     do: [ 
       spec
         package: 'Seaside-FileSystem'
-          with: [ 
-              spec
-                requires: #('Seaside-Core');
-                repository:
-                    'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main' ];
+          with: [ spec requires: #('Seaside-Core') ];
         package: 'Seaside-Tests-FileSystem'
-          with: [ 
-              spec
-                requires: #('Seaside-FileSystem');
-                repository:
-                    'http://smalltalkhub.com/mc/Seaside/Seaside30LGPL/main' ].
+          with: [ spec requires: #('Seaside-FileSystem') ].
       spec
         group: 'Filesystem' with: #('Seaside-FileSystem');
         group: 'Filesystem Tests'
