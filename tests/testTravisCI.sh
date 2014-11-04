@@ -37,41 +37,20 @@ cat - >> $OUTPUT_PATH << EOF
 "Load and run tests to be performed by TravisCI"
 Transcript cr; show: 'travis---->travisCI.st'.
 
-GsDeployer deploy: [
-  | glassVersion |
-  glassVersion := ConfigurationOfGLASS project currentVersion.
-  glassVersion versionNumber < '1.0-beta.9.3' asMetacelloVersionNumber
-    ifTrue: [
-      Transcript
-        cr;
-        show: '-----Upgrading GLASS to 1.0-beta.9.3'.
-      GsDeployer deploy: [
-        Gofer new
-          package: 'ConfigurationOfGLASS';
-          url: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
-          load.
-        (((System stoneVersionAt: 'gsVersion') beginsWith: '2.') and: [glassVersion versionNumber < '1.0-beta.9.2' asMetacelloVersionNumber])
-          ifTrue: [
-            ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.2') load ].
-        ((Smalltalk at: #ConfigurationOfGLASS) project version: '1.0-beta.9.3') load.
-      ] ]
-    ifFalse: [
-      Transcript
-        cr;
-        show: '-----GLASS already upgraded to 1.0-beta.9.3' ] ].
+"Upgrade Grease and Metacello"
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
+  load.
+(Smalltalk at: #GsUpgrader) upgradeGrease.
 
 GsDeployer deploy: [
-  "Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-  Metacello new
-    configuration: 'Grease';
-    repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-    get.
-
   "Load the configuration or baseline"
   Metacello new
-  $PROJECT_LINE
-  $VERSION_LINE
-  $REPOSITORY_LINE
+    $PROJECT_LINE
+    $VERSION_LINE
+    $REPOSITORY_LINE
+    onLock: [:ex | ex honor];
     load: #( ${LOADS} )
 ].
 
