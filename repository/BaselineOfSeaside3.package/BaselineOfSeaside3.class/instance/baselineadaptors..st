@@ -91,7 +91,7 @@ baselineadaptors: spec
             className: 'ConfigurationOfGsFastCGI';
             versionString: #'stable';
             loads: #('FastCGI');
-            repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
+            repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ].
       spec
         package: 'Seaside-Adaptors-Swazoo'
           with: [ spec includes: #('Seaside-GemStone-Adaptors-Swazoo') ];

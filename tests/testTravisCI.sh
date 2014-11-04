@@ -22,34 +22,17 @@ EOF
 
 if [ "${GLASS}x" != "x" ] ; then
 cat - >> $OUTPUT_PATH << EOF
-"Load GLASS1 from glassdb repository"
-
-Metacello image
-  baseline: 'GLASS1';
-  get.
-Metacello image
-  baseline: 'GLASS1';
+"Upgrade Grease and Metacello"
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
   load.
+(Smalltalk at: #GsUpgrader) upgradeGLASS1.
 EOF
 fi
 
 cat - >> $OUTPUT_PATH << EOF
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
-
-"Load latest GLASS1"
- [ Metacello new
-    baseline: 'GLASS1';
-    repository: 'github://glassdb/glass:master/repository';
-    load.
-  ] on: Warning
-    do:[:ex | Transcript show: ex greaseString. ex resume].
-
-"Explicitly load latest Grease configuration, since we're loading the #bleeding edge"
-
-Metacello new
-  configuration: 'Grease';
-  repository: 'http://www.smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main';
-  get.
 
 "Load Seaside31 from git repository"
 
