@@ -2,9 +2,11 @@ language: erlang
 
 env:
 
+   # standard load
    - ST=GemStone-3.1.0.6   BASELINE=Seaside3 LOADS="'CI' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
    - ST=GemStone-3.2.2     BASELINE=Seaside3 LOADS="'CI' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-
+   # whole enchilada
+   - ST=GemStone-3.2.2     BASELINE=Seaside3 LOADS="'ALL'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
 install:
    - export PROJECT_HOME="$(pwd)"
    - cd $HOME
@@ -15,4 +17,4 @@ install:
    - ln -s $PROJECT_HOME $GIT_PATH
    - ./build_image.sh
 
-script: $PROJECT_HOME/tests/testTravisCI.sh # -verbose
+script: $PROJECT_HOME/tests/testTravisCI.sh -verbose

@@ -85,8 +85,7 @@ baselinegemstone: spec
         package: 'Seaside-Tests-GemStone-Functional'
           with: [ spec requires: #('Seaside-Tests-Functional') ].
       spec
-        group: 'CI'
-          overrides: #('Tests' 'Development Tests' 'FastCGI' 'Zinc' 'Swazoo');
+        group: 'CI' with: #('FastCGI' 'Zinc' 'Swazoo');
         group: 'Development' with: #('Seaside-GemStone-Basic-Development');
         group: 'Production' with: #('Seaside-GemStone-Tools-Production') ].
   spec

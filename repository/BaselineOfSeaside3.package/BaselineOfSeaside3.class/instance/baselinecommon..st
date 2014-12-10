@@ -3,19 +3,20 @@ baselinecommon: spec
   spec
     for: #'squeakCommon'
     do: [ 
-      spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
-      spec
-        configuration: 'Grease'
-        with: [ 
-          spec
-            versionString: #'release1.1';
-            loads: #('Grease-Core');
-            repository:
-                'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
-      spec
-        project: 'Grease Core Tests'
-        copyFrom: 'Grease'
-        with: [ spec loads: #('Core Tests') ] ].
+	spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
+	spec
+		configuration: 'Grease'
+		with: [ 
+			spec
+				versionString: #'release1.1';
+				loads: #('Grease-Core');
+				repository: 'http://smalltalkhub.com/mc/Seaside/MetacelloConfigurations/main' ].
+	spec
+		project: 'Grease Core Tests'
+		copyFrom: 'Grease'
+		with: [ spec loads: #('Core Tests') ] 
+	].
+
   spec
     for: #'gemstone'
     do: [ 

@@ -3,16 +3,16 @@ baselinefilesystem: spec
   spec
     for: #'common'
     do: [ 
+	
       spec
-        package: 'Seaside-FileSystem'
-          with: [ spec requires: #('Seaside-Core') ];
-        package: 'Seaside-Tests-FileSystem'
-          with: [ spec requires: #('Seaside-FileSystem') ].
+        package: 'Seaside-FileSystem' with: [ spec requires: #('Seaside-Core') ];
+        package: 'Seaside-Tests-FileSystem' with: [ spec requires: #('Seaside-FileSystem') ].
+
       spec
         group: 'Filesystem' with: #('Seaside-FileSystem');
-        group: 'Filesystem Tests'
-          with: #('Filesystem' 'Seaside-Tests-FileSystem');
+        group: 'Filesystem Tests' with: #('Filesystem' 'Seaside-Tests-FileSystem');
         group: 'Tests' with: #('Filesystem Tests') ].
+
   spec
     for: #'squeakCommon'
     do: [ 
