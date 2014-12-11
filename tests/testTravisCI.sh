@@ -54,11 +54,18 @@ GsDeployer deploy: [
     load: #( ${LOADS} )
 ].
 
-"Run the tests"
+true ifTrue: [
+  "Run all tests in image"
+   TravisCISuiteHarness
+     value: TestCase suite
+     value: 'TravisCISuccess.txt'
+     value: 'TravisCIFailure.txt'.
+] ifFalse: [
+  "Run just the Seaside tests"
   TravisCIHarness
     value: #( '${FULL_CONFIG_NAME}' )
     value: 'TravisCISuccess.txt' 
-    value: 'TravisCIFailure.txt'.
+    value: 'TravisCIFailure.txt' ].
 EOF
 
 cat $OUTPUT_PATH
