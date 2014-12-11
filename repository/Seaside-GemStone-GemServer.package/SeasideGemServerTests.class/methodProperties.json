@@ -3,7 +3,10 @@
 		"isAbstract" : "dkh 12/10/2014 16:23" },
 	"instance" : {
 		"gemServer" : "dkh 12/10/2014 16:29",
+		"httpClient" : "dkh 12/10/2014 18:50",
 		"setUp" : "dkh 12/10/2014 16:24",
 		"tearDown" : "dkh 12/10/2014 16:24",
+		"testServerSideError" : "dkh 12/10/2014 20:11",
+		"testSimpleGet" : "dkh 12/10/2014 20:09",
 		"testStartRestartStopServer" : "dkh 12/10/2014 16:59",
 		"validatePidFile:shouldExist:" : "dkh 12/10/2014 16:45" } }

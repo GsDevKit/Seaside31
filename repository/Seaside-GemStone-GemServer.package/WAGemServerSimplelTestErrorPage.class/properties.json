@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-GemServer-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 12/10/2014 20:02",
+	"instvars" : [
+		 ],
+	"name" : "WAGemServerSimplelTestErrorPage",
+	"pools" : [
+		 ],
+	"super" : "WAComponent",
+	"type" : "normal" }
