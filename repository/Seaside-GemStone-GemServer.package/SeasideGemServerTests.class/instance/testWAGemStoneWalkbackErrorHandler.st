@@ -1,0 +1,3 @@
+tests
+testWAGemStoneWalkbackErrorHandler
+  self runServerErrorTestUsing: WAGemStoneWalkbackErrorHandler

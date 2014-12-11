@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "dkh 12/10/2014 19:59",
+	"commentStamp" : "dkh 12/10/2014 20:51",
 	"instvars" : [
 		 ],
-	"name" : "WAGemServerSimplelTestPage",
+	"name" : "WAGemServerSimpleTestPage",
 	"pools" : [
 		 ],
 	"super" : "WAComponent",
