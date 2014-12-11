@@ -10,5 +10,5 @@
 	"name" : "ZnSeasideGemServer",
 	"pools" : [
 		 ],
-	"super" : "SeasideGemServer",
+	"super" : "ZnGemServer",
 	"type" : "normal" }
