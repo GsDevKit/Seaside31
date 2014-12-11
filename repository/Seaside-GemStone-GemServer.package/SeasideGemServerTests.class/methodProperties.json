@@ -11,7 +11,6 @@
 		"testSimpleGet" : "dkh 12/10/2014 20:09",
 		"testStartRestartStopServer" : "dkh 12/10/2014 16:59",
 		"testWAGemStoneProductionErrorHandler" : "dkh 12/10/2014 21:08",
-		"testWAGemStoneWalkbackErrorHandler" : "dkh 12/11/2014 06:29",
-		"testWAGemStoneWalkbackErrorHandlerInteractive" : "dkh 12/11/2014 06:49",
+		"testWAGemStoneWalkbackErrorHandler" : "dkh 12/11/2014 13:59",
 		"testWARemoteDebuggingWalkbackErrorHandler" : "dkh 12/10/2014 21:09",
 		"validatePidFile:shouldExist:" : "dkh 12/10/2014 16:45" } }
