@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-Adaptors-Zinc",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ZnSeasideGemServer",
+	"pools" : [
+		 ],
+	"super" : "SeasideGemServer",
+	"type" : "normal" }

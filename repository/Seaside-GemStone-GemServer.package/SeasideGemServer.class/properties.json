@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-GemStone-GemServer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SeasideGemServer",
+	"pools" : [
+		 ],
+	"super" : "GemServer",
+	"type" : "normal" }

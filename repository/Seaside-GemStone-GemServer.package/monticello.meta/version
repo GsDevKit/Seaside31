@@ -1,0 +1,1 @@
+(name 'Seaside-GemStone-GemServer-dkh.1' message 'Issue #54: implement GemServer class for Swazoo, FastCGI and Zinc Seaside adaptors ... add a test that does a start/stop/restart on each of the GemServers ' id '99ccdf9a-7c92-4d82-b785-0f071fb955cd' date '12/10/2014' time '17:32:37' author 'dkh' ancestors () stepChildren ())

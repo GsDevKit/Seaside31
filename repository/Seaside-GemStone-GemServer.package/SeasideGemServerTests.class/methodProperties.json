@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"isAbstract" : "dkh 12/10/2014 16:23" },
+	"instance" : {
+		"gemServer" : "dkh 12/10/2014 16:29",
+		"setUp" : "dkh 12/10/2014 16:24",
+		"tearDown" : "dkh 12/10/2014 16:24",
+		"testStartRestartStopServer" : "dkh 12/10/2014 16:59",
+		"validatePidFile:shouldExist:" : "dkh 12/10/2014 16:45" } }
