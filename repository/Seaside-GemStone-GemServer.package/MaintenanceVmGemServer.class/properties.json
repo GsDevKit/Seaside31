@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"maintenanceVm" ],
-	"name" : "SeasideGemServer",
+		"maintenanceProcess" ],
+	"name" : "MaintenanceVmGemServer",
 	"pools" : [
 		 ],
 	"super" : "GemServer",
