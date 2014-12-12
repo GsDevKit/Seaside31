@@ -6,4 +6,4 @@ initialize
   self
     maintenanceVm:
       ((GemServerRegistry gemServerNamed: vmName)
-        ifNil: [ GemServer register: vmName ])
+        ifNil: [ MaintenanceVmGemServer register: vmName ])

@@ -1,6 +1,7 @@
 {
 	"class" : {
-		"defaultPortList" : "dkh 12/12/2014 10:00" },
+		"defaultPortList" : "dkh 12/12/2014 10:00",
+		"serverClass" : "dkh 12/12/2014 15:30" },
 	"instance" : {
 		"initialize" : "dkh 12/12/2014 09:57",
 		"maintenanceProcess" : "dkh 12/12/2014 10:03",
