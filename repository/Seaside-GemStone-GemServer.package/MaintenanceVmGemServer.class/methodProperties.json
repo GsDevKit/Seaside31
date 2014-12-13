@@ -1,10 +1,5 @@
 {
 	"class" : {
-		"defaultPortList" : "dkh 12/12/2014 10:00",
-		"serverClass" : "dkh 12/12/2014 15:30" },
+		"taskClass" : "dkh 12/13/2014 15:27" },
 	"instance" : {
-		"initialize" : "dkh 12/12/2014 09:57",
-		"maintenanceProcess" : "dkh 12/12/2014 10:03",
-		"maintenanceProcess:" : "dkh 12/12/2014 10:03",
-		"startBasicServerOn:" : "dkh 12/12/2014 10:02",
-		"stop" : "dkh 12/12/2014 10:04" } }
+		 } }

@@ -11,20 +11,20 @@ startBasicServerOn: ignored
         whileTrue: [ 
           [ 
           "run maintenance tasks"
-          WAGemStoneMaintenanceTask performTasks: count.	"Sleep for a minute"
-          (Delay forSeconds: 60) wait.
+          self taskClass performTasks: count.	"Sleep for a minute"
+          (Delay forMilliseconds: self delayTimeMs) wait.
           count := count + 1 ]
             on: self class breakpointExceptionSet
             do: [ :ex | 
               System inTransaction
                 ifTrue: [ 
-                  DebuggerLogEntry createContinuationLabeled: 'MTCE continuation'.
+                  DebuggerLogEntry createContinuationLabeled: 'SVCE continuation'.
                   System commitTransaction.
                   System beginTransaction ]
                 ifFalse: [ 
                   System beginTransaction.
                   DebuggerLogEntry
-                    createContinuationLabeled: 'MTCE continuation'.
+                    createContinuationLabeled: 'SVCE continuation'.
                   System commitTransaction ].
               ex isResumable
                 ifTrue: [ ex resume ] ] ] ]

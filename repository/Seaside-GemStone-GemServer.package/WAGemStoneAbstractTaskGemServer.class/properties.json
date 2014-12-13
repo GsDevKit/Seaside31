@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "dkh 12/13/2014 15:55",
 	"instvars" : [
-		 ],
-	"name" : "MaintenanceVmGemServer",
+		"maintenanceProcess" ],
+	"name" : "WAGemStoneAbstractTaskGemServer",
 	"pools" : [
 		 ],
-	"super" : "WAGemStoneAbstractTaskGemServer",
+	"super" : "GemServer",
 	"type" : "normal" }
