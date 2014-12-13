@@ -36,7 +36,7 @@ See more at http://www.seaside.st/
       load: #('Development' 'Examples' 'Zinc') ].
   ```
 
-## Managing Gem Servers
+## Managing Seaside Gem Servers
 
 ```Smalltalk
 "Register gem servers"
