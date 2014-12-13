@@ -36,6 +36,36 @@ See more at http://www.seaside.st/
       load: #('Development' 'Examples' 'Zinc') ].
   ```
 
+## Managing Seaside Gem Servers
+
+```Smalltalk
+"Register gem servers"
+FastCGISeasideGemServer register: 'FastCGISeasideGems' on: #( 9001 9002 9003 )
+  enableLogToObjectLog;
+  yourself.
+
+ZnSeasideGemServer register: 'ZincSeasideGems' on: #( 8383 )
+  logToObjectLog;
+  logErrorsOnly;
+  yourself.
+
+"Start gem servers - including maintenance vm"
+(GemServerRegistry gemServerNamed: 'FastCGISeasideGems') startGems.
+(GemServerRegistry gemServerNamed: 'ZincSeasideGems') startGems.
+
+"Restart gem servers"
+(GemServerRegistry gemServerNamed: 'FastCGISeasideGems') restartGems.
+(GemServerRegistry gemServerNamed: 'ZincSeasideGems') restartGems.
+
+"Stop gem servers"
+(GemServerRegistry gemServerNamed: 'FastCGISeasideGems') stopGems.
+(GemServerRegistry gemServerNamed: 'ZincSeasideGems') stopGems.
+
+"Unregister gem servers"
+(GemServerRegistry gemServerNamed: 'FastCGISeasideGems') unregister.
+(GemServerRegistry gemServerNamed: 'ZincSeasideGems') unregister.
+```
+
 ## Build Status
  - [![gs_master branch:](https://travis-ci.org/GsDevKit/Seaside31.png?branch=gs_master)](https://travis-ci.org/GsDevKit/Seaside31) gs_master (Gemstone)
  - [![master branch (pharo/squeak):](https://travis-ci.org/GsDevKit/Seaside31.png?branch=master)](https://travis-ci.org/GsDevKit/Seaside31)  master (Pharo/Squeak)
