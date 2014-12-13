@@ -40,10 +40,16 @@ See more at http://www.seaside.st/
 
 ```Smalltalk
 "Register gem servers"
-FastCGISeasideGemServer register: 'FastCGISeasideGems' on: #( 9001 9002 9003 ).
-ZnSeasideGemServer register: 'ZincSeasideGems' on: #( 8383 ).
+FastCGISeasideGemServer register: 'FastCGISeasideGems' on: #( 9001 9002 9003 )
+  enableLogToObjectLog;
+  yourself.
 
-"Start gem servers"
+ZnSeasideGemServer register: 'ZincSeasideGems' on: #( 8383 )
+  logToObjectLog;
+  logErrorsOnly;
+  yourself.
+
+"Start gem servers - including maintenance vm"
 (GemServerRegistry gemServerNamed: 'FastCGISeasideGems') startGems.
 (GemServerRegistry gemServerNamed: 'ZincSeasideGems') startGems.
 
