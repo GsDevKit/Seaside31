@@ -1,5 +1,5 @@
 accessing
 serverClass
-  "no serverClass used ... server implemented as single thread in gemServer instance"
+  "no serverClass used ... but the taskClass replaces serverClass for task gem servers"
 
-  ^ nil
+  ^ self taskClass

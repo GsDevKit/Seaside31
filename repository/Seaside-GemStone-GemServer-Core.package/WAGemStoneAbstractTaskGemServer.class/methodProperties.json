@@ -1,8 +1,10 @@
 {
 	"class" : {
+		"createServerOfClass:withName:on:" : "dkh 12/14/2014 14:38",
 		"defaultPortList" : "dkh 12/13/2014 15:55",
 		"delayTimeMs" : "dkh 12/13/2014 15:55",
-		"serverClass" : "dkh 12/13/2014 15:55",
+		"register:for:" : "dkh 12/14/2014 14:46",
+		"serverClass" : "dkh 12/14/2014 14:37",
 		"taskClass" : "dkh 12/13/2014 15:55" },
 	"instance" : {
 		"delayTimeMs" : "dkh 12/13/2014 15:55",
@@ -11,4 +13,5 @@
 		"maintenanceProcess:" : "dkh 12/13/2014 15:55",
 		"startBasicServerOn:" : "dkh 12/13/2014 15:55",
 		"stop" : "dkh 12/13/2014 15:55",
-		"taskClass" : "dkh 12/13/2014 15:55" } }
+		"taskClass" : "dkh 12/14/2014 14:36",
+		"taskClass:" : "dkh 12/14/2014 14:36" } }
