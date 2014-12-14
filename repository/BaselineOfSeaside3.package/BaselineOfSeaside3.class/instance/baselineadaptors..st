@@ -109,7 +109,7 @@ baselineadaptors: spec
           with: [ 
               spec
                 requires:
-                  #('Seaside-GemStone-GemServer-Core' 'Seaside-GemStone-Development' 'Zinc') ];
+                  #('Seaside-GemStone-GemServer-Core' 'Seaside-GemStone-Development' 'Seaside-GemStone-Adaptors-Swazoo' 'Seaside-GemStone-Adaptors-Zinc') ];
         package: 'Seaside-Adaptors-Swazoo'
           with: [ spec includes: #('Seaside-GemStone-Adaptors-Swazoo') ];
         package: 'Zinc-Seaside'
