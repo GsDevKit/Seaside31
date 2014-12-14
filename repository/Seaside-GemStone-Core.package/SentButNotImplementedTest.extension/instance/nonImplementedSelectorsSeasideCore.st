@@ -1,3 +1,3 @@
 *seaside-gemstone-core
 nonImplementedSelectorsSeasideCore
-  ^ #(#'javascript:')	"WAScriptGenerator>>writeLoadScriptsOn: is the bad boy"
+  ^ #(#'javascript:' #'internalServerErrorMessage:')	"WAScriptGenerator>>writeLoadScriptsOn: is the bad boy for javascript: and GRGemStonePlatform>>seasideProcessRequest:adaptor:resultBlock: is bad boy for internalServerErrorMessage:"
