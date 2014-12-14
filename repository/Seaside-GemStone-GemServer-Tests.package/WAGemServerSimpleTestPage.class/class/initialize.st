@@ -4,4 +4,4 @@ initialize
 
   (WAAdmin register: self asApplicationAt: 'tests/gemServerSimple')
     preferenceAt: #'sessionClass'
-    put: WAExpirySession
+    put: WASession

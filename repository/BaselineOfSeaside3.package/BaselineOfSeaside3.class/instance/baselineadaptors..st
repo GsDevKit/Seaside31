@@ -103,16 +103,27 @@ baselineadaptors: spec
                 repository: 'github://GsDevKit/zinc:issue_58/repository' ];
         yourself.
       spec
-        package: 'Seaside-GemStone-GemServer'
+        package: 'Seaside-GemStone-GemServer-Core'
           with: [ spec requires: #('GsApplicationTools' 'Seaside-Core') ];
+        package: 'Seaside-GemStone-GemServer-Tests'
+          with: [ 
+              spec
+                requires:
+                  #('Seaside-GemStone-GemServer-Core' 'Seaside-GemStone-Development') ];
         package: 'Seaside-Adaptors-Swazoo'
           with: [ spec includes: #('Seaside-GemStone-Adaptors-Swazoo') ];
         package: 'Zinc-Seaside'
           with: [ spec includes: #('Seaside-GemStone-Adaptors-Zinc') ];
         package: 'Seaside-Adaptors-FastCGI'
-          with: [ spec requires: #('Seaside-Core' 'FastCGI Project' 'Seaside-GemStone-GemServer') ];
+          with: [ 
+              spec
+                requires:
+                  #('Seaside-Core' 'FastCGI Project' 'Seaside-GemStone-GemServer-Core') ];
         package: 'Seaside-GemStone-Adaptors-Swazoo'
-          with: [ spec requires: #('Seaside-Adaptors-Swazoo' 'Seaside-GemStone-GemServer') ];
+          with: [ spec requires: #('Seaside-Adaptors-Swazoo' 'Seaside-GemStone-GemServer-Core') ];
         package: 'Seaside-GemStone-Adaptors-Zinc'
-          with: [ spec requires: #('Zinc-Seaside' 'Seaside-GemStone-GemServer') ].
-      spec group: 'FastCGI' with: #('Seaside-Adaptors-FastCGI') ]
+          with: [ spec requires: #('Zinc-Seaside' 'Seaside-GemStone-GemServer-Core') ].
+      spec
+        group: 'FastCGI' with: #('Seaside-Adaptors-FastCGI');
+        group: 'Tests' with: #('Seaside-GemStone-GemServer-Tests');
+        yourself ]

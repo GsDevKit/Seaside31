@@ -1,3 +1,3 @@
-*seaside-gemstone-gemserver
+*seaside-gemstone-gemserver-core
 defaultMaintenanceVmName
   ^ 'SeasideMaintenanceVM'
