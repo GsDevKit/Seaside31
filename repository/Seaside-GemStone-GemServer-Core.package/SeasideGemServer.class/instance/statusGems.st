@@ -6,6 +6,5 @@ statusGems
     ifNotNil: [ :gemServer | 
       | maintStatus |
       maintStatus := gemServer statusGems.
-      status := status , '
-' , (maintStatus lines at: 2) ].
+      status := status , (maintStatus lines at: 2) ].
   ^ status
