@@ -2,6 +2,7 @@ tests
 testStartRestartStopServer
   "just start/restart/stop ... without an http client cannot do much else"
 
+  [ 
   | gemServer |
   gemServer := self gemServer.
   [ 
@@ -21,4 +22,12 @@ testStartRestartStopServer
     ensure: [ 
       gemServer stopGems.
       (Delay forSeconds: 3) wait.
-      self validatePidFile: gemServer shouldExist: false ]
+      self validatePidFile: gemServer shouldExist: false ] ]
+    on: Error
+    do: [ :ex | 
+      Transcript
+        cr;
+        show: 'testStartRestartStopServer (Issue #59)';
+        cr;
+        show: (GsProcess stackReportToLevel: 100).
+      ex pass ]
