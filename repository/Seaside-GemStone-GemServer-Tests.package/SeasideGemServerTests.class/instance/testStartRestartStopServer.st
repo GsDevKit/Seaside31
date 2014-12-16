@@ -29,5 +29,7 @@ testStartRestartStopServer
         cr;
         show: 'testStartRestartStopServer (Issue #59)';
         cr;
+        show: ex description;
+        cr;
         show: (GsProcess stackReportToLevel: 100).
       ex pass ]
