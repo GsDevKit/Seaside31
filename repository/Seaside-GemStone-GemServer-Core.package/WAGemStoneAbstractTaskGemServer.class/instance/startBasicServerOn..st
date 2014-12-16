@@ -29,4 +29,4 @@ startBasicServerOn: ignored
               ex isResumable
                 ifTrue: [ ex resume ] ] ] ]
         fork.
-  self serverInstance: self
+  self serverInstance: self	"the maintenanceProcess is session-specific"
