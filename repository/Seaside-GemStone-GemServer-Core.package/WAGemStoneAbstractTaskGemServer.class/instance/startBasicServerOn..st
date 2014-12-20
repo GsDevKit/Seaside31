@@ -14,7 +14,7 @@ startBasicServerOn: ignored
           self taskClass performTasks: count.	"Sleep for a minute"
           (Delay forMilliseconds: self delayTimeMs) wait.
           count := count + 1 ]
-            on: self class breakpointExceptionSet
+            on: self class gemServerExceptionSet
             do: [ :ex | 
               System inTransaction
                 ifTrue: [ 
