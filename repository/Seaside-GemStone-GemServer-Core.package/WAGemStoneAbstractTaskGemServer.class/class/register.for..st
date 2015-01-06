@@ -3,6 +3,6 @@ register: aName for: aTaskClass
   ^ (self
     createServerOfClass: aTaskClass
     withName: aName
-    on: self defaultPortList)
+    on: self defaultPortOrResourceNameList)
     register;
     yourself

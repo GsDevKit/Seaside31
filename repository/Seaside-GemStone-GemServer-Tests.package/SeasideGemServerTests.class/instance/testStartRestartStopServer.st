@@ -10,7 +10,7 @@ testStartRestartStopServer
   gemServer startGems.
   (Delay forSeconds: 3) wait.
   portCount := self validatePidFile: gemServer shouldExist: true.
-  self assert: portCount = gemServer defaultPortList size.
+  self assert: portCount = gemServer defaultPortOrResourceNameList size.
   gemServer restartGems.
   (Delay forSeconds: 3) wait.
   self validatePidFile: gemServer shouldExist: true.

@@ -1,9 +1,9 @@
 {
 	"class" : {
-		"createServerOfClass:withName:on:" : "dkh 12/14/2014 14:38",
-		"defaultPortList" : "dkh 12/13/2014 15:55",
+		"createServerOfClass:withName:on:" : "dkh 01/06/2015 15:37",
+		"defaultPortOrResourceNameList" : "dkh 01/06/2015 15:23",
 		"delayTimeMs" : "dkh 12/13/2014 15:55",
-		"register:for:" : "dkh 12/14/2014 14:46",
+		"register:for:" : "dkh 01/06/2015 15:23",
 		"serverClass" : "dkh 12/14/2014 14:37",
 		"taskClass" : "dkh 12/13/2014 15:55" },
 	"instance" : {
