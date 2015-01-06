@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "dkh 12/13/2014 15:55",
+	"commentStamp" : "",
 	"instvars" : [
-		"maintenanceProcess" ],
+		 ],
 	"name" : "WAGemStoneAbstractTaskGemServer",
 	"pools" : [
 		 ],

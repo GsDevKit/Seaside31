@@ -7,11 +7,8 @@
 		"serverClass" : "dkh 12/14/2014 14:37",
 		"taskClass" : "dkh 12/13/2014 15:55" },
 	"instance" : {
+		"basicServerOn:" : "dkh 01/02/2015 17:51",
 		"delayTimeMs" : "dkh 12/13/2014 15:55",
-		"initialize" : "dkh 12/13/2014 15:55",
-		"maintenanceProcess" : "dkh 12/13/2014 15:55",
-		"maintenanceProcess:" : "dkh 12/13/2014 15:55",
-		"startBasicServerOn:" : "dkh 12/20/2014 08:19",
-		"stop" : "dkh 12/13/2014 15:55",
+		"stop" : "dkh 01/02/2015 17:23",
 		"taskClass" : "dkh 12/14/2014 14:36",
 		"taskClass:" : "dkh 12/14/2014 14:36" } }

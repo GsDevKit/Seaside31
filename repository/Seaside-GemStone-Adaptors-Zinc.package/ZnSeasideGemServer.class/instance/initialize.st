@@ -5,5 +5,5 @@ initialize
   vmName := self defaultMaintenanceVmName.
   self
     maintenanceVm:
-      ((GemServerRegistry gemServerNamed: vmName)
+      ((self class gemServerNamed: vmName)
         ifNil: [ MaintenanceVmGemServer register: vmName ])
