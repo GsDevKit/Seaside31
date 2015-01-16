@@ -10,9 +10,8 @@ testWAGemStoneWalkbackErrorHandlerInteractive
     ifNil: [ 
       "no client? ... skip it"
       ^ self ].
-  gemServer := self gemServer
-    debugMode: true;
-    yourself.
+  gemServer := self gemServer.
+  self setDebugMode: gemServer.
   port := gemServer ports first.
   testUrl := 'http://localhost:' , port printString , '/tests/gemServerError'.
   simpleUrl := 'http://localhost:' , port printString , '/tests/gemServerSimple'.

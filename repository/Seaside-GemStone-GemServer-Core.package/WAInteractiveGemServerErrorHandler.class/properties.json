@@ -1,5 +1,5 @@
 {
-	"category" : "Seaside-GemStone-Basic-Development",
+	"category" : "Seaside-GemStone-GemServer-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "WABasicDevelopment",
+	"name" : "WAInteractiveGemServerErrorHandler",
 	"pools" : [
 		 ],
-	"super" : "WAObject",
+	"super" : "WAErrorHandler",
 	"type" : "normal" }
