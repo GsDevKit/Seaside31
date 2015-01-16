@@ -16,8 +16,7 @@ testWAGemStoneWalkbackErrorHandler
   | exceptionSeen |
   WAGemServerSimpleTestErrorPage
     initializeWithErrorHandler: WAGemStoneWalkbackErrorHandler.
-  gemServer restartGems.
-  (Delay forSeconds: 3) wait.
+  self restartGems: gemServer.
   exceptionSeen := false.
   [ client get: testUrl ]
     on: ConnectionClosed
@@ -25,6 +24,4 @@ testWAGemStoneWalkbackErrorHandler
       "remote server crashed ... good"
       exceptionSeen := true ].
   self assert: exceptionSeen ]
-    ensure: [ 
-      gemServer stopGems.
-      (Delay forSeconds: 3) wait ]
+    ensure: [ self stopGems: gemServer ]

@@ -10,10 +10,7 @@ testSimpleGet
   port := gemServer ports first.
   url := 'http://localhost:' , port printString , '/tests/gemServerSimple'.
   [ 
-  gemServer restartGems.
-  (Delay forSeconds: 3) wait.
+  self restartGems: gemServer.
   response := client get: url.
   self assert: response status = 200 ]
-    ensure: [ 
-      gemServer stopGems.
-      (Delay forSeconds: 3) wait ]
+    ensure: [ self stopGems: gemServer ]

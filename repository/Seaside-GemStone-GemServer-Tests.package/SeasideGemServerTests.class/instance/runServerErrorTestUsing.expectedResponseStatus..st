@@ -12,12 +12,9 @@ runServerErrorTestUsing: exceptionHandlerClass expectedResponseStatus: expectedR
   simpleUrl := 'http://localhost:' , port printString , '/tests/gemServerSimple'.
   [ 
   WAGemServerSimpleTestErrorPage initializeWithErrorHandler: exceptionHandlerClass.
-  gemServer restartGems.
-  (Delay forSeconds: 3) wait.
+  self restartGems: gemServer.
   response := client get: testUrl.
   self assert: response status = expectedResponseStatus.
   response := self httpClient get: simpleUrl.
   self assert: response status = 200	"server should not crash" ]
-    ensure: [ 
-      gemServer stopGems.
-      (Delay forSeconds: 3) wait ]
+    ensure: [ self stopGems: gemServer ]

@@ -1,3 +1,3 @@
 accessing
 gemServer
-  ^ FastCGISeasideGemServer register: 'FastCGISeasideServer'
+  ^ FastCGISeasideGemServer register: self gemServerName

@@ -74,7 +74,6 @@ TDScriptLeafNode{#name:'gemServer',#contents:'[ :topez :objIn :tokens :command :
       opts
         at: \'interactiveStart\'
         ifPresent: [ :serverName | 
-          \"WABasicDevelopment setBreakPoints.\"
           gemServer := GemServer gemServerNamed: serverName.
           gemServer interactiveStartServiceOn: gemServer ports first\t\"does not return\" ].
       opts
@@ -155,4 +154,4 @@ EXAMPLES
   ./gemServer --restart=seaside
 
 \'
-        topez: topez ] ]',#creationTime:DateAndTime['2015-01-15T16:57:31.775855064392-08:00'],#modificationTime:@2}
+        topez: topez ] ]',#creationTime:DateAndTime['2015-01-15T16:57:31.775855064392-08:00'],#modificationTime:DateAndTime['2015-01-16T11:56:16.3552780151367-08:00']}

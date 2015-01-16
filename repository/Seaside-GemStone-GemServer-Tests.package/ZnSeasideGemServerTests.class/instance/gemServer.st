@@ -1,3 +1,3 @@
 accessing
 gemServer
-  ^ ZnSeasideGemServer register: 'ZnSeasideServer'
+  ^ ZnSeasideGemServer register: self gemServerName

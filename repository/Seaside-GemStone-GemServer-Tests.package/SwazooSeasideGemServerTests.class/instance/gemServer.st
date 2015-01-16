@@ -1,3 +1,3 @@
 accessing
 gemServer
-  ^ SwazooSeasideGemServer register: 'SwazooSeasideServer'
+  ^ SwazooSeasideGemServer register: self gemServerName
