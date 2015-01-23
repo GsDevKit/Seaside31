@@ -100,7 +100,7 @@ baselineadaptors: spec
           with: [ 
               spec
                 className: 'BaselineOfZincHTTPComponents';
-                repository: 'github://GsDevKit/zinc:issue_58/repository' ];
+                repository: 'github://GsDevKit/zinc:v2.4.3.?/repository' ];
         yourself.
       spec
         package: 'Seaside-GemStone-GemServer-Core'
