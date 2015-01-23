@@ -1,0 +1,3 @@
+tests
+testWARemoteDebuggingWalkbackErrorHandler
+  self runServerErrorTestUsing: WARemoteDebuggingWalkbackErrorHandler

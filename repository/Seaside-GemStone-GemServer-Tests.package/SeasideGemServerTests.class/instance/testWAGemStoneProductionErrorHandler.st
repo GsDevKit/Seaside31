@@ -1,0 +1,3 @@
+tests
+testWAGemStoneProductionErrorHandler
+  self runServerErrorTestUsing: WAGemStoneProductionErrorHandler
