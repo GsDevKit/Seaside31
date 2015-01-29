@@ -12,7 +12,7 @@ seasideProcessRequest: aNativeRequest adaptor: adaptor resultBlock: resultBlock
 					ifTrue: [ ^result ].
 				System _sessionCacheStatAt: 2 put: ((System _sessionCacheStatAt: 2) + 1). "requests retried"
 				(Delay forMilliseconds: self retryDelay * count) wait.
-				count := count * 10 ].
+				count := count + 1 ].
 		"exceeded retry limit"
 		^adaptor internalServerErrorMessage: 'Too many retries: ', (retryCount+1) printString ] 
 			on: Error 
