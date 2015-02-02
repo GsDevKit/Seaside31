@@ -95,7 +95,7 @@ baselineadaptors: spec
               spec
                 loads: 'Core';
                 repository:
-                    'github://GsDevKit/gsApplicationTools:issue_19/repository' ];
+                    'github://GsDevKit/gsApplicationTools:v1.?/repository' ];
         baseline: 'Zinc Project'
           with: [ 
               spec
