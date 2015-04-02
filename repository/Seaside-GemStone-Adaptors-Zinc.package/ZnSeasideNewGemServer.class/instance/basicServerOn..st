@@ -16,6 +16,7 @@ basicServerOn: port
   self
     gemServer: [ 
       znServer serverSocket isValid
-        ifTrue: [ znServer serveConnectionsOn: znServer serverSocket ] ] ]
+        ifTrue: [ znServer serveConnectionsOn: znServer serverSocket ] ]
+    beforeUnwind: [ :ex | ex pass ] ]
     repeat ]
     ifCurtailed: [ znServer releaseServerSocket ]
