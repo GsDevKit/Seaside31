@@ -1,10 +1,9 @@
-baselines-311
+baselines-311-312
 baseline311adaptors: spec
 	spec
 		for: #squeakCommon
 		do: [ 
 			spec blessing: #baseline.
-			spec repository: 'http://smalltalkhub.com/mc/Seaside/Seaside31/main'.
 
 			spec
 				project: 'WebClient Project'

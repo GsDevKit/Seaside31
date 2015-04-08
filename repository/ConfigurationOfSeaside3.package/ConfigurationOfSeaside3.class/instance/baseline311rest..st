@@ -1,7 +1,7 @@
-baselines-311
+baselines-311-312
 baseline311rest: spec
 
-	spec for: #'common' do: [	
+	spec for: #'squeakCommon' do: [	
 		spec blessing: #baseline.
 		spec 
 			package: 'Seaside-REST-Core' with: [
