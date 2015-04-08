@@ -1,7 +1,7 @@
-baselines-311
+baselines-311-312
 baseline311gettext: spec
 
-	spec for: #'common' do: [	
+	spec for: #'squeakCommon' do: [	
 		spec repository: 'http://www.smalltalkhub.com/mc/Seaside/Seaside30Addons/main'.
 		
 		spec
