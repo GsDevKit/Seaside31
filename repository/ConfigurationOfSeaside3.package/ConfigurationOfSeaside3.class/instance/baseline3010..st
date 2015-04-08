@@ -222,7 +222,9 @@ baseline3010: spec
 				package: 'Seaside-Tests-GemStone-Functional' with: [ spec requires: #('Seaside-Tests-Functional') ].
 			spec
 				group: 'Base' with: #('Seaside-GemStone-Basic-Development');
-				group: 'Core' with: #('Seaside-Adaptors-FastCGI' 'Seaside-Adaptors-Swazoo') ].
+				group: 'Core' with: #('Seaside-Adaptors-FastCGI' 'Seaside-Adaptors-Swazoo');
+             group: 'JQuery' with: #('JQuery-Core');
+             group: 'JQueryUI' with: #('JQuery-UI') ].
 	spec
 		for: #'gs2.4.x'
 		do: [ 

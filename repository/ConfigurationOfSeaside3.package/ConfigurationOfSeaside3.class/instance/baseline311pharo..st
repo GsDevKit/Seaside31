@@ -1,8 +1,13 @@
-baselines-311
+baselines-311-312
 baseline311pharo: spec
 
 	spec for: #'squeakCommon' do: [
 		spec blessing: #baseline.
+		spec 
+			project: 'Grease Slime' copyFrom: 'Grease' with: [
+				spec loads: #('Slime' ) ];
+			project: 'Grease Slime Tests' copyFrom: 'Grease' with: [
+				spec loads: #('Slime Tests' ) ].
 		spec
 			package: 'Seaside-Canvas' with: [
 				spec includes: #('Seaside-Pharo-Canvas' ). ];
@@ -40,7 +45,14 @@ baseline311pharo: spec
 			package: 'Seaside-Tests-Canvas' with: [
 				spec includes: #('Seaside-Tests-Pharo-Canvas' ). ];
 			package: 'Seaside-Tests-Pharo-Canvas' with: [
-				spec requires: #('Seaside-Tests-Canvas' ). ] ].
+				spec requires: #('Seaside-Tests-Canvas' ). ];
+			package: 'Seaside-Slime' with: [
+				spec requires: #('Grease Slime' ). ];
+			package: 'Seaside-Tests-Slime' with: [
+				spec requires: #('Seaside-Slime' 'Seaside-Tests-Component' 'Grease Slime Tests' ). ].
+		spec 
+			group: 'Development' with: #('Seaside-Slime' );
+			group: 'Development Tests' with: #('Seaside-Tests-Slime' ) ].
 				
     spec for: #(#'squeak' #'pharo1.x')  do: [ 
             spec
@@ -63,22 +75,6 @@ baseline311pharo: spec
 				spec requires: #( 'Seaside-Tests-Pharo-Core' ) ];
 			package: 'Seaside-Pharo-Email' with: [
 				spec requires: #('Seaside-Email' 'Seaside-Pharo-Core' ) ] ].
-
-	spec for: #'pharo' do: [
-			
-		spec 
-			project: 'Grease Slime' copyFrom: 'Grease' with: [
-				spec loads: #('Slime' ) ];
-			project: 'Grease Slime Tests' copyFrom: 'Grease' with: [
-				spec loads: #('Slime Tests' ) ].
-		spec
-			package: 'Seaside-Slime' with: [
-				spec requires: #('Grease Slime' ). ];
-			package: 'Seaside-Tests-Slime' with: [
-				spec requires: #('Seaside-Slime' 'Seaside-Tests-Component' 'Grease Slime Tests' ). ].
-		spec 
-			group: 'Development' with: #('Seaside-Slime' );
-			group: 'Development Tests' with: #('Seaside-Tests-Slime' ) ].
 
 	spec for: #'pharo2.x' do: [
 		spec
