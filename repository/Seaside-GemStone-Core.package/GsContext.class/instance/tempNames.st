@@ -1,4 +1,3 @@
 accessing
 tempNames
-
-^(continuation _localFrameContentsAt: level) at: 9
+  ^ (continuation _frameContentsAt: level) at: 9
