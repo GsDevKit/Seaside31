@@ -1,6 +1,6 @@
 private
-waitForStartGems: message
-  (self gemServer waitForStartGems: 20)
+waitForGemServer: gemServer message: message
+  (gemServer waitForStartGems: 20)
     ifFalse: [ 
       Transcript
         cr;

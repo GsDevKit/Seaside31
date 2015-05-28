@@ -20,7 +20,9 @@ testWAGemStoneWalkbackErrorHandlerInteractive
   WAGemServerSimpleTestErrorPage
     initializeWithErrorHandler: WAGemStoneWalkbackErrorHandler.
   gemServer restartGems.
-  self waitForStartGems: 'Gems did not restart ' , self gemServerName.
+  self
+    waitForGemServer: gemServer
+    message: 'Gems did not restart ' , self gemServerName.
   exceptionSeen := false.
   [ client get: testUrl ]
     on: ConnectionClosed

@@ -12,11 +12,15 @@ testStartRestartStopServer
   [ 
   | statusReport portCount |
   gemServer startGems.
-  self waitForStartGems: 'Gems did not start ' , self gemServerName.
+  self
+    waitForGemServer: gemServer
+    message: 'Gems did not start ' , self gemServerName.
   portCount := self validatePidFile: gemServer shouldExist: true.
   self assert: portCount = gemServer defaultPortOrResourceNameList size.
   gemServer restartGems.
-  self waitForStartGems: 'Gems did not restart ' , self gemServerName.
+  self
+    waitForGemServer: gemServer
+    message: 'Gems did not restart ' , self gemServerName.
   self validatePidFile: gemServer shouldExist: true.
   statusReport := gemServer statusGems.
   Transcript
