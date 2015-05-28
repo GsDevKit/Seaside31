@@ -5,4 +5,5 @@ waitForGemServer: gemServer message: message
       Transcript
         cr;
         show: message.
-      self assert: false ]
+      self assert: false ].
+  (Delay forSeconds: 3) wait
