@@ -9,4 +9,6 @@ startGems: gemServer
             , self gemServerName ]
     ifFalse: [ 
       gemServer startGems.
-      (Delay forSeconds: 3) wait ]
+      self
+        waitForGemServer: gemServer
+        message: 'Gems did not start ' , self gemServerName ]

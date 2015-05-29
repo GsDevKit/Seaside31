@@ -8,6 +8,7 @@ testWAGemStoneWalkbackErrorHandler
     ifNil: [ 
       "no client? ... skip it"
       ^ self ].
+  [ 
   gemServer := self gemServer yourself.
   port := gemServer ports first.
   testUrl := 'http://localhost:' , port printString , '/tests/gemServerError'.
@@ -24,4 +25,10 @@ testWAGemStoneWalkbackErrorHandler
       "remote server crashed ... good"
       exceptionSeen := true ].
   self assert: exceptionSeen ]
-    ensure: [ self stopGems: gemServer ]
+    ensure: [ self stopGems: gemServer ] ]
+    on: Error
+    do: [ :ex | 
+      Transcript
+        cr;
+        show: 'testWAGemStoneWalkbackErrorHandler error: ' , ex description;
+        show: (GsProcess stackReportToLevel: 100) ]

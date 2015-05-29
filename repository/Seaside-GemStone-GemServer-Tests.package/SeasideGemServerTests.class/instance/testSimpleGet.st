@@ -1,5 +1,6 @@
 tests
 testSimpleGet
+  [ 
   | client gemServer port url response |
   client := self httpClient.
   client
@@ -13,4 +14,10 @@ testSimpleGet
   self restartGems: gemServer.
   response := client get: url.
   self assert: response status = 200 ]
-    ensure: [ self stopGems: gemServer ]
+    ensure: [ self stopGems: gemServer ] ]
+    on: Error
+    do: [ :ex | 
+      Transcript
+        cr;
+        show: 'testSimpleGet error: ' , ex description;
+        show: (GsProcess stackReportToLevel: 100) ]

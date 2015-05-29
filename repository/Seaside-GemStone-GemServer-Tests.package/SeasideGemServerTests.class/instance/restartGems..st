@@ -9,4 +9,6 @@ restartGems: gemServer
             , self gemServerName ]
     ifFalse: [ 
       gemServer restartGems.
-      (Delay forSeconds: 3) wait ]
+      self
+        waitForGemServer: gemServer
+        message: 'Gems did not restart ' , self gemServerName ]
