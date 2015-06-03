@@ -1,4 +1,4 @@
 initialization
 labels
 
-	^#('fatal' 'error' 'warn' 'info' 'debug' 'trace' 'transcript').
+	^#('fatal' 'error' 'warn' 'info' 'debug' 'trace' 'transcript' 'inspect').
