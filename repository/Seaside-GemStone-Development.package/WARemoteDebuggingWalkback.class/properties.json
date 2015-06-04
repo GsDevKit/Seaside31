@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "dkh 10/18/2011 16:33",
+	"commentStamp" : "",
 	"instvars" : [
 		"continuation",
 		"logEntry" ],
