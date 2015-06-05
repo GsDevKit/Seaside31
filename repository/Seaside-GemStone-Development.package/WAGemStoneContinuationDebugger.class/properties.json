@@ -1,13 +1,13 @@
 {
-	"category" : "Seaside-GemStone-Tools-Production-ObjectLog",
+	"category" : "Seaside-GemStone-Development",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "MarianoMartinezPeck 06/02/2015 22:02",
+	"commentStamp" : "dkh 06/05/2015 15:44",
 	"instvars" : [
 		"errorDescription" ],
-	"name" : "WAObjectLogDebuggerWalkback",
+	"name" : "WAGemStoneContinuationDebugger",
 	"pools" : [
 		 ],
 	"super" : "WAGemStoneWalkback",
