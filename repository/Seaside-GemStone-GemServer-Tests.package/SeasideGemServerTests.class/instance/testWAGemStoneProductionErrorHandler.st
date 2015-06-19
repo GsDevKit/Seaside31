@@ -6,4 +6,5 @@ testWAGemStoneProductionErrorHandler
       Transcript
         cr;
         show: 'testWAGemStoneProductionErrorHandler error: ' , ex description;
-        show: (GsProcess stackReportToLevel: 100) ]
+        show: (GsProcess stackReportToLevel: 100).
+      ex pass ]

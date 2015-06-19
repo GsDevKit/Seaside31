@@ -20,4 +20,5 @@ testSimpleGet
       Transcript
         cr;
         show: 'testSimpleGet error: ' , ex description;
-        show: (GsProcess stackReportToLevel: 100) ]
+        show: (GsProcess stackReportToLevel: 100).
+      ex pass ]
