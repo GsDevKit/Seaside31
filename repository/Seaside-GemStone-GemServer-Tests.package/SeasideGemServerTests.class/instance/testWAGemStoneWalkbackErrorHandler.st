@@ -31,4 +31,5 @@ testWAGemStoneWalkbackErrorHandler
       Transcript
         cr;
         show: 'testWAGemStoneWalkbackErrorHandler error: ' , ex description;
-        show: (GsProcess stackReportToLevel: 100) ]
+        show: (GsProcess stackReportToLevel: 100).
+      ex pass ]

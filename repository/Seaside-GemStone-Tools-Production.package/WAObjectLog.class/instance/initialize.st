@@ -31,6 +31,10 @@ initialize
 			onClick: [ :each | self deleteLogEntriesUpToInclusive: each ])
 			sortBlock: nil);
 		add: ((WAReportColumn
+			selector: #debugContinuationString title: 'debug continuation'
+			onClick: [ :each | self debugContinuation: each ])
+			sortBlock: nil);
+		add: ((WAReportColumn
 			renderBlock: [ :each :html | 
 				html anchor
 					callback: [ self deleteLogEntry: each ];

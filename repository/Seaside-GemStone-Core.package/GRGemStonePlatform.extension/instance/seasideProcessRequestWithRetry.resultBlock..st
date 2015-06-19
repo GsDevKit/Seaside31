@@ -15,6 +15,7 @@ seasideProcessRequestWithRetry: aNativeRequest resultBlock: resultBlock
         do: [ :ex | 
           retryRequest := true.
           retryException := ex ].
+	self transactionMutex privateLockingProcess: Processor activeProcess.
       retryRequest
         ifTrue: [ 
           (retryException isKindOf: SafelyPerformBlockRequiringAbort)

@@ -13,6 +13,9 @@ testSimpleGet
   [ 
   self restartGems: gemServer.
   response := client get: url.
+  Transcript
+    cr;
+    show: 'testSimpleGet response status: ' , response status printString.
   self assert: response status = 200 ]
     ensure: [ self stopGems: gemServer ] ]
     on: Error
@@ -20,4 +23,5 @@ testSimpleGet
       Transcript
         cr;
         show: 'testSimpleGet error: ' , ex description;
-        show: (GsProcess stackReportToLevel: 100) ]
+        show: (GsProcess stackReportToLevel: 100).
+      ex pass ]
