@@ -1,10 +1,9 @@
 tests
 testSimpleGet
   [ 
-  | client gemServer port url response |
-  client := self httpClient.
-  client
-    ifNil: [ 
+  | gemServer port url response |
+  self hasHttpClient
+    ifFalse: [ 
       "no client? ... skip it"
       ^ self ].
   gemServer := self gemServer.
@@ -12,7 +11,7 @@ testSimpleGet
   url := 'http://localhost:' , port printString , '/tests/gemServerSimple'.
   [ 
   self restartGems: gemServer.
-  response := client get: url.
+  response := self httpGet: url.
   Transcript
     cr;
     show: 'testSimpleGet response status: ' , response status printString.

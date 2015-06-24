@@ -4,10 +4,9 @@ testWAGemStoneWalkbackErrorHandlerInteractive
   interactively and you want the exception passed to your debugger ... when run remotely 
   the topaz session crashes"
 
-  | client gemServer port response testUrl simpleUrl |
-  client := self httpClient.
-  client
-    ifNil: [ 
+  | gemServer port response testUrl simpleUrl |
+  self hasHttpClient
+    ifFalse: [ 
       "no client? ... skip it"
       ^ self ].
   gemServer := self gemServer.
@@ -24,7 +23,7 @@ testWAGemStoneWalkbackErrorHandlerInteractive
     waitForGemServer: gemServer
     message: 'Gems did not restart ' , self gemServerName.
   exceptionSeen := false.
-  [ client get: testUrl ]
+  [ self httpGetNoRetry: testUrl ]
     on: ConnectionClosed
     do: [ :ex | 
       "remote server crashed ... good"

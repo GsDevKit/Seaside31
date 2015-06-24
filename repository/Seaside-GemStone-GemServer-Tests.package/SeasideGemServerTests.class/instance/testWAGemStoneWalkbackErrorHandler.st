@@ -2,10 +2,9 @@ tests
 testWAGemStoneWalkbackErrorHandler
   "topaz session should crash..."
 
-  | client gemServer port response testUrl simpleUrl |
-  client := self httpClient.
-  client
-    ifNil: [ 
+  | gemServer port response testUrl simpleUrl |
+  self hasHttpClient
+    ifFalse: [ 
       "no client? ... skip it"
       ^ self ].
   [ 
@@ -19,7 +18,7 @@ testWAGemStoneWalkbackErrorHandler
     initializeWithErrorHandler: WAGemStoneWalkbackErrorHandler.
   self restartGems: gemServer.
   exceptionSeen := false.
-  [ client get: testUrl ]
+  [ self httpGetNoRetry: testUrl ]
     on: ConnectionClosed
     do: [ :ex | 
       "remote server crashed ... good"
