@@ -1,9 +1,8 @@
 private
 runServerErrorTestUsing: exceptionHandlerClass expectedResponseStatus: expectedResponseStatus
-  | client gemServer port response testUrl simpleUrl |
-  client := self httpClient.
-  client
-    ifNil: [ 
+  | gemServer port response testUrl simpleUrl |
+  self hasHttpClient
+    ifFalse: [ 
       "no client? ... skip it"
       ^ self ].
   gemServer := self gemServer.
@@ -13,8 +12,8 @@ runServerErrorTestUsing: exceptionHandlerClass expectedResponseStatus: expectedR
   [ 
   WAGemServerSimpleTestErrorPage initializeWithErrorHandler: exceptionHandlerClass.
   self restartGems: gemServer.
-  response := client get: testUrl.
+  response := self httpGet: testUrl.
   self assert: response status = expectedResponseStatus.
-  response := self httpClient get: simpleUrl.
+  response := self httpGet: simpleUrl.
   self assert: response status = 200	"server should not crash" ]
     ensure: [ self stopGems: gemServer ]
