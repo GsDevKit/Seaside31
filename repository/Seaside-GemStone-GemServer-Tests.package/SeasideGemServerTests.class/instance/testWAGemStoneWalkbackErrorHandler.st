@@ -18,7 +18,7 @@ testWAGemStoneWalkbackErrorHandler
     initializeWithErrorHandler: WAGemStoneWalkbackErrorHandler.
   self restartGems: gemServer.
   exceptionSeen := false.
-  [ self httpGet: testUrl ]
+  [ self httpGetNoRetry: testUrl ]
     on: ConnectionClosed
     do: [ :ex | 
       "remote server crashed ... good"

@@ -23,7 +23,7 @@ testWAGemStoneWalkbackErrorHandlerInteractive
     waitForGemServer: gemServer
     message: 'Gems did not restart ' , self gemServerName.
   exceptionSeen := false.
-  [ self httpGet: testUrl ]
+  [ self httpGetNoRetry: testUrl ]
     on: ConnectionClosed
     do: [ :ex | 
       "remote server crashed ... good"
