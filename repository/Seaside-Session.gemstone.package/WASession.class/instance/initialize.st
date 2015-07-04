@@ -1,5 +1,5 @@
 initialization
 initialize
-	super initialize.
-	self initializeFilters.
-	continuations := self createCache
+  super initialize.
+  self initializeFilters.
+  self continuations: self createCache

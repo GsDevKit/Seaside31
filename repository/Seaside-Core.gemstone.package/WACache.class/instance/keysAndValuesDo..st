@@ -1,4 +1,3 @@
 enumerating
 keysAndValuesDo: aBlock
-
-	objectsByKey keysAndValuesDo: aBlock
+  self objectsByKey keysAndValuesDo: aBlock

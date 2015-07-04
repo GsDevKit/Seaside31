@@ -1,4 +1,5 @@
 copying
 postCopy
-	super postCopy.
-	continuations := continuations copy
+  super postCopy.
+  self continuations: copiedFrom continuations copy.
+  copiedFrom := nil

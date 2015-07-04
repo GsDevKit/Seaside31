@@ -1,3 +1,9 @@
 accessing
 actionUrlForContinuation: aContinuation
-	^ self actionUrlForKey: (continuations store: (aContinuation setParent: self; yourself))
+  ^ self
+    actionUrlForKey:
+      (self continuations
+        store:
+          (aContinuation
+            setParent: self;
+            yourself))

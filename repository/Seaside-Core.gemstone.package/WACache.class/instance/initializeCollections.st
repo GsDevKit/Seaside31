@@ -1,4 +1,4 @@
 initialization
 initializeCollections
-	objectsByKey := GRPlatform current reducedConflictDictionary new.
-	keysByObject := GRPlatform current reducedConflictDictionary new
+  self objectsByKey: GRPlatform current reducedConflictDictionary new.
+  self keysByObject: GRPlatform current reducedConflictDictionary new
