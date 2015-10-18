@@ -1,0 +1,14 @@
+{
+	"category" : "Seaside-Swazoo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"handler" ],
+	"name" : "WAPluggableSite",
+	"pools" : [
+		 ],
+	"super" : "SwazooSite",
+	"type" : "normal" }
