@@ -14,3 +14,4 @@ flexibleRoutesForContext: aRequestContext
 	endIndex isNil
 		ifTrue: [ endIndex := routesForMethod size ].
 	^ routesForMethod copyFrom: startIndex to: endIndex
+	

@@ -1,3 +1,0 @@
-configuration
-keySize
-	^ 16

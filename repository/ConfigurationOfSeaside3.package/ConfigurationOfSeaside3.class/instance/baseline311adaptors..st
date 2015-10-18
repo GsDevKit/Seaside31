@@ -1,7 +1,7 @@
 baselines-311-312
 baseline311adaptors: spec
 	spec
-		for: #common
+		for: #squeakCommon
 		do: [ 
 			spec blessing: #baseline.
 
@@ -72,25 +72,3 @@ baseline311adaptors: spec
 	spec
 		for: #'pharo1.x'
 		do: [ spec package: 'Seaside-Tests-Adaptors-Comanche' with: [ spec requires: #('Seaside-Tests-Pharo-Core') ] ].
-		
-	spec for: #'gemstone' do: [
-		spec project: 'FastCGI Project' with: [
-				spec
-					className: 'ConfigurationOfGsFastCGI';
-					versionString: #'stable';
-					loads: #('FastCGI' );
-					repository: 'http://seaside.gemstone.com/ss/MetacelloRepository' ].
-		spec
-			 package: 'Seaside-Adaptors-Swazoo' with: [
-				spec includes: #('Seaside-GemStone-Adaptors-Swazoo' ) ];
-			package: 'Zinc-Seaside' with: [
-				spec includes: #('Seaside-GemStone-Adaptors-Zinc' ) ];
-			package: 'Seaside-Adaptors-FastCGI' with: [
-				spec requires: #('Seaside-Core' 'FastCGI Project' ). ];
-			package: 'Seaside-GemStone-Adaptors-Swazoo' with: [
-				spec requires: #('Seaside-Adaptors-Swazoo' ). ];
-			package: 'Seaside-GemStone-Adaptors-Zinc' with: [
-				spec requires: #('Zinc-Seaside' ) ].
-	
-		spec
-			group: 'FastCGI' with: #('Seaside-Adaptors-FastCGI' ) ]

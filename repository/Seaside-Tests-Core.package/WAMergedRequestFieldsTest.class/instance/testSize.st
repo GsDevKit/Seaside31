@@ -7,3 +7,4 @@ testSize
 	self assert: merged size = 2.
 	two at: 'bar' put: 4.
 	self assert: merged size = 3
+	

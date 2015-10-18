@@ -10,3 +10,4 @@ testMessage
 	
 	self response status: 290 message: 'Seaside Rocks'.
 	self assert: self response message = 'Seaside Rocks'
+	

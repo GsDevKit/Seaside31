@@ -8,3 +8,4 @@ testCopyConfiguration
 	self assert: handler configuration == config.
 	self deny: copy configuration == handler configuration.
 	self deny: copy configuration isNil
+	
