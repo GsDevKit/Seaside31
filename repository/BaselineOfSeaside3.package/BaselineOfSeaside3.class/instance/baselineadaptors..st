@@ -100,7 +100,7 @@ baselineadaptors: spec
           with: [ 
               spec
                 className: 'BaselineOfZincHTTPComponents';
-                loads: #('Core');
+                loads: #('Zinc-HTTP' 'Core');
                 repository: 'github://GsDevKit/zinc:v2.4.3.?/repository' ];
         yourself.
       spec
