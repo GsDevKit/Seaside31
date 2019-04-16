@@ -1,31 +1,18 @@
-language: erlang
+language: smalltalk
+sudo: false
 
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/c59e6bffa0b41a693676 # GsDevKit/chat (public)
-    on_success: always # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: false     # default: false
+os: linux
 
-env:
+smalltalk:
+  - GemStone-2.4.8
+  - GemStone-3.1.0.6
+  - GemStone-3.2.17
+  - GemStone-3.3.9
+  - GemStone-3.4.3
 
-   # standard load
-   - ST=GemStone-3.1.0.6   BASELINE=Seaside3 LOADS="'CI' 'Swazoo' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.2.17    BASELINE=Seaside3 LOADS="'CI' 'Swazoo' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.3.9     BASELINE=Seaside3 LOADS="'CI' 'Swazoo' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.4.3     BASELINE=Seaside3 LOADS="'CI' 'Swazoo' 'Zinc' 'FastCGI'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   # whole enchilada
-   - ST=GemStone-3.3.9     BASELINE=Seaside3 LOADS="'ALL'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-   - ST=GemStone-3.4.3     BASELINE=Seaside3 LOADS="'ALL'" REPOSITORY="filetree://${TRAVIS_BUILD_DIR}/repository"
-install:
-   - export PROJECT_HOME="$(pwd)"
-   - cd $HOME
-   - wget -q -O builderCI.zip https://github.com/dalehenrich/builderCI/zipball/master
-   - unzip -q builderCI.zip
-   - cd dalehenrich-builderCI*
-   - source build_env_vars
-   - ln -s $PROJECT_HOME $GIT_PATH
-   - ./build_image.sh
+smalltalk_config:
+  - .smalltalk.ston
 
-script: $PROJECT_HOME/tests/testTravisCI.sh -verbose
+cache:
+  directories:
+    - $SMALLTALK_CI_CACHE
