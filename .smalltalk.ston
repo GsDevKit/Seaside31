@@ -2,7 +2,7 @@ SmalltalkCISpec {
   #name : 'Metacello',
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'Seaside31',
+      #baseline : 'Seaside3',
       #directory : 'repository',
      	#load : [ 'CI' ],
       #onWarningLog : true,
