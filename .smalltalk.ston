@@ -1,0 +1,18 @@
+SmalltalkCISpec {
+  #name : 'Metacello',
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'Seaside3',
+      #directory : 'repository',
+     	#load : [ 'CI' ],
+      #onWarningLog : true,
+      #useLatestMetacello : false,
+      #platforms : [ #gemstone ]
+    }
+  ],
+  #testing : {
+    #include : {
+      #classes : [ #SentButNotImplementedTest, #UndefinedSymbolsTest ]
+    }
+  }
+}

@@ -95,13 +95,13 @@ baselineadaptors: spec
               spec
                 loads: 'Core';
                 repository:
-                    'github://GsDevKit/gsApplicationTools:v1.?/repository' ];
+                    'github://GsDevKit/gsApplicationTools:master/repository' ];
         baseline: 'Zinc Project'
           with: [ 
               spec
                 className: 'BaselineOfZincHTTPComponents';
                 loads: #('Zinc-HTTP' 'Core');
-                repository: 'github://GsDevKit/zinc:v2.4.3.?/repository' ];
+                repository: 'github://GsDevKit/zinc:gs_master/repository' ];
         yourself.
       spec
         package: 'Seaside-GemStone-GemServer-Core'
