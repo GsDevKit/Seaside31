@@ -15,7 +15,7 @@ seasideProcessRequestWithRetry: aNativeRequest resultBlock: resultBlock
         do: [ :ex | 
           retryRequest := true.
           retryException := ex ].
-	self transactionMutex privateLockingProcess: Processor activeProcess.
+      self transactionMutex privateLockingProcess: Processor activeProcess.
       retryRequest
         ifTrue: [ 
           (retryException isKindOf: SafelyPerformBlockRequiringAbort)
@@ -26,9 +26,10 @@ seasideProcessRequestWithRetry: aNativeRequest resultBlock: resultBlock
               self doAbortTransaction ]
             ifFalse: [ 
               "lock not acquired - unwind the stack to this point and leave transaction mode"
-              self doAbortTransaction	"self 
+              self doAbortTransaction.	"self 
 								saveLogEntry: (WAObjectLogEntry trace: retryException logMessage request: aNativeRequest object: retryException description) 
-								shouldCommit: true" ].
+								shouldCommit: true"
+              ^ self class retryWithNoRetryIncrement	"retry request don't increment retry count" ].
           ^ nil	"retry request" ].
       self doCommitTransaction
         ifFalse: [ 
